@@ -18,3 +18,11 @@
 2) Calculate Statistics by using the **Descriptive Statistics** tool to generate a summary of your numerical data
 3) Visualize Outliers
 4) Generate Tables for visuals
+
+## Data Analysis Pivot Tables Uncovering Key Business Questions in Excel
+1) Answering Business Questions by using Pivot Tables
+2) Add a Revenue Column with Data
+3) Make Product as the Rows and Quantity as the Values
+4) Total Revenue by making Revenue as Values add-on to the previous step
+5) Revenue Breakdown by Payment Method ( Payment Method as Rows )
+6) Sort and even convert values to percentages by using Show Values as…
