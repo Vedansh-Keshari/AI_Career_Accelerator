@@ -23,11 +23,10 @@
 - Business Logic
 - Clean Structure
 - Working user interface
-3. Instead of 
+3. Claude Code helps us focus on Ideas and System Design, instead of 
 - Boiler plate
 - setting-up files
 - wiring everything together manually
-Claude Code helps us focus on Ideas and System Design
 4. Onboarding systems, Dashboards, Automation Tools, Internal platforms
 
 ## Avatar Watch your App in action
