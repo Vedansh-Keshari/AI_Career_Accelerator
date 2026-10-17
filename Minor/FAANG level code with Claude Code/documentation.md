@@ -39,6 +39,19 @@
 - Instructions
 5. Click on “Generate” and review the complete onboarding package
 6. Inputs: Name, Role, Department
-7. Outputs: Welcome Email, 7-day Onboarding Plan, Required Documents Checklist, IT Access Checklist (Base Access & Department-specific Access based on role)
+7. Outputs: Welcome Email, 7-day Onboarding Plan (mapped to roles, departments & sectors), Required Documents Checklist (based on roles and departments), IT Access Checklist (Base Access & Department-specific Access based on role)
 
 ## How One File Powers the Whole Application
+1. app.py > 
+- import streamlit as st
+- from datetime import datetime, timedelta
+- \# Page configuration > page_title, page_icon, layout
+- \# Title and description > title, markdown
+- \# Input section > header, multiple columns (defining roles, departments and other selections)
+- \# Submit button > Onboarding plan generation is triggered , error message if all other above required fields are not filled correctly
+2. FAQ Section in the app as mentioned in the original prompt, each question has predefined answer clearly mapped in the code
+3. General Training Resources and Learning Materials assigned to each role
+4. Everything (implementation) works exactly as expected based on the original System Design.
+
+## From Prompt to GitHub Repo Automatically
+
