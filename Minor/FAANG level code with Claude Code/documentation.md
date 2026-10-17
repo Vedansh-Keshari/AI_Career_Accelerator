@@ -54,4 +54,7 @@
 4. Everything (implementation) works exactly as expected based on the original System Design.
 
 ## From Prompt to GitHub Repo Automatically
+- Claude can directly push changes to GitHub as a separate branch until you allow to merge it to the main branch
+
+## Don’t Skip This README (It’s Powerful)
 
