@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Excel Practice Lab: Fast Food Sales</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f8f4;--ink:#1d2b22;--muted:#56665b;--line:#d5dccf;--card:#fff;--accent:#1e7145;--accent-ink:#fff;--hot:#d9381e;--mustard:#f2b705;--bar:#bfe3cd;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a15;--ink:#e6efe8;--muted:#9aa99f;--line:#2a382f;--card:#19241d;--accent:#3fb27a;--accent-ink:#0b140e;--hot:#ff6a50;--bar:#24523a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121a15;--ink:#e6efe8;--muted:#9aa99f;--line:#2a382f;--card:#19241d;--accent:#3fb27a;--accent-ink:#0b140e;--hot:#ff6a50;--bar:#24523a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "IBM Plex Sans",system-ui,sans-serif;font-variant-numeric:tabular-nums}
+main{max-width:920px;margin:0 auto;padding:24px 16px 64px}
+h1{font:800 clamp(30px,6vw,48px)/1.05 "Bricolage Grotesque",system-ui,sans-serif;margin:8px 0 10px;letter-spacing:-.02em}
+h2{font:700 24px/1.2 "Bricolage Grotesque",system-ui,sans-serif;margin:0 0 4px}
+h3{font-size:17px;margin:0 0 8px}
+p{margin:0 0 12px;max-width:68ch}
+.lede{color:var(--muted);font-size:18px}
+.tabs{display:flex;gap:0;margin:22px 0 20px;border-bottom:2px solid var(--line)}
+.tab{background:none;border:0;padding:12px 18px;font:600 16px "IBM Plex Sans",sans-serif;color:var(--muted);cursor:pointer;border-bottom:4px solid transparent;margin-bottom:-2px}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+:focus-visible{outline:3px solid var(--mustard);outline-offset:2px}
+.prog{display:flex;align-items:center;gap:12px;margin-bottom:18px;font-size:14px;color:var(--muted)}
+.meter{flex:1;height:10px;background:var(--line);border-radius:5px;overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--accent);transition:width .25s}
+.sec{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:6px;padding:18px 18px 8px;margin-bottom:18px}
+.sec .sub{color:var(--muted);margin-bottom:12px}
+.step{display:flex;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
+.step input{width:22px;height:22px;margin-top:3px;accent-color:var(--accent);flex:none}
+.step label{cursor:pointer}
+.step .t{font-weight:600}
+.step.done .t{text-decoration:line-through;color:var(--muted)}
+.step .d{color:var(--muted);font-size:15px;margin-top:2px}
+code{background:var(--bg);border:1px solid var(--line);padding:1px 6px;border-radius:4px;font:14px ui-monospace,Menlo,Consolas,monospace;word-break:break-word}
+.fix{border-left:4px solid var(--hot);padding:6px 12px;margin:8px 0 12px;background:var(--bg);font-size:15px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px;margin-bottom:18px}
+.controls{display:flex;flex-wrap:wrap;gap:14px;align-items:end;margin-bottom:12px}
+.controls label{display:flex;flex-direction:column;font-size:13px;color:var(--muted);gap:4px}
+select{font:16px "IBM Plex Sans",sans-serif;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);min-height:40px}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:480px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font-size:13px;color:var(--muted);font-weight:600;background:var(--bg)}
+td.bar{position:relative;min-width:150px}
+td.bar span{position:relative;z-index:1}
+td.bar b{position:absolute;left:0;top:3px;bottom:3px;background:var(--bar);z-index:0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.stat{border:1px solid var(--line);border-radius:6px;padding:10px;background:var(--bg)}
+.stat small{display:block;color:var(--muted);font-size:12px}
+.stat strong{font-size:20px}
+.out{color:var(--hot);font-weight:600}
+.result{font-size:22px;font-weight:600;margin:6px 0}
+.hide{display:none}
+footer{margin-top:32px;color:var(--muted);font-size:14px}
+@media (prefers-reduced-motion:reduce){.meter i{transition:none}}
+</style>
+</head>
+<body>
+<main>
+<h1>Excel Practice Lab</h1>
+<p class="lede">Learn to clean, summarize and report on fast-food sales data. Follow the guide, then practice the same moves on live sample data.</p>
+<div class="tabs" role="tablist">
+<button class="tab" role="tab" id="tab-guide" aria-selected="true" aria-controls="guide">Guide</button>
+<button class="tab" role="tab" id="tab-lab" aria-selected="false" aria-controls="lab">Practice dashboard</button>
+</div>
+
+<section id="guide" role="tabpanel" aria-labelledby="tab-guide">
+<div class="prog"><span id="pct">0 of 0 steps</span><div class="meter"><i id="meter"></i></div></div>
+<div id="steps"></div>
+</section>
+
+<section id="lab" role="tabpanel" aria-labelledby="tab-lab" class="hide">
+<div class="panel">
+<h2>Descriptive statistics</h2>
+<p class="sub" style="color:var(--muted)">The same numbers the ToolPak gives you, for the Revenue column (80 sample orders).</p>
+<div class="stats" id="stats"></div>
+<p id="outl" style="margin-top:12px"></p>
+</div>
+
+<div class="panel">
+<h2>Pivot table</h2>
+<p style="color:var(--muted)">Change the row field, filter by region (a slicer), and sort. Data bars show relative revenue.</p>
+<div class="controls">
+<label>Rows<select id="by"><option>Product</option><option>Payment Method</option><option>Region</option></select></label>
+<label>Region filter<select id="reg"></select></label>
+<label>Sort by<select id="sort"><option value="rev">Revenue, largest first</option><option value="name">Name, A to Z</option></select></label>
+</div>
+<div class="wrap"><table><thead><tr><th id="rowhead">Product</th><th>Quantity</th><th>Revenue</th><th>% of grand total</th></tr></thead><tbody id="pv"></tbody></table></div>
+</div>
+
+<div class="panel">
+<h2>Dynamic lookup</h2>
+<p style="color:var(--muted)">Pick a product, like a Data Validation drop-down. Two formulas respond.</p>
+<div class="controls"><label>Product<select id="prod"></select></label></div>
+<p>Total revenue: <code id="f1"></code></p>
+<div class="result" id="r1"></div>
+<p>Unit price: <code id="f2"></code></p>
+<div class="result" id="r2"></div>
+</div>
+</section>
+
+<footer>All data is randomly generated for practice. Nothing here is real sales data.</footer>
+</main>
+
+<script>
+(function(){
+var $=function(s){return document.querySelector(s)};
+var money=function(n){return "$"+n.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2})};
+
+/* ---------- Sample data ---------- */
+function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+var PRODUCTS={"Burger":5.49,"Cheeseburger":6.29,"Fries":2.99,"Chicken Sandwich":6.99,"Nuggets":4.79,"Milkshake":4.19,"Soda":1.99,"Salad":5.89};
+var PAY=["Card","Cash","Mobile Pay"],REG=["North","South","East","West"];
+var R=rng(2026),DATA=[],names=Object.keys(PRODUCTS);
+for(var i=0;i<80;i++){
+  var p=names[Math.floor(R()*names.length)],q=1+Math.floor(R()*6);
+  if(i%27===13)q=18+Math.floor(R()*6); /* a few bulk orders act as outliers */
+  DATA.push({Product:p,"Payment Method":PAY[Math.floor(R()*3)],Region:REG[Math.floor(R()*4)],Quantity:q,"Unit Price":PRODUCTS[p],Revenue:Math.round(q*PRODUCTS[p]*100)/100});
+}
+
+/* ---------- Statistics ---------- */
+function quart(s,k){var pos=(s.length-1)*k,lo=Math.floor(pos),hi=Math.ceil(pos);return s[lo]+(s[hi]-s[lo])*(pos-lo)}
+function stats(vals){
+  var s=vals.slice().sort(function(a,b){return a-b}),n=s.length,sum=s.reduce(function(a,b){return a+b},0),mean=sum/n;
+  var sd=Math.sqrt(s.reduce(function(a,b){return a+(b-mean)*(b-mean)},0)/(n-1));
+  var q1=quart(s,.25),q3=quart(s,.75),iqr=q3-q1;
+  return{n:n,mean:mean,median:quart(s,.5),sd:sd,min:s[0],max:s[n-1],q1:q1,q3:q3,lo:q1-1.5*iqr,hi:q3+1.5*iqr,sum:sum};
+}
+function renderStats(){
+  var st=stats(DATA.map(function(r){return r.Revenue})),items=[["Mean",money(st.mean)],["Median",money(st.median)],["Std. deviation",money(st.sd)],["Min",money(st.min)],["Max",money(st.max)],["Q1 / Q3",money(st.q1)+" / "+money(st.q3)]];
+  $("#stats").innerHTML=items.map(function(x){return '<div class="stat"><small>'+x[0]+'</small><strong>'+x[1]+'</strong></div>'}).join("");
+  var out=DATA.filter(function(r){return r.Revenue>st.hi||r.Revenue<st.lo});
+  $("#outl").innerHTML=out.length?'<span class="out">'+out.length+' outliers</span> sit outside '+money(Math.max(0,st.lo))+' to '+money(st.hi)+' (Q1 − 1.5×IQR, Q3 + 1.5×IQR): '+out.map(function(r){return r.Quantity+' × '+r.Product}).join(", ")+'. Check whether these are bulk orders or typing errors.':'No outliers found.';
+}
+
+/* ---------- Pivot ---------- */
+function pivot(){
+  var by=$("#by").value,reg=$("#reg").value,sort=$("#sort").value,m={};
+  $("#rowhead").textContent=by;
+  DATA.forEach(function(r){if(reg!=="All"&&r.Region!==reg)return;var k=r[by];m[k]=m[k]||{q:0,v:0};m[k].q+=r.Quantity;m[k].v+=r.Revenue});
+  var list=Object.keys(m).map(function(k){return[k,m[k].q,m[k].v]});
+  list.sort(sort==="rev"?function(a,b){return b[2]-a[2]}:function(a,b){return a[0]<b[0]?-1:1});
+  var tot=list.reduce(function(a,x){return a+x[2]},0),tq=list.reduce(function(a,x){return a+x[1]},0),mx=Math.max.apply(null,list.map(function(x){return x[2]}));
+  $("#pv").innerHTML=list.map(function(x){return '<tr><td>'+x[0]+'</td><td>'+x[1]+'</td><td class="bar"><b style="width:'+(x[2]/mx*100).toFixed(1)+'%"></b><span>'+money(x[2])+'</span></td><td>'+(x[2]/tot*100).toFixed(1)+'%</td></tr>'}).join("")+'<tr><td><strong>Grand total</strong></td><td><strong>'+tq+'</strong></td><td><strong>'+money(tot)+'</strong></td><td><strong>100%</strong></td></tr>';
+}
+
+/* ---------- Lookup ---------- */
+function lookup(){
+  var p=$("#prod").value;
+  var sum=DATA.reduce(function(a,r){return r.Product===p?a+r.Revenue:a},0);
+  var first=DATA.filter(function(r){return r.Product===p})[0];
+  $("#f1").textContent="=SUMIFS(Sales[Revenue], Sales[Product], H2)";
+  $("#r1").textContent=money(sum);
+  $("#f2").textContent="=XLOOKUP(H2, Sales[Product], Sales[Unit Price])";
+  $("#r2").textContent=first?money(first["Unit Price"]):"Not found";
+}
+
+/* ---------- Guide ---------- */
+var GUIDE=[
+{h:"A) Clean and prepare the data",s:"Do this first, so every later number can be trusted.",st:[
+["Convert the range to a Table","Press <code>Ctrl + T</code>, tick My table has headers, then name it <code>Sales</code> under Table Design."],
+["Remove extra spaces","Use <code>=TRIM(CLEAN(B2))</code>, then Paste Special as Values over the original column."],
+["Round numbers with ROUND","Use <code>=ROUND(E2,2)</code>. <div class='fix'>Correction: ROUNDUP always pushes values up (2.31 becomes 2.4) and inflates totals. Use ROUND, or change only the number format.</div>"],
+["Add geographical data","Add Region, State or City columns by looking them up from a store list with <code>XLOOKUP</code>."],
+["Remove duplicates","Data tab, Remove Duplicates. Tick only the columns that identify a record, such as Order ID."]]},
+{h:"B) Describe the numbers",s:"Summaries and outlier checks. Try them live in the Practice tab.",st:[
+["Turn on the Analysis ToolPak","File, Options, Add-ins, Manage Excel Add-ins, Go, then tick Analysis ToolPak."],
+["Run Descriptive Statistics","Data, Data Analysis, Descriptive Statistics. Tick Labels in first row and Summary statistics."],
+["Visualize outliers","Insert, Statistics Chart, Box and Whisker. Or flag values outside Q1 − 1.5×IQR and Q3 + 1.5×IQR."],
+["Generate tables for visuals","Build small summary tables, such as average sales by product, to feed your charts."]]},
+{h:"C) Answer business questions with pivot tables",s:"Pivot tables turn rows into answers.",st:[
+["Add a Revenue column","In the Table, add a calculated column: <code>=[@Quantity]*[@[Unit Price]]</code>."],
+["Product as rows, Quantity as values","Insert, PivotTable, then drag Product to Rows and Quantity to Values."],
+["Add total revenue","Drag Revenue into Values as well."],
+["Break revenue down by payment method","Put Payment Method in Rows."],
+["Sort and show percentages","Right-click a value, Show Values As, % of Grand Total. Then Sort, Largest to Smallest."]]},
+{h:"D) Build a dynamic report",s:"Let the reader choose what they see.",st:[
+["Add a drop-down with Data Validation","Select a cell, Data, Data Validation, List, and point it at your product list."],
+["Connect it with formulas","Use <code>=SUMIFS(Sales[Revenue], Sales[Product], $H$2)</code> and <code>=XLOOKUP($H$2, Sales[Product], Sales[Unit Price])</code>. <div class='fix'>Correction: a drop-down cell cannot filter a pivot table directly. Use a Slicer (PivotTable Analyze, Insert Slicer) or a Report Filter for that.</div>"],
+["Compare values with Data Bars","Home, Conditional Formatting, Data Bars on the revenue column."]]}];
+
+var KEY="excel-lab-progress",saved={};
+try{saved=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){saved={}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(saved))}catch(e){}}
+function renderGuide(){
+  $("#steps").innerHTML=GUIDE.map(function(g,gi){
+    return '<div class="sec"><h2>'+g.h+'</h2><p class="sub">'+g.s+'</p>'+g.st.map(function(s,si){
+      var id="s"+gi+"_"+si;
+      return '<div class="step'+(saved[id]?" done":"")+'"><input type="checkbox" id="'+id+'"'+(saved[id]?" checked":"")+'><label for="'+id+'"><div class="t">'+s[0]+'</div><div class="d">'+s[1]+'</div></label></div>';
+    }).join("")+'</div>';
+  }).join("");
+  progress();
+}
+function progress(){
+  var all=document.querySelectorAll("#steps input"),done=0;
+  all.forEach(function(c){if(c.checked)done++});
+  $("#pct").textContent=done+" of "+all.length+" steps";
+  $("#meter").style.width=(all.length?done/all.length*100:0)+"%";
+}
+$("#steps").addEventListener("change",function(e){
+  var c=e.target;if(!c||c.type!=="checkbox")return;
+  if(c.checked)saved[c.id]=1;else delete saved[c.id];
+  c.closest(".step").classList.toggle("done",c.checked);
+  save();progress();
+});
+
+/* ---------- Tabs ---------- */
+function show(which){
+  var g=which==="guide";
+  $("#guide").classList.toggle("hide",!g);$("#lab").classList.toggle("hide",g);
+  $("#tab-guide").setAttribute("aria-selected",g);$("#tab-lab").setAttribute("aria-selected",!g);
+}
+$("#tab-guide").addEventListener("click",function(){show("guide")});
+$("#tab-lab").addEventListener("click",function(){show("lab")});
+
+/* ---------- Init ---------- */
+$("#reg").innerHTML=["All"].concat(REG).map(function(r){return"<option>"+r+"</option>"}).join("");
+$("#prod").innerHTML=names.map(function(n){return"<option>"+n+"</option>"}).join("");
+["#by","#reg","#sort"].forEach(function(s){$(s).addEventListener("change",pivot)});
+$("#prod").addEventListener("change",lookup);
+renderGuide();renderStats();pivot();lookup();
+window.__lab={DATA:DATA,stats:stats};
+})();
+</script>
+</body>
+</html>
