@@ -1,9 +1,9 @@
 # Excel Mastery: Analysis, Cleaning & Visualization
 
 ## Complete Guide to Data Analysis Fundamentals Using Fast Food Chain Sales Data
-A) Transforming data
-B) Creating Descriptive Statistics
-C) Performing Data Analysis
+A) Transforming data <br>
+B) Creating Descriptive Statistics <br>
+C) Performing Data Analysis <br>
 D) Visualizing the findings in a Report
 
 ## A) Data Transformation Cleaning and Preparing Data in Excel
@@ -25,9 +25,9 @@ D) Visualizing the findings in a Report
 3) Make _Product_ as the Rows and _Quantity_ as the Values
 4) Total Revenue by making _Revenue_ as Values add-on to the previous step
 5) Revenue Breakdown by Payment Method ( _Payment-Method_ as Rows )
-6) Sort and even convert values to percentages by using **Show Values** as…
+6) Sort and even convert values to percentages by using **Show Values** asâ€¦
 
 ## D) Dynamic Report Data Validation, Formulas, and Conditional Formatting
-1) Data Validation – Create a drop-down menu to allow users to have a dynamic report in the same pivot table that updates automatically
-2) Formulas – xLookup and Sumif
-3) Conditional Formatting – use Data Bars to compare values at a glance
+1) Data Validation â€“ Create a drop-down menu to allow users to have a dynamic report in the same pivot table that updates automatically
+2) Formulas â€“ xLookup and Sumif
+3) Conditional Formatting â€“ use Data Bars to compare values at a glance
