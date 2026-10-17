@@ -76,4 +76,10 @@
 2. Using our prompt, Claude gives itself a to-do list to complete and accomplish everything that we have asked it to do
 
 ## Watch AI Turn Prompts into Real Code
-1. 
+1. Connect Claude with GitHub and choose project and branch accordingly
+2. Paste the detailed modular prompt in Claude to make the app
+3. No external API , python only, Streamlit for UI
+4. Model : Sonnet
+
+## Stop Wasting Time - Use These Commands
+
