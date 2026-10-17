@@ -57,18 +57,23 @@
 - Claude can directly push changes to GitHub as a separate branch until you allow to merge it to the main branch
 
 ## Don’t Skip This README (It’s Powerful)
-- Intro
+1. Intro
 > A comprehensive Streamlit application that automates and streamlines the employee onboarding process by generating personalized onboarding packages.
-- Features (brief description for each feature)
-- Requirements (packages, libraries and language versions needed)
-- Installation (walks us through the basic steps, also provides necessary commands)
-- Usage (commands, localhost setup, steps to run)
-- Supported Roles
-- Supported Departments
-- Application Structure
-- How it works (overall repository layout)
-- Screenshots (what the app features in itself –> Live Demo)
-- Contributing (guidelines for making contributions)
-- License (essentials)
+2. Features (brief description for each feature)
+3. Requirements (packages, libraries and language versions needed)
+4. Installation (walks us through the basic steps, also provides necessary commands)
+5. Usage (commands, localhost setup, steps to run)
+6. Supported Roles
+7. Supported Departments
+8. Application Structure
+9. How it works (overall repository layout)
+10. Screenshots (what the app features in itself –> Live Demo)
+11. Contributing (guidelines for making contributions)
+12. License (essentials)
 
-## 
+## This Prompt Made Claude Build Everything
+1. Think in Systems (~syntax~) #vibe_coding
+2. Using our prompt, Claude gives itself a to-do list to complete and accomplish everything that we have asked it to do
+
+## Watch AI Turn Prompts into Real Code
+1. 
