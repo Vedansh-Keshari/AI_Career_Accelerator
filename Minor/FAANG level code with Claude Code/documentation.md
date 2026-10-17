@@ -31,4 +31,15 @@ Claude Code helps us focus on Ideas and System Design
 4. Onboarding systems, Dashboards, Automation Tools, Internal platforms
 
 ## Avatar Watch your App in action
+1. streamlit run app.py 		(simplest command)
+2. python -m streamlit run app.py	(environment or path issues)
+3. Local URL :  ,  Network URL :
+4. Up and running -> AI powered employee onboarding system
+- Description (About)
+- Features
+- Instructions
+5. Click on “Generate” and review the complete onboarding package
+6. Inputs: Name, Role, Department
+7. Outputs: Welcome Email, 7-day Onboarding Plan, Required Documents Checklist, IT Access Checklist (Base Access & Department-specific Access based on role)
 
+## How One File Powers the Whole Application
