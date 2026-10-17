@@ -82,4 +82,68 @@
 4. Model : Sonnet
 
 ## Stop Wasting Time - Use These Commands
+1. Starting Claude Code
+- claude 				: start interactive session
+- claude “your question” 	: start with an initial prompt
+- claude -c 			: continue your recent conversation
+- claude -r “session-name” 	: resume a specific session
+2. Key Slash Commands
+> session and conversation control
+- /help 	: get help with Claude Code
+- /clear 	: clear conversation history
+- /resume	: resume previous sessions
+- /rewind	: undo changes to code or conversation
+- /export	: export conversation
+- /copy	: copy the last response to clipboard
+> context and memory management
+- /compact	: summarize conversation to free context
+- /context	: visualize what’s in the context window
+- /memory	: view or edit CLAUDE.md project memory
+> model and performance controls
+- /model 	: switch ai models ( Haiku / Sonnet / Opus ) ( fastest, lightest / balanced / heavy reasoning specialist )
+- /effort	: adjust reasoning depth (low->max)
+- /fast	: toggle fast output mode
+- /cost , /usage	: view token usage and limits
+> project setup and configuration
+- /init		: generate a started CLAUDE.md
+- /permissions	: manage tool permissions
+- /add-dir		: add another directory for Claude to access
+- /config 		: open settings ( theme, defaults, editor mode )
+> code editing and review tools
+- /diff			: view uncommitted changes
+- /code-review		: review code for bugs or improvements
+- /simplify			: Cleanup-only review for efficiency
+- /security-review	: scan for security issues
+- /plan			: enter read-only plan mode before making changes
+> parallel work and agents
+- /tasks		: view background tasks
+- /agents		: manage subagents
+- /background	: run session as a background agent
+> troubleshooting and diagnostics
+- /doctor 	: diagnose installation and environment problems
+- /debug	: investigate runtime issues
+- /status	: show model, version, and working directory info
+3. Critical Keyboard Shortcuts
+- ctrl + C	: cancel current operation
+- ctrl + D	: exit Claude Code
+- ctrl + G	: open in text editor
+- ctrl + L	: clear screen
+- ctrl + V	: paste images from clipboard
+- ctrl + B	: move tasks to background
+- shift + tab , alt + M : toggle permission modes
+- \ + Enter	: start multiline input
+4. Quick Input Modes
+- /command 	: run slash commands
+- !command	: run bash commands directly
+- @path	: file path autocomplete
+5. Useful Flags
+- --model opus/sonnet/haiku	: choose ai model
+- --permission-mode plan/auto/ask	: set permission level
+- --tools “Bash,Read,Edit”	: restrict available tools
+6. extra features
+- Run /help within Claude Code
+- Type / to see all available commands
+- Press ? to see keyboard shortcuts
+
+## Building a Real Project with Claude Code
 
