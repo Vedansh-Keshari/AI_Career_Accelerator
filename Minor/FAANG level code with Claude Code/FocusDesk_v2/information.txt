@@ -1,0 +1,262 @@
+==============================================================================
+ FOCUSDESK - FILE INFORMATION GUIDE                                   (v2)
+==============================================================================
+ FocusDesk is a colourful, local-first productivity app written in Python
+ with a Streamlit interface: tasks, a focus-session log, and weekly insights.
+ This guide explains EVERY file in the project: the 9 files that were in the
+ original v1 FocusDesk.zip, plus everything new in v2.
+
+ Status labels used below:
+   UNCHANGED = identical to the v1 file (included again so you have a
+               complete v2 set in one place)
+   UPDATED   = existed in v1, changed in v2
+   NEW       = added in v2
+
+
+------------------------------------------------------------------------------
+ 1. WHAT CHANGED IN V2 (summary)
+------------------------------------------------------------------------------
+  - Email is mandatory: the app opens on an email screen and nothing else is
+    reachable until a correctly formatted email is entered.
+  - Each email gets its own data file (several people can share one computer).
+  - Much more colour: gradient banner, coloured headline cards, colour-coded
+    priority cards and chips, coloured charts and sidebar.
+  - Sample ("model") data: one click loads realistic tasks and sessions to
+    test every feature, one click removes them again.
+  - Safer: user-typed text is HTML-escaped; damaged or hand-edited data files
+    are repaired or backed up instead of crashing the app.
+  - Everything delivered as separate files (no zip), including files that did
+    not change.
+  - Extra documents: this guide, commands.doc, commands_flowchart.png.
+
+
+------------------------------------------------------------------------------
+ 2. HOW TO PUT THE DOWNLOADED FILES TOGETHER
+------------------------------------------------------------------------------
+ The files are downloaded individually (flat), so recreate this folder
+ layout. Create a folder called "focusdesk", then:
+
+   focusdesk/
+   |-- app.py
+   |-- logic.py
+   |-- storage.py
+   |-- theme.py
+   |-- sample_data.py
+   |-- requirements.txt
+   |-- README.md
+   |-- .gitignore
+   |-- .streamlit/              <- create this folder (name starts with a dot)
+   |   `-- config.toml
+   |-- tests/                   <- create this folder
+   |   |-- conftest.py
+   |   |-- test_logic.py
+   |   |-- test_app.py
+   |   |-- test_sample_data.py
+   |   `-- test_theme.py
+   `-- docs/                    <- create this folder (optional, for reference)
+       |-- information.txt
+       |-- commands.doc
+       `-- commands_flowchart.png
+
+ Notes
+   - Names starting with a dot (.gitignore, .streamlit) are hidden on
+     macOS/Linux. In Finder press Cmd+Shift+. ; in a terminal use "ls -a".
+   - The "data/" folder is NOT downloaded: the app creates it automatically
+     the first time something is saved.
+   - Replace your old v1 files with these. Your v1 data is kept (see
+     section 5, "Upgrading from v1").
+
+ First run:
+   cd focusdesk
+   pip install -r requirements.txt
+   streamlit run app.py          (or: python -m streamlit run app.py)
+ Then open the Local URL shown in the terminal (usually
+ http://localhost:8501), enter an email, and optionally click
+ "Load sample data" in the sidebar.
+
+
+------------------------------------------------------------------------------
+ 3. FILES IN THE PROJECT ROOT  (focusdesk/)
+------------------------------------------------------------------------------
+
+ app.py                                                          [UPDATED]
+ -----------------------------------------------------------------------
+  The Streamlit user interface and the file you run. In v2 it:
+    * shows the mandatory email screen first and stops until a valid email
+      is accepted;
+    * builds the sidebar (who is signed in, Switch user, Load/Remove sample
+      data);
+    * draws the banner and four coloured headline cards (Open tasks,
+      Overdue, Done in 7 days, Focus in 7 days);
+    * provides three tabs: Tasks (add, filter, search, complete, reopen,
+      delete, export CSV), Focus log (record and delete sessions) and
+      Insights (7-day focus chart, open tasks by priority, totals).
+  It contains no business rules: it calls logic.py, storage.py, theme.py and
+  sample_data.py.
+  Edit it when you want to change layout, wording, tabs or buttons.
+
+ logic.py                                                        [UPDATED]
+ -----------------------------------------------------------------------
+  The "brain" of the app: plain Python with no Streamlit code, so it is easy
+  to test. Contains the rules for tasks (add, complete, reopen, delete,
+  overdue, sorting, filtering), focus sessions, statistics (summary,
+  focus_by_day, priority_counts), time formatting, CSV export, and - new in
+  v2 - email normalising and validation (validate_email).
+  Edit it when you want to change a rule, e.g. add a new priority level or
+  change what counts as "this week".
+
+ storage.py                                                      [UPDATED]
+ -----------------------------------------------------------------------
+  Saves and loads data as JSON files on your own computer. In v2 it keeps one
+  file per email address (the file name is a hash, the email is stored inside
+  as "owner"), writes files atomically so a crash cannot leave a half-written
+  file, repairs or drops malformed records on load, backs up an unreadable
+  file as *.corrupt.json instead of overwriting it, and adopts a v1 data file
+  once on first login. Nothing is ever sent over the network.
+  Edit it only if you want a different storage format or location.
+
+ theme.py                                                            [NEW]
+ -----------------------------------------------------------------------
+  All the colours and look-and-feel helpers: the colour palette, the CSS
+  stylesheet, and small functions that build coloured HTML (banner, metric
+  cards, priority chips, task cards, session cards, progress bars). Every
+  piece of user-typed text is HTML-escaped here, so a task named
+  "<b>hi</b>" or "$5" is shown literally and cannot break the page.
+  Edit it to change colours, fonts or card styles.
+
+ sample_data.py                                                      [NEW]
+ -----------------------------------------------------------------------
+  The model test data. Builds 11 sample tasks and 10 focus sessions with
+  dates relative to today (so some are always overdue, some due today, some
+  done this week). Every sample record is flagged "sample": true so
+  "Remove sample data" deletes only the demo records, never your own.
+  Known expected results for any day:
+      8 open tasks | 2 overdue | 2 done in the last 7 days | 3 done overall
+      open by priority: High 2, Medium 3, Low 3
+      focus: 365 minutes in the last 7 days, 425 minutes overall
+  One sample task deliberately contains "<b>budget</b> & costs ($5 + $10)"
+  to prove special characters display safely.
+
+ requirements.txt                                                [UNCHANGED]
+ -----------------------------------------------------------------------
+  The Python packages to install with "pip install -r requirements.txt":
+  streamlit (the web interface), pandas (chart data) and pytest (tests).
+
+ README.md                                                       [UPDATED]
+ -----------------------------------------------------------------------
+  The project's front page: features, requirements, installation, usage,
+  where data is stored, folder structure, how it works, testing,
+  contributing and license. Updated for v2 (email screen, per-user data,
+  sample data, new files).
+
+ .gitignore                                                      [UNCHANGED]
+ -----------------------------------------------------------------------
+  Tells Git which files NOT to upload to GitHub: Python cache folders,
+  virtual environments, test cache, and the data/ folder (so your personal
+  tasks and email are never published by accident).
+
+
+------------------------------------------------------------------------------
+ 4. FILES IN SUB-FOLDERS
+------------------------------------------------------------------------------
+
+ .streamlit/config.toml                                              [NEW]
+ -----------------------------------------------------------------------
+  Streamlit's own settings file. Sets the colour theme (light base, purple
+  primary colour, soft lavender panels) and turns off Streamlit's usage
+  statistics. Streamlit reads it automatically when you run the app from the
+  focusdesk/ folder. Without it the app still works, but buttons and widgets
+  use Streamlit's default red accent instead of purple.
+
+ tests/conftest.py                                               [UNCHANGED]
+ -----------------------------------------------------------------------
+  A tiny helper that lets the test files import the project modules
+  (logic, storage, ...) no matter where pytest is started from.
+
+ tests/test_logic.py                                             [UPDATED]
+ -----------------------------------------------------------------------
+  Tests for the rules in logic.py and for storage.py: task add / complete /
+  reopen / delete, sorting and filtering, overdue detection, sessions,
+  summaries, priority counts, CSV, email validation (valid and invalid
+  examples and error messages), per-user data files, corrupt-file backup,
+  malformed-record repair, and the one-time v1 migration.
+
+ tests/test_sample_data.py                                           [NEW]
+ -----------------------------------------------------------------------
+  Checks the model data against its known expected numbers (see
+  sample_data.py above), that loading twice does not duplicate anything,
+  that removing it leaves your own entries alone, and that it survives
+  being saved and reloaded.
+
+ tests/test_theme.py                                                 [NEW]
+ -----------------------------------------------------------------------
+  Tests for theme.py: HTML escaping of dangerous text, chips and cards,
+  progress-bar widths, and that every priority has a colour.
+
+ tests/test_app.py                                                   [UPDATED]
+ -----------------------------------------------------------------------
+  Runs the REAL app through Streamlit's AppTest and clicks through it:
+  the email screen appears first and hides the app; empty or malformed
+  emails are rejected; a valid email opens the app; Switch user returns to
+  the email screen and data stays separate per email; add / complete /
+  delete tasks; log a session; load and remove sample data; special
+  characters render safely; the Insights tab draws its chart.
+  Run all tests with:   python -m pytest -q     (62 tests)
+
+ docs/information.txt                                                [NEW]
+ -----------------------------------------------------------------------
+  This file.
+
+ docs/commands.doc                                                   [NEW]
+ -----------------------------------------------------------------------
+  A formatted Word reference sheet of the Claude Code commands extracted
+  from your original course notes (.md file): launch commands, 29 slash
+  commands in 7 colour-coded groups, 8 keyboard shortcuts, input modes,
+  flags, and the Streamlit run commands. Includes the overview flowchart
+  and the detailed flowchart (appendix). 6 pages, A4.
+  Commands are reproduced as written in your notes; run /help inside your
+  installed Claude Code to confirm what your version supports.
+
+ docs/commands_flowchart.png                                         [NEW]
+ -----------------------------------------------------------------------
+  The detailed command-map flowchart as a high-resolution image (zoom in to
+  read it): start Claude Code -> session -> "What do you need to do?" ->
+  one of 7 colour-coded command groups, plus launch flags, quick input
+  modes and keyboard shortcuts. The same picture is inside commands.doc.
+
+
+------------------------------------------------------------------------------
+ 5. FILES AND FOLDERS CREATED AUTOMATICALLY (not downloaded)
+------------------------------------------------------------------------------
+  data/                          Created on first save. Holds your data.
+  data/user_<hash>.json          One file per email address you used.
+  data/focusdesk.v1-backup.json  Your old v1 data file, kept as a backup
+                                 after it was adopted (see below).
+  data/*.corrupt.json            An unreadable data file that was set aside
+                                 safely instead of being overwritten.
+  __pycache__/, .pytest_cache/   Python and pytest caches. Safe to delete.
+
+ Upgrading from v1
+   If you used v1, your tasks were in data/focusdesk.json. The first email
+   used to sign in to v2 adopts that data automatically, and the original is
+   kept as data/focusdesk.v1-backup.json. Other emails start empty.
+
+ Use another data folder
+   Set FOCUSDESK_DATA_DIR before starting, e.g.
+   (macOS/Linux)  FOCUSDESK_DATA_DIR=/path/to/folder streamlit run app.py
+   (v1 used FOCUSDESK_DATA, a single file; v2 uses a folder.)
+
+
+------------------------------------------------------------------------------
+ 6. GOOD TO KNOW
+------------------------------------------------------------------------------
+  * About the email: FocusDesk checks the FORMAT of the address
+    (name@domain.ext). It does not send a confirmation message or verify
+    that you own the address - the app runs locally and has no mail server.
+    The email's job is to keep each person's data separate. It stays on your
+    computer.
+  * If you see "ModuleNotFoundError: No module named 'logic'", you started
+    the app from the wrong folder. cd into focusdesk/ first.
+  * If "streamlit" is not recognised, use: python -m streamlit run app.py
+  * To start fresh, close the app and delete the data/ folder.
+==============================================================================
