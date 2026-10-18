@@ -88,38 +88,38 @@
 - claude -c 			: continue your recent conversation
 - claude -r “session-name” 	: resume a specific session
 2. Key Slash Commands
-> session and conversation control
+a. session and conversation control
 - /help 	: get help with Claude Code
 - /clear 	: clear conversation history
 - /resume	: resume previous sessions
 - /rewind	: undo changes to code or conversation
 - /export	: export conversation
 - /copy	: copy the last response to clipboard
-> context and memory management
+b. context and memory management
 - /compact	: summarize conversation to free context
 - /context	: visualize what’s in the context window
 - /memory	: view or edit CLAUDE.md project memory
-> model and performance controls
+c. model and performance controls
 - /model 	: switch ai models ( Haiku / Sonnet / Opus ) ( fastest, lightest / balanced / heavy reasoning specialist )
 - /effort	: adjust reasoning depth (low->max)
 - /fast	: toggle fast output mode
 - /cost , /usage	: view token usage and limits
-> project setup and configuration
+d. project setup and configuration
 - /init		: generate a started CLAUDE.md
 - /permissions	: manage tool permissions
 - /add-dir		: add another directory for Claude to access
 - /config 		: open settings ( theme, defaults, editor mode )
-> code editing and review tools
+e. code editing and review tools
 - /diff			: view uncommitted changes
 - /code-review		: review code for bugs or improvements
 - /simplify			: Cleanup-only review for efficiency
 - /security-review	: scan for security issues
 - /plan			: enter read-only plan mode before making changes
-> parallel work and agents
+f. parallel work and agents
 - /tasks		: view background tasks
 - /agents		: manage subagents
 - /background	: run session as a background agent
-> troubleshooting and diagnostics
+g. troubleshooting and diagnostics
 - /doctor 	: diagnose installation and environment problems
 - /debug	: investigate runtime issues
 - /status	: show model, version, and working directory info
@@ -146,4 +146,12 @@
 - Press ? to see keyboard shortcuts
 
 ## Building a Real Project with Claude Code
+1. Simple onboarding application
+2. Real usable outputs 
+3. Inputs : Employee Name, Role, Department
+4. Outputs : Welcome Email, (structured) 7-day onboarding plan, Required Documents Checklist (that HR needs to collect), IT Access Checklist, FAQs, Training Resources (relevant)
+5. Technical Requirements : python only, streamlit for ui, no external APIs
+6. Easy to understand , Easy to modify , Easy to extend later
+
+## Behind the Scenes-Claude Code Interface
 
