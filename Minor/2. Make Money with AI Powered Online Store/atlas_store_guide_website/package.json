@@ -1,0 +1,13 @@
+{
+  "name": "atlas-store-guide",
+  "version": "1.0.0",
+  "description": "Step-by-step companion site for building a Shopify store with the Atlas AI builder",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/smoke.test.js",
+    "start": "npx --yes serve ."
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}

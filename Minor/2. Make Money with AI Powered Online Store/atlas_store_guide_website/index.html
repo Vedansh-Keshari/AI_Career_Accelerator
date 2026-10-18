@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Shopify + Atlas: AI store guide</title>
+  <meta name="description" content="A step-by-step companion for building a Shopify store with the Atlas AI builder. Tick off each step and track your progress.">
+  <meta name="theme-color" content="#0F1B2D">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F1B2D'/%3E%3Crect x='7' y='8' width='18' height='4' rx='1' fill='%237C97FF'/%3E%3Crect x='7' y='14' width='11' height='10' rx='1' fill='%237C97FF' opacity='.6'/%3E%3Crect x='20' y='14' width='5' height='10' rx='1' fill='%237C97FF' opacity='.3'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the steps</a>
+
+  <div class="app">
+    <header class="topbar">
+      <button class="icon-btn" id="menu-btn" type="button" aria-controls="rail" aria-expanded="false" aria-label="Open chapter list">
+        <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+      </button>
+      <p class="topbar-title" id="topbar-title">Chapter 1 of 11</p>
+      <p class="topbar-pct" id="topbar-pct">0%</p>
+      <div class="topbar-bar" aria-hidden="true"><span id="topbar-fill"></span></div>
+    </header>
+
+    <div class="scrim" id="scrim" hidden></div>
+
+    <aside class="rail" id="rail" aria-label="Chapters and progress">
+      <div class="rail-head">
+        <p class="brand">Shopify + Atlas</p>
+        <h1>AI store guide</h1>
+      </div>
+
+      <figure class="tracker" aria-label="Your store, built as you complete chapters">
+        <svg viewBox="0 0 240 300" role="img" aria-labelledby="tracker-title">
+          <title id="tracker-title">A storefront sketch that fills in as you finish chapters</title>
+          <rect class="frame" x="3" y="3" width="234" height="294" rx="12"/>
+
+          <g data-block="6">
+            <rect class="base" x="12" y="12" width="216" height="14" rx="4"/>
+            <rect class="lit" x="12" y="12" width="216" height="14" rx="4"/>
+          </g>
+          <g data-block="2">
+            <rect class="base" x="12" y="32" width="216" height="20" rx="4"/>
+            <rect class="lit" x="12" y="32" width="216" height="20" rx="4"/>
+            <rect class="mark" x="20" y="38" width="30" height="8" rx="2"/>
+            <rect class="mark" x="150" y="40" width="20" height="4" rx="2"/>
+            <rect class="mark" x="178" y="40" width="20" height="4" rx="2"/>
+          </g>
+          <g data-block="4">
+            <rect class="base" x="12" y="60" width="140" height="84" rx="6"/>
+            <rect class="lit" x="12" y="60" width="140" height="84" rx="6"/>
+            <path class="mark-line" d="M30 126l28-30 20 20 18-16 34 26"/>
+          </g>
+          <g data-block="8">
+            <rect class="base" x="160" y="60" width="68" height="24" rx="5"/>
+            <rect class="lit" x="160" y="60" width="68" height="24" rx="5"/>
+            <rect class="base" x="160" y="90" width="68" height="24" rx="5"/>
+            <rect class="lit" x="160" y="90" width="68" height="24" rx="5"/>
+            <rect class="base" x="160" y="120" width="68" height="24" rx="5"/>
+            <rect class="lit" x="160" y="120" width="68" height="24" rx="5"/>
+          </g>
+          <g data-block="5">
+            <rect class="base" x="12" y="152" width="216" height="46" rx="6"/>
+            <rect class="lit" x="12" y="152" width="216" height="46" rx="6"/>
+            <rect class="mark" x="22" y="160" width="90" height="6" rx="3"/>
+            <rect class="mark" x="22" y="172" width="44" height="6" rx="3"/>
+            <rect class="mark" x="22" y="184" width="70" height="8" rx="4"/>
+            <rect class="mark" x="160" y="170" width="58" height="18" rx="5"/>
+          </g>
+          <g data-block="7">
+            <rect class="base" x="12" y="206" width="104" height="32" rx="6"/>
+            <rect class="lit" x="12" y="206" width="104" height="32" rx="6"/>
+            <rect class="base" x="124" y="206" width="104" height="32" rx="6"/>
+            <rect class="lit" x="124" y="206" width="104" height="32" rx="6"/>
+          </g>
+          <g data-block="9">
+            <rect class="base" x="12" y="246" width="216" height="28" rx="6"/>
+            <rect class="lit" x="12" y="246" width="216" height="28" rx="6"/>
+            <rect class="mark" x="22" y="256" width="60" height="8" rx="4"/>
+          </g>
+          <g data-block="10">
+            <rect class="base" x="12" y="280" width="216" height="10" rx="5"/>
+            <rect class="lit" x="12" y="280" width="216" height="10" rx="5"/>
+          </g>
+        </svg>
+        <figcaption>
+          <span class="tracker-pct" id="tracker-pct">0%</span>
+          <span class="tracker-count" id="tracker-count">0 of 0 steps done</span>
+        </figcaption>
+      </figure>
+
+      <nav class="chapters" id="chapter-nav" aria-label="Chapters"></nav>
+
+      <div class="rail-foot">
+        <button class="btn btn-rail" type="button" data-global="print">Print guide</button>
+        <button class="btn btn-rail" type="button" data-global="reset">Reset progress</button>
+      </div>
+    </aside>
+
+    <main id="main" tabindex="-1">
+      <article id="chapter" aria-live="off"></article>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <section id="print-view" aria-hidden="true"></section>
+
+  <noscript>
+    <p class="noscript">This guide needs JavaScript to show the chapters. Please enable it and reload the page.</p>
+  </noscript>
+
+  <script src="js/content.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
