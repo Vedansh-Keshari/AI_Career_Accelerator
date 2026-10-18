@@ -154,4 +154,9 @@ g. troubleshooting and diagnostics
 6. Easy to understand , Easy to modify , Easy to extend later
 
 ## Behind the Scenes-Claude Code Interface
-
+1. Use like a Senior Software Engineer (~chatting with AI~)
+2. Describe entire system you want to build (~snippets~ , ~bug fixes~)
+3. Inputs, Outputs, Rules, Usage
+4. Sync GitHub. Claude can read repositories, read codebase and work with direct project files.
+5. Model selection ( Haiku , Sonnet , Opus )
+6. Suggested Actions – real developer tasks Teams do everyday
