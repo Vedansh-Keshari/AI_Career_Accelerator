@@ -1,0 +1,125 @@
+EXCEL SHORTCUTS PROJECT: NOTES, LINKS, LIMITS AND CHANGE LOG
+=============================================================
+Source file: "20 Excel Shortcuts Projects" (.md, 4 modules)
+Prepared: 20 October 2026
+
+
+1. WHAT WAS BUILT
+-----------------
+Three deliverables were made from the source .md file.
+
+1.1 Excel Shortcut Trainer (website / web app)
+    Link: https://claude.ai/artifact/Wa8Z76GRKAPwnJNrymN9Kk
+    Description: An interactive trainer covering all 24 entries in the .md.
+    - Device picker on the first screen: Phone, Laptop or desktop, Shared screen.
+    - A red "Main page" button on every screen. It returns to the start and
+      resets the device choice, in case a wrong option was picked.
+    - Cheat sheet: searchable list of every shortcut.
+    - Learn: four modules, with "Mark as learned" on each shortcut.
+    - Quiz: 10 random questions with instant feedback and a final score.
+    - Revision map: the one-shot flowchart (see 1.2).
+    - Progress tracker: overall percentage, per-module count and best quiz score.
+
+1.2 Revision map (flowchart)
+    Location: inside the website, on the "Revision map" tile.
+    Description: A top-to-bottom flowchart for students skimming for fast
+    revision: Start (raw sheet) > Module 1 > Module 2 > Module 3 > Module 4 >
+    Goal (a clean, filtered, summarised table in seconds). Every shortcut
+    appears as a chip. Chips turn green once marked as learned.
+
+1.3 Detailed guide (document)
+    Link: https://claude.ai/code/artifact/59c4ac99-7c28-4c39-982a-a5b6910912cf
+    (It was also opened for viewing at https://claude.ai/artifact/C5vq8ub7xzNjV4Noemgve2)
+    Description: An editable document with an explanation, a worked example and
+    a tip for each of the 24 commands, plus the corrections and a one-minute
+    revision list. It can be downloaded as Word or PDF from the document viewer.
+
+1.4 This file
+    excel-shortcuts-project-notes.txt: links, limits and the change log.
+
+
+2. CHANGES MADE TO THE ORIGINAL .MD
+-----------------------------------
+2.1 CORRECTED (wrong or misleading in the original)
+    a) Format Cells
+       Original: Ctrl + T
+       Now: Ctrl + 1
+       Reason: Ctrl + T creates a Table, which the original also listed under
+       "Create a Table".
+    b) Add a new row or column (Ctrl + Shift + "+")
+       Original: "after selecting it"
+       Now: the new row appears ABOVE the selected row, and the new column
+       appears to the LEFT of the selected column.
+    c) Title count
+       Original title says 20 shortcuts. The file actually lists 24 entries
+       (Module 1: 7, Module 2: 8, Module 3: 4, Module 4: 5). All 24 are used.
+    d) Add comments (Shift + F2)
+       In current Microsoft 365 this adds a Note. A threaded Comment is
+       Ctrl + Shift + F2. The entry is now named "Add a note".
+
+2.2 ADDED (not in the original)
+    - Explanations and worked examples for every command, using a sample
+      Sales sheet (Date, Region, Product, Units, Revenue).
+    - Extra tips: Alt, W, F, F to unfreeze; Ctrl + Home to return to A1;
+      Ctrl + Y to redo; F5 as another way to open Go To; Go To Special;
+      Ctrl + F for Find only; Ctrl + Shift + L to switch filter arrows on and
+      off; F4 cycling reference types (A1, $A$1, A$1, $A1) inside a formula.
+    - Clarifications: Alt + Down needs the list directly below the data with
+      no blank row; Move Row needs Shift held while dragging the row border,
+      otherwise the target is overwritten; Ctrl + R and Ctrl + D can also fill
+      across a selected range.
+    - MAX and LARGE: LARGE works for any rank (k = 1 equals MAX, not only the
+      second or third largest), and duplicate values count separately.
+    - Labels marking entries that are mouse actions or functions rather than
+      key shortcuts: Move Row, Filter, Insert slicer, MAX and LARGE.
+    - Everything in the app and the revision flowchart (device picker, Main
+      page button, quiz, progress tracker).
+
+2.3 REMOVED OR REPLACED
+    - The incorrect "Ctrl + T" under Format Cells (replaced by Ctrl + 1).
+    - The word "after" in the insert row/column entry (replaced by above / left).
+    - The "20" count (replaced by the real count of 24).
+    - The "Add comments" wording (replaced by "Add a note").
+    - The original tab-spaced plain layout, replaced by structured modules.
+    - No shortcut from the original was deleted. All 24 entries are kept.
+
+2.4 RENAMED (wording only)
+    - "Custom range selection" is shown as "Custom selection".
+    - "Copy data from immediate left / up" is shown as "Copy from the left /
+      above".
+    - "drop-down list of already used data" is shown as "Pick from column list".
+    - "TableDesign tab" is written as "Table Design tab".
+    - "= large(range,rank)" is written as =LARGE(range, k).
+
+
+3. LIMITS
+---------
+- Windows only. All keys are for Excel on Windows with a keyboard. Mac
+  equivalents were not added because several differ and could not all be
+  verified.
+- Phones. Excel on a phone has no keyboard shortcuts, so on a phone the
+  trainer is for studying and revision, not for practising the keys.
+- Excel version. Names such as "Table Design" and the Note vs Comment behaviour
+  follow current Microsoft 365. Older versions may differ.
+- Progress is stored in the browser on the device being used. It does not sync
+  between devices, and clearing browser data resets it.
+- Quiz questions are a random set of 10 from the 24 entries, so each attempt
+  differs. Options are the shortcut keys; there are no typed answers.
+- Testing. The website was checked with an automated test (device picker,
+  search, learn toggles, a full 10-question quiz, Main page button, flowchart,
+  progress saving; 38 checks passed, no script errors). It was not tested on
+  physical phones or on every browser.
+- The document is a Claude Doc, not a pre-made Word file. Download it as Word
+  (.docx) or PDF from the viewer if needed.
+- The website and document are private to the account owner until shared.
+- Four entries are not pure keyboard shortcuts (Move Row, Filter, Insert
+  slicer, MAX and LARGE), so they are shown as actions or functions.
+
+
+4. QUICK ENTRY COUNT
+--------------------
+Module 1 (Move, select and fill): 7 entries
+Module 2 (Rows, columns and cell editing): 8 entries
+Module 3 (Jump, add up, format, repeat): 4 entries
+Module 4 (Find, filter, tables, top values): 5 entries
+Total: 24

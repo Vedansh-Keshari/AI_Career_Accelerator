@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Excel Shortcut Trainer</title>
+<style>
+:root{--bg:#F3F7F1;--panel:#fff;--ink:#10231A;--mute:#4B6356;--line:#C9D8CC;--grid:rgba(29,111,66,.09);--g:#1D6F42;--on:#fff;--hi:#FFE27A;--red:#B42318;--ok:#DDF3E4;--bad:#FBE3E0;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1A14;--panel:#16251C;--ink:#E8F2EB;--mute:#9DB5A5;--line:#2B4034;--grid:rgba(76,192,129,.09);--g:#4CC081;--on:#08150D;--red:#FF8A7A;--ok:#17402A;--bad:#4A1F1A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1A14;--panel:#16251C;--ink:#E8F2EB;--mute:#9DB5A5;--line:#2B4034;--grid:rgba(76,192,129,.09);--g:#4CC081;--on:#08150D;--red:#FF8A7A;--ok:#17402A;--bad:#4A1F1A;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px}
+body.d-class{font-size:21px}
+.wrap{max-width:680px;margin:0 auto;padding:20px 16px 96px}
+body.d-laptop .wrap{max-width:1040px}body.d-class .wrap{max-width:1180px}
+h1{font-size:2rem;line-height:1.15;margin:.4em 0 .3em;letter-spacing:-.01em}h2{font-size:1.5rem;margin:.2em 0}h3{font-size:1.05rem;margin:0 0 .5em}h4{margin:0 0 .4em;font-size:1.02rem}
+p{margin:.3em 0}.lede{color:var(--mute);max-width:62ch}
+.fbar{display:flex;border:1px solid var(--line);background:var(--panel);border-radius:6px;overflow:hidden;margin:14px 0 18px}
+.fbar b{background:var(--g);color:var(--on);padding:8px 14px;font-style:italic}.fbar span{padding:8px 14px;color:var(--mute)}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:3px solid var(--g);outline-offset:2px}
+.btn,.tile{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px 16px;text-align:left;width:100%;min-height:48px}
+.btn:hover,.tile:hover{border-color:var(--g)}
+.tile strong{display:block;font-size:1.1rem}.tile small{color:var(--mute)}
+.primary{background:var(--g);color:var(--on);border-color:var(--g);font-weight:600;text-align:center}
+.row{display:grid;gap:10px;grid-template-columns:1fr}
+body.d-laptop .row.cols,body.d-class .row.cols{grid-template-columns:repeat(2,1fr)}
+.row.three{grid-template-columns:1fr}
+@media(min-width:640px){.row.three{grid-template-columns:repeat(3,1fr)}}
+.grid{display:grid;gap:12px;grid-template-columns:1fr;margin-bottom:18px}
+body.d-laptop .grid,body.d-class .grid{grid-template-columns:repeat(auto-fill,minmax(330px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px}
+.card.done{border-color:var(--g);box-shadow:inset 4px 0 0 var(--g)}
+.keys{display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin:.3em 0 .5em}
+kbd{font:600 .9em/1 "Segoe UI",system-ui,sans-serif;background:var(--hi);color:#10231A;border:1px solid #B79A1A;border-bottom-width:3px;border-radius:5px;padding:6px 9px;min-width:30px;text-align:center}
+.keys i{font-style:normal;color:var(--mute);font-size:.85em}
+.plain{background:var(--hi);color:#10231A;border:1px solid #B79A1A;border-radius:5px;padding:6px 9px;font-weight:600;font-size:.92em}
+.ex{color:var(--mute);font-size:.94em}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}
+.tabs button{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:8px 14px;min-height:44px}
+.tabs button[aria-selected="true"]{background:var(--g);color:var(--on);border-color:var(--g)}
+.bar{height:10px;border-radius:5px;background:var(--line);overflow:hidden;margin:6px 0}.bar span{display:block;height:100%;background:var(--g)}
+input[type=search]{width:100%;font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);margin:8px 0 14px}
+.mh{margin:18px 0 8px;color:var(--g)}
+.opt{display:block;width:100%;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:8px 0;min-height:48px}
+.opt.ok{background:var(--ok);border-color:var(--g)}.opt.bad{background:var(--bad);border-color:var(--red)}
+.note{border-left:4px solid var(--g);background:var(--panel);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;color:var(--mute);font-size:.94em}
+.flow{display:flex;flex-direction:column;align-items:stretch;max-width:760px;margin:14px auto 0}
+.node{background:var(--panel);border:2px solid var(--g);border-radius:10px;padding:14px}
+.node.end{background:var(--g);color:var(--on);text-align:center;font-weight:700}
+.arr{text-align:center;color:var(--g);font-size:1.3rem;line-height:1.6}
+.chips{list-style:none;margin:0;padding:0;display:grid;gap:8px;grid-template-columns:1fr}
+body.d-laptop .chips,body.d-class .chips{grid-template-columns:1fr 1fr}
+.chips li{border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:.92em}
+.chips li.on{background:var(--ok);border-color:var(--g)}
+.chips li span{font-weight:600;display:block}
+#home{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:20;background:var(--red);color:#fff;border:0;border-radius:999px;padding:14px 20px;font-weight:700;min-height:48px;box-shadow:0 3px 10px rgba(0,0,0,.3)}
+:root[data-theme="dark"] #home{color:#1a0a07}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) #home{color:#1a0a07}}
+#home[hidden]{display:none}
+.top{display:flex;align-items:center;gap:12px;margin-bottom:6px}.top .back{width:auto;padding:8px 14px}
+@media(prefers-reduced-motion:no-preference){.card,.node{transition:border-color .15s}}
+</style>
+</head>
+<body>
+<main class="wrap"><div id="app"></div></main>
+<button id="home" data-a="reset" aria-label="Back to the main page" hidden>Main page</button>
+<script>
+const R=[
+[0,"Freeze top row","Alt, W, F, R","Freeze the top row","Keeps the header row visible while you scroll. Press the keys one after another, not together.","Scroll to row 300 and the headers stay on screen."],
+[0,"Navigate","Ctrl + ↑↓←→","Jump to the edge of your data","Moves to the last filled cell in that direction. At the edge, it jumps to the next filled cell.","In A1, Ctrl + ↓ lands on the last row of the column."],
+[0,"Select to the edge","Ctrl + Shift + ↑↓←→","Select from here to the edge of the data","Selects from the active cell to the edge of the data block.","On the first Revenue cell, Ctrl + Shift + ↓ selects every value below it."],
+[0,"Custom selection","Shift + ↑↓←→","Extend the selection one cell at a time","Grows the selection by one cell per key press.","From D2, press Shift + ↓ four times to select D2:D6."],
+[0,"Copy from the left","Ctrl + R","Copy data from the cell on the left","Fills the selected cell with the content of the cell to its left.","Type North in B2, click C2, press Ctrl + R."],
+[0,"Copy from above","Ctrl + D","Copy data from the cell above","Fills the selected cell with the content of the cell above. Formulas adjust their references.","Select B2:B8 with North in B2, then press Ctrl + D."],
+[0,"Pick from column list","Alt + ↓","Open a drop-down of values already used in the column","In the empty cell just below a column of text, lists what you already typed there.","Below North, South, East, press Alt + ↓ and choose East."],
+[1,"Select row","Shift + Space","Select the entire row","Selects the whole row of the active cell.","Click B5, press Shift + Space to select row 5."],
+[1,"Select column","Ctrl + Space","Select the entire column","Selects the whole column of the active cell.","Click D3, press Ctrl + Space to select column D."],
+[1,"Insert row or column","Ctrl + Shift + +","Insert a new row or column","Select a row or column first. The new one appears above the row or to the left of the column, not after it.","Select row 5, press Ctrl + Shift + + for a blank row 5."],
+[1,"Delete row or column","Ctrl + -","Delete the selected row or column","Select a row or column first. Everything below or to the right shifts into the gap.","Select row 5, press Ctrl + - to remove it."],
+[1,"Move a row","Shift + Drag","Move a row without overwriting","Select the row, hold Shift and drag its border. The row is inserted at the new spot.","Drag row 8 between rows 3 and 4 while holding Shift."],
+[1,"Undo","Ctrl + Z","Undo the last action","Reverses your most recent action. Ctrl + Y redoes it.","Deleted the wrong column? Press Ctrl + Z straight away."],
+[1,"New line in a cell","Alt + Enter","Start a new line inside the same cell","Enter alone moves to the next cell. Alt + Enter breaks the line inside the cell.","Type Item: Pen, press Alt + Enter, type Qty: 10."],
+[1,"Add a note","Shift + F2","Add a note to a cell","Opens a note box on the selected cell. For a threaded comment use Ctrl + Shift + F2.","Select E7, press Shift + F2, type Awaiting invoice."],
+[2,"Go to a cell","Ctrl + G","Jump to a specific cell","Opens the Go To box (F5 does the same). Type a reference and press Enter.","Press Ctrl + G, type Z500, press Enter."],
+[2,"AutoSum","Alt + =","Add up a column or row automatically","Inserts a SUM formula and guesses the range above or to the left.","Click D12 under the Units column, press Alt + =, then Enter."],
+[2,"Format Cells","Ctrl + 1","Open Format Cells","Opens the Format Cells box (Number, Alignment, Font, Border, Fill). The source file listed Ctrl + T here, which is a typo: Ctrl + T creates a table.","Select Revenue, press Ctrl + 1, pick Number with 2 decimals."],
+[2,"Repeat last action","F4","Repeat the last action on another cell","Repeats your latest action on the current selection. Inside a formula it cycles $ references instead.","Fill B2 yellow, click D2, press F4."],
+[3,"Find and Replace","Ctrl + H","Find and replace text","Replaces text across the sheet. Ctrl + F only finds.","Replace N. with North in the Region column."],
+[3,"Filter","Right-click → Filter","Filter rows (or use Advanced Filter)","Right-click a cell, choose Filter, then Filter by Selected Cell’s Value. Advanced Filter is on the Data tab and supports a criteria range.","Right-click a South cell to show only South rows.",1],
+[3,"Create a Table","Ctrl + T","Turn a range into a Table","Adds filter arrows, banded rows and auto-filling formulas, and the range grows with new rows.","Click inside the data, press Ctrl + T, tick My table has headers."],
+[3,"Insert a slicer","Table Design → Insert Slicer","Add clickable filter buttons","Click inside a Table, open the Table Design tab, choose Insert Slicer and tick a column. Ctrl + click picks several.","Tick Region, then click North to show only North.",1],
+[3,"Highest values","=MAX(range)  =LARGE(range, k)","Find the highest and k-th highest value","MAX returns the largest value. LARGE returns the k-th largest; k = 1 equals MAX. These are functions, not key shortcuts.","Values 120, 450, 300, 450, 80: MAX = 450, LARGE(range, 3) = 300.",1]
+];
+const D=R.map((r,i)=>({id:i,m:r[0],name:r[1],k:r[2],task:r[3],what:r[4],ex:r[5],p:!!r[6]}));
+const MODS=["Move, select and fill","Rows, columns and cell editing","Jump, add up, format, repeat","Find, filter, tables, top values"];
+const DEV={phone:["Phone","Tap-friendly single column"],laptop:["Laptop or desktop","Wider layout with side-by-side cards"],class:["Shared screen","Large text for a classroom"]};
+let S={dev:null,view:"home",mod:0,q:null},P={learned:[],best:0};
+try{P=Object.assign(P,JSON.parse(localStorage.getItem("xlsprog")||"{}"))}catch(e){}
+const save=()=>{try{localStorage.setItem("xlsprog",JSON.stringify(P))}catch(e){}};
+const $=s=>document.querySelector(s),app=$("#app");
+const caps=it=>it.p?`<span class="plain">${it.k}</span>`:it.k.split(", ").map(s=>s.split(" + ").map(c=>`<kbd>${c}</kbd>`).join("<i>+</i>")).join("<i>then</i>");
+const pct=()=>Math.round(P.learned.length/D.length*100);
+const shuf=a=>a.slice().sort(()=>Math.random()-.5);
+const hdr=t=>`<div class="top"><button class="btn back" data-a="go" data-v="home">‹ Menu</button><h2>${t}</h2></div>`;
+const card=(it,learn)=>`<article class="card ${learn&&P.learned.includes(it.id)?"done":""}"><h4>${it.name}</h4><div class="keys">${caps(it)}</div><p>${learn?it.what:it.task}</p>${learn?`<p class="ex">Example: ${it.ex}</p><button class="btn" data-a="learn" data-v="${it.id}" aria-pressed="${P.learned.includes(it.id)}">${P.learned.includes(it.id)?"✓ Learned (tap to undo)":"Mark as learned"}</button>`:""}</article>`;
+function vHome(){
+ if(!S.dev){app.innerHTML=`<h1>Learn 24 Excel shortcuts by doing them</h1><div class="fbar"><b>fx</b><span>Which device are you using?</span></div><div class="row three">${Object.keys(DEV).map(k=>`<button class="tile" data-a="dev" data-v="${k}"><strong>${DEV[k][0]}</strong><small>${DEV[k][1]}</small></button>`).join("")}</div><p class="note">You can change this any time with the red Main page button.</p>`;return}
+ app.innerHTML=`<h1>Excel Shortcut Trainer</h1><div class="fbar"><b>fx</b><span>${DEV[S.dev][0]} view · ${P.learned.length} of ${D.length} learned</span></div><div class="bar" role="progressbar" aria-valuenow="${pct()}" aria-valuemin="0" aria-valuemax="100"><span style="width:${pct()}%"></span></div><p class="ex">${pct()}% complete${P.best?` · best quiz score ${P.best}/10`:""}</p><div class="row cols"><button class="tile" data-a="go" data-v="cheat"><strong>Cheat sheet</strong><small>Search all 24 shortcuts</small></button><button class="tile" data-a="go" data-v="learn"><strong>Learn</strong><small>Four modules, mark each one learned</small></button><button class="tile" data-a="newquiz"><strong>Quiz</strong><small>10 questions, instant feedback</small></button><button class="tile" data-a="go" data-v="map"><strong>Revision map</strong><small>The whole course on one flowchart</small></button></div><p class="note">Keys are for Excel on Windows with a keyboard. The source file listed 24 entries (not 20); Move Row, Filter, Slicer and MAX/LARGE are mouse actions or functions.</p>`}
+function vCheat(){app.innerHTML=hdr("Cheat sheet")+`<input id="q" type="search" placeholder="Search a shortcut or task" aria-label="Search shortcuts"><div id="cl"></div>`;$("#q").oninput=e=>fill(e.target.value);fill("")}
+function fill(q){q=q.toLowerCase();let h="";MODS.forEach((n,mi)=>{const L=D.filter(x=>x.m===mi&&(x.name+" "+x.task+" "+x.k+" "+x.what).toLowerCase().includes(q));if(L.length)h+=`<h3 class="mh">Module ${mi+1}: ${n}</h3><div class="grid">${L.map(x=>card(x,0)).join("")}</div>`});$("#cl").innerHTML=h||`<p>No match. Try a word like “row” or “copy”.</p>`}
+function vLearn(){const L=D.filter(x=>x.m===S.mod),n=L.filter(x=>P.learned.includes(x.id)).length;app.innerHTML=hdr("Learn")+`<div class="tabs" role="tablist">${MODS.map((m,i)=>`<button role="tab" aria-selected="${i===S.mod}" data-a="mod" data-v="${i}">Module ${i+1}</button>`).join("")}</div><h3>${MODS[S.mod]}</h3><p class="ex">${n} of ${L.length} learned in this module</p><div class="grid">${L.map(x=>card(x,1)).join("")}</div>${S.mod<3?`<button class="btn primary" data-a="mod" data-v="${S.mod+1}">Next module</button>`:`<button class="btn primary" data-a="newquiz">Test yourself with a quiz</button>`}`}
+function vQuiz(){const q=S.q;if(q.i>=q.o.length){app.innerHTML=hdr("Quiz result")+`<h1>${q.s} out of ${q.o.length}</h1><p class="lede">${q.s>=8?"Strong work. Try the revision map for a final skim.":q.s>=5?"Good start. Review the modules you missed in Learn, then retry.":"Keep going. Open Learn, work through one module, then retry."}</p><div class="row cols"><button class="btn primary" data-a="newquiz">Try again</button><button class="btn" data-a="go" data-v="learn">Back to Learn</button></div>`;return}
+ const it=D[q.o[q.i]];if(!q.opts)q.opts=shuf([it,...shuf(D.filter(x=>x.k!==it.k)).slice(0,3)]).map(x=>x.id);
+ const done=q.a!==null;app.innerHTML=hdr(`Question ${q.i+1} of ${q.o.length}`)+`<div class="bar"><span style="width:${q.i/q.o.length*100}%"></span></div><h3>Which shortcut lets you: ${it.task.charAt(0).toLowerCase()+it.task.slice(1)}?</h3>${q.opts.map(id=>{const x=D[id],c=done?(x.k===it.k?"ok":(id===q.a?"bad":"")):"";return `<button class="opt ${c}" data-a="ans" data-v="${id}" ${done?"aria-disabled=true":""}><span class="keys">${caps(x)}</span></button>`}).join("")}${done?`<div class="note" role="status"><strong>${D[q.a].k===it.k?"Correct.":"Not quite."}</strong> ${it.name}: ${it.what} Example: ${it.ex}</div><button class="btn primary" data-a="next">${q.i+1===q.o.length?"See result":"Next question"}</button>`:""}`}
+function vMap(){let h=hdr("Revision map")+`<p class="lede">One pass, top to bottom. Green boxes are shortcuts you marked as learned.</p><div class="flow"><div class="node end">Start: a raw sheet</div>`;
+ MODS.forEach((n,mi)=>{h+=`<div class="arr" aria-hidden="true">▼</div><div class="node"><h3>Module ${mi+1}: ${n}</h3><ul class="chips">${D.filter(x=>x.m===mi).map(x=>`<li class="${P.learned.includes(x.id)?"on":""}"><span>${x.name}</span><div class="keys">${caps(x)}</div></li>`).join("")}</ul></div>`});
+ app.innerHTML=h+`<div class="arr" aria-hidden="true">▼</div><div class="node end">Goal: a clean, filtered, summarised table in seconds</div></div>`}
+function render(){document.body.className="d-"+(S.dev||"none");$("#home").hidden=!(S.dev||S.view!=="home");({home:vHome,cheat:vCheat,learn:vLearn,quiz:vQuiz,map:vMap})[S.view]()}
+function go(v){S.view=v;render();window.scrollTo(0,0)}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(!b)return;const a=b.dataset.a,v=b.dataset.v;
+ if(a==="dev"){S.dev=v;render()}
+ else if(a==="go")go(v)
+ else if(a==="reset"){S={dev:null,view:"home",mod:0,q:null};render();window.scrollTo(0,0)}
+ else if(a==="mod"){S.mod=+v;render();window.scrollTo(0,0)}
+ else if(a==="learn"){const i=+v,k=P.learned.indexOf(i);k<0?P.learned.push(i):P.learned.splice(k,1);save();const y=window.scrollY;render();window.scrollTo(0,y)}
+ else if(a==="newquiz"){S.q={o:shuf(D.map(x=>x.id)).slice(0,10),i:0,s:0,a:null,opts:null};go("quiz")}
+ else if(a==="ans"){const q=S.q;if(q.a!==null)return;q.a=+v;if(D[q.a].k===D[q.o[q.i]].k)q.s++;const y=window.scrollY;render();window.scrollTo(0,y)}
+ else if(a==="next"){const q=S.q;q.i++;q.a=null;q.opts=null;if(q.i>=q.o.length&&q.s>P.best){P.best=q.s;save()}render();window.scrollTo(0,0)}
+});
+render();
+</script>
+</body>
+</html>
