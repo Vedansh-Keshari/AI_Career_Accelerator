@@ -1,0 +1,239 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Formula Lab - Excel formulas</title>
+<meta name="theme-color" content="#1d6f42">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
+<style>
+:root{--bg:#eef2f1;--panel:#fff;--ink:#15231d;--mute:#586860;--line:#cfd9d5;--g:#1d6f42;--gd:#14532f;--gt:#e3f1ea;--sel:#fff1b8;--err:#b3261e;--code:#f3f6f5;--onG:#fff;color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root{--bg:#0e1612;--panel:#16211b;--ink:#e5eee9;--mute:#9bb0a6;--line:#2a3a32;--g:#46b983;--gd:#8be0b6;--gt:#1b3027;--sel:#4b4210;--err:#ff8a80;--code:#1c2a23;--onG:#06150d}}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%}
+body{font:16px/1.55 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+code,.mono{font-family:ui-monospace,Consolas,Menlo,monospace}
+.app{display:grid;grid-template-columns:220px 1fr;min-height:100vh}
+nav{background:var(--panel);border-right:1px solid var(--line);padding:20px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:6px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;margin-bottom:16px}
+.mark{width:34px;height:34px;border-radius:6px;background:var(--g);color:var(--onG);display:grid;place-items:center;font:italic 700 16px Georgia,serif}
+.tabs{display:flex;flex-direction:column;gap:4px}
+.tab{cursor:pointer;padding:10px 12px;border-radius:6px;font:inherit;font-weight:600;color:var(--mute);background:none;border:0;text-align:left}
+.tab[aria-selected=true]{background:var(--gt);color:var(--gd)}
+button:focus-visible,input:focus-visible,.flash:focus-visible{outline:2px solid var(--g);outline-offset:2px}
+main{padding:24px clamp(16px,4vw,48px) 60px;max-width:1000px;width:100%}
+.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+h1{font-size:26px;margin:0 0 2px;line-height:1.2}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 22px}
+.chip{border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:6px 12px;border-radius:999px;cursor:pointer;font:inherit;font-size:14px}
+.chip[aria-pressed=true]{background:var(--g);border-color:var(--g);color:var(--onG)}
+section h2{font-size:20px;margin:30px 0 2px;padding-bottom:6px;border-bottom:2px solid var(--g)}
+.lead{color:var(--mute);margin:4px 0 12px}
+.fn{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px 18px;margin:0 0 14px}
+.fn h3{margin:0 0 4px;font:700 17px ui-monospace,Consolas,monospace;color:var(--gd)}
+.fn p{margin:4px 0 10px}
+.syn{display:block;background:var(--code);padding:8px 10px;border-radius:6px;font-size:14px;overflow-x:auto;white-space:nowrap}
+.ex{margin-top:14px}
+.fx{display:flex;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--panel);align-items:stretch}
+.fx b{padding:6px 10px;background:var(--gt);color:var(--gd);font:italic 700 14px Georgia,serif;border-right:1px solid var(--line);display:flex;align-items:center}
+.fx code,.fx input{flex:1;min-width:0;padding:6px 10px;font-size:14px;overflow-x:auto;white-space:nowrap;border:0;background:transparent;color:var(--ink)}
+.res{margin:8px 0 0;overflow-x:auto}
+.val{display:inline-block;background:var(--sel);padding:2px 10px;border-radius:4px;font:14px ui-monospace,Consolas,monospace}
+.err{color:var(--err);font:600 14px ui-monospace,Consolas,monospace}
+.note{margin:6px 0 0!important;color:var(--mute);font-size:14px}
+table{border-collapse:collapse;font-size:14px}
+table.out td{border:1px solid var(--line);padding:3px 10px;background:var(--sel)}
+.sheetwrap{overflow-x:auto;margin:10px 0 16px}
+table.sheet th,table.sheet td{border:1px solid var(--line);padding:3px 12px;background:var(--panel);white-space:nowrap}
+table.sheet th{background:var(--gt);color:var(--mute);font-weight:600}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:22px}
+.meta{color:var(--mute);font-size:14px;margin:0 0 8px}
+.q{font-size:20px;margin:0 0 16px;line-height:1.35}
+.opts{display:grid;gap:8px;margin-bottom:14px}
+.opt{text-align:left;padding:11px 14px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink);font:inherit;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--g)}
+.opt.right{background:var(--gt);border-color:var(--g);font-weight:600}
+.opt.wrong{border-color:var(--err);color:var(--err)}
+.why{margin:0 0 14px}
+.go{background:var(--g);color:var(--onG);border:0;border-radius:6px;padding:9px 18px;font:inherit;font-weight:600;cursor:pointer}
+.go.sec{background:var(--gt);color:var(--gd)}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.big{font-size:44px;margin:0 0 6px}
+.flash{background:var(--panel);border:2px solid var(--g);border-radius:10px;min-height:240px;padding:26px;cursor:pointer;display:flex;align-items:center}
+.face{width:100%}.face h2{font-size:30px;margin:0 0 10px;color:var(--gd)}
+.hint{color:var(--mute);font-size:14px;margin-top:18px}
+.blk{display:block;background:var(--code);padding:8px 10px;border-radius:6px;margin:0 0 14px;font-size:14px;overflow-x:auto;white-space:nowrap}
+.tasks{display:flex;flex-direction:column;gap:6px;margin:0 0 16px}
+.task{text-align:left;padding:9px 12px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink);font:inherit;font-size:15px;cursor:pointer}
+.task[aria-pressed=true]{border-color:var(--g);background:var(--gt)}
+.verdict{margin:10px 0 0;font-weight:600}.ok{color:var(--g)}
+@media(max-width:860px){
+.app{display:block}
+nav{position:fixed;top:auto;bottom:0;left:0;right:0;height:auto;flex-direction:row;border-right:0;border-top:1px solid var(--line);padding:6px 6px calc(6px + env(safe-area-inset-bottom));z-index:5}
+.brand{display:none}.tabs{flex-direction:row;width:100%}.tab{flex:1;text-align:center;padding:10px 2px;font-size:14px}
+main{padding-bottom:96px;padding-top:max(20px,env(safe-area-inset-top))}}
+@media(prefers-reduced-motion:no-preference){.opt,.chip,.go{transition:background .15s,border-color .15s}}
+</style></head><body>
+<div class="app">
+<nav aria-label="Modules"><div class="brand"><span class="mark">fx</span>Formula Lab</div><div class="tabs" role="tablist"></div></nav>
+<main><div id="view"></div></main></div>
+<script>
+(function(root){
+const ERR=m=>{const e=new Error(m);e.xl=true;return e};
+const isArr=Array.isArray, flat=x=>isArr(x)?x.flat():[x];
+const txt=x=>x===null||x===undefined?'':String(x);
+const num=x=>{if(x===null||x==='')return 0;const n=Number(x);if(isNaN(n))throw ERR('#VALUE!');return n};
+const colNum=s=>{let n=0;for(const ch of s)n=n*26+ch.charCodeAt(0)-64;return n};
+const re=/\s*(?:(\d+(?:\.\d+)?)|"((?:[^"]|"")*)"|(\$?[A-Za-z]{1,2}\$?\d+(?::\$?[A-Za-z]{1,2}\$?\d+)?)|([A-Za-z][A-Za-z0-9.]*)(?=\s*\()|(<>|<=|>=|[-+*\/&=<>(),]))/y;
+function parse(src){
+  src=src.trim();const T=[];re.lastIndex=0;
+  while(re.lastIndex<src.length){const m=re.exec(src);if(!m)throw ERR('#NAME?');
+    if(m[1]!==undefined)T.push({k:'n',v:m[1]});else if(m[2]!==undefined)T.push({k:'s',v:m[2].replace(/""/g,'"')});
+    else if(m[3])T.push({k:'r',v:m[3]});else if(m[4])T.push({k:'f',v:m[4]});else T.push({k:'o',v:m[5]});}
+  let p=0;const nx=()=>T[p++];const isOp=(...o)=>T[p]&&T[p].k==='o'&&o.includes(T[p].v);
+  const bn=(op,a,b)=>({t:'b',op,a,b});
+  function cmp(){let a=cat();while(isOp('=','<>','<','>','<=','>=')){const op=nx().v;a=bn(op,a,cat())}return a}
+  function cat(){let a=add();while(isOp('&')){nx();a=bn('&',a,add())}return a}
+  function add(){let a=mul();while(isOp('+','-')){const op=nx().v;a=bn(op,a,mul())}return a}
+  function mul(){let a=un();while(isOp('*','/')){const op=nx().v;a=bn(op,a,un())}return a}
+  function un(){if(isOp('-')){nx();return bn('-',{t:'v',v:0},un())}return pri()}
+  function pri(){const k=nx();if(!k)throw ERR('#NAME?');
+    if(k.k==='n')return{t:'v',v:+k.v};if(k.k==='s')return{t:'v',v:k.v};if(k.k==='r')return{t:'r',v:k.v};
+    if(k.k==='f'){nx();const args=[];if(isOp(')')){nx();return{t:'c',n:k.v.toUpperCase(),args}}
+      for(;;){if(isOp(',')||isOp(')'))args.push({t:'v',v:null});else args.push(cmp());
+        if(isOp(',')){nx();continue}if(isOp(')')){nx();break}throw ERR('#NAME?')}
+      return{t:'c',n:k.v.toUpperCase(),args}}
+    if(k.k==='o'&&k.v==='('){const e=cmp();if(!isOp(')'))throw ERR('#NAME?');nx();return e}
+    throw ERR('#NAME?')}
+  const ast=cmp();if(p<T.length)throw ERR('#NAME?');return ast}
+function refVal(s,sh){s=s.replace(/\$/g,'').toUpperCase();const [a,b]=s.split(':');
+  const pc=x=>{const m=/^([A-Z]+)(\d+)$/.exec(x);return[colNum(m[1]),+m[2]]};
+  const g=(c,r)=>{const v=(sh[r-1]||[])[c-1];return v===undefined?null:v};
+  const [c1,r1]=pc(a);if(!b)return g(c1,r1);const [c2,r2]=pc(b);const out=[];
+  for(let r=Math.min(r1,r2);r<=Math.max(r1,r2);r++){const row=[];for(let c=Math.min(c1,c2);c<=Math.max(c1,c2);c++)row.push(g(c,r));out.push(row)}return out}
+function cmpv(a,b){if(a===null)a=typeof b==='number'?0:'';if(b===null)b=typeof a==='number'?0:'';
+  const na=typeof a==='number',nb=typeof b==='number';if(na&&nb)return a-b;
+  if(!na&&!nb){a=String(a).toLowerCase();b=String(b).toLowerCase();return a<b?-1:a>b?1:0}return na?-1:1}
+function bin(op,a,b){
+  if(isArr(a)||isArr(b)){const A=isArr(a)?a:null,B=isArr(b)?b:null,R=A?A.length:B.length,C=A?A[0].length:B[0].length;
+    return Array.from({length:R},(_,i)=>Array.from({length:C},(_,j)=>bin(op,A?A[i][j]:a,B?B[i][j]:b)))}
+  switch(op){case'&':return txt(a)+txt(b);case'+':return num(a)+num(b);case'-':return num(a)-num(b);case'*':return num(a)*num(b);
+    case'/':{const d=num(b);if(!d)throw ERR('#DIV/0!');return num(a)/d}}
+  const c=cmpv(a,b);return{'=':c===0,'<>':c!==0,'<':c<0,'>':c>0,'<=':c<=0,'>=':c>=0}[op]}
+const wild=p=>{const r=new RegExp('^'+String(p).toLowerCase().replace(/[.+^${}()|[\]\\]/g,'\\$&').replace(/\*/g,'.*').replace(/\?/g,'.')+'$');return s=>r.test(txt(s).toLowerCase())};
+function crit(c){if(typeof c==='number')return v=>typeof v==='number'&&v===c;
+  const m=/^(<>|<=|>=|=|<|>)?([\s\S]*)$/.exec(txt(c));const op=m[1]||'=',val=m[2];
+  if(val!==''&&!isNaN(Number(val))){const nv=Number(val);return v=>{if(typeof v!=='number')return op==='<>';const d=v-nv;return{'=':d===0,'<>':d!==0,'<':d<0,'>':d>0,'<=':d<=0,'>=':d>=0}[op]}}
+  const f=wild(val);return op==='<>'?v=>!f(v):f}
+function toDate(x){if(typeof x==='number')return new Date(Date.UTC(1899,11,30)+x*864e5);
+  const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(txt(x));if(!m)throw ERR('#VALUE!');return new Date(Date.UTC(+m[1],+m[2]-1,+m[3]))}
+const F={
+  LEFT:(t,n)=>txt(t).slice(0,n==null?1:num(n)),
+  RIGHT:(t,n)=>{const s=txt(t),k=n==null?1:num(n);return k?s.slice(-k):''},
+  MID:(t,s,n)=>{s=num(s);if(s<1)throw ERR('#VALUE!');return txt(t).substr(s-1,num(n))},
+  SEQUENCE:(r,c,s,st)=>{r=num(r);c=c==null?1:num(c);s=s==null?1:num(s);st=st==null?1:num(st);
+    return Array.from({length:r},(_,i)=>Array.from({length:c},(_,j)=>s+(i*c+j)*st))},
+  EDATE:(d,k)=>{const dt=toDate(d),m=dt.getUTCMonth()+num(k),y=dt.getUTCFullYear()+Math.floor(m/12),mm=((m%12)+12)%12;
+    const last=new Date(Date.UTC(y,mm+1,0)).getUTCDate();return new Date(Date.UTC(y,mm,Math.min(dt.getUTCDate(),last))).toISOString().slice(0,10)},
+  LARGE:(a,k)=>{const v=flat(a).filter(x=>typeof x==='number').sort((x,y)=>y-x);k=num(k);if(k<1||k>v.length)throw ERR('#NUM!');return v[k-1]},
+  SMALL:(a,k)=>{const v=flat(a).filter(x=>typeof x==='number').sort((x,y)=>x-y);k=num(k);if(k<1||k>v.length)throw ERR('#NUM!');return v[k-1]},
+  SUMIFS:(sr,...cs)=>{const S=flat(sr),tests=[];for(let i=0;i<cs.length;i+=2)tests.push([flat(cs[i]),crit(cs[i+1])]);
+    let t=0;S.forEach((v,i)=>{if(typeof v==='number'&&tests.every(([r,f])=>f(r[i])))t+=v});return t},
+  FILTER:(a,inc,ifE)=>{const A=isArr(a)?a:[[a]],I=flat(inc);
+    const out=A.filter((r,i)=>I[i]===true||(typeof I[i]==='number'&&I[i]!==0));
+    if(!out.length){if(ifE!=null)return ifE;throw ERR('#CALC!')}return out},
+  XLOOKUP:(lv,la,ra,nf,mm,sm)=>{const L=flat(la),R=flat(ra);mm=mm==null?0:num(mm);sm=sm==null?1:num(sm);
+    const idx=[...L.keys()];if(sm===-1)idx.reverse();let hit;
+    if(mm===2){const f=wild(lv);hit=idx.find(i=>typeof L[i]==='string'&&f(L[i]))}
+    else{hit=idx.find(i=>L[i]!==null&&cmpv(L[i],lv)===0);
+      if(hit===undefined&&(mm===-1||mm===1)){for(const i of idx){const c=cmpv(L[i],lv);
+        if(mm===-1&&c<0&&(hit===undefined||cmpv(L[i],L[hit])>0))hit=i;if(mm===1&&c>0&&(hit===undefined||cmpv(L[i],L[hit])<0))hit=i}}}
+    if(hit===undefined){if(nf!=null)return nf;throw ERR('#N/A')}return R[hit]},
+  INDEX:(a,r,c)=>{const A=isArr(a)?a:[[a]];r=r==null?0:num(r);c=c==null?0:num(c);
+    if(c===0&&A[0].length===1){if(!A[r-1])throw ERR('#REF!');return A[r-1][0]}
+    if(c===0&&A.length===1){if(r<1||r>A[0].length)throw ERR('#REF!');return A[0][r-1]}
+    const row=A[r-1];if(!row||c<1||c>row.length)throw ERR('#REF!');return row[c-1]},
+  MATCH:(v,a,t)=>{const L=flat(a);t=t==null?1:num(t);let r=-1;
+    if(t===0){if(typeof v==='string'&&/[*?]/.test(v)){const f=wild(v);r=L.findIndex(x=>typeof x==='string'&&f(x))}else r=L.findIndex(x=>x!==null&&cmpv(x,v)===0)}
+    else if(t>0)L.forEach((x,i)=>{if(x!==null&&cmpv(x,v)<=0)r=i});else L.forEach((x,i)=>{if(x!==null&&cmpv(x,v)>=0)r=i});
+    if(r<0)throw ERR('#N/A');return r+1}
+};
+function ev(n,sh){switch(n.t){case'v':return n.v;case'r':return refVal(n.v,sh);case'b':return bin(n.op,ev(n.a,sh),ev(n.b,sh));
+  case'c':{if(n.n==='IFERROR'){if(n.args.length!==2)throw ERR('#NAME?');try{return ev(n.args[0],sh)}catch(e){if(e.xl)return ev(n.args[1],sh);throw e}}
+    const f=F[n.n];if(!f)throw ERR('#NAME?');return f(...n.args.map(a=>ev(a,sh)))}}}
+function evaluate(src,sheet){try{src=String(src||'').trim();if(!src)return{ok:false,error:'Type a formula starting with ='};
+  if(src[0]==='=')src=src.slice(1);return{ok:true,value:ev(parse(src),sheet)}}
+  catch(e){return{ok:false,error:e.xl?e.message:'#VALUE!'}}}
+const fmt=v=>isArr(v)?v.map(r=>r.map(c=>txt(c)).join(', ')).join(' | '):txt(v);
+root.XL={evaluate,fmt};
+})(typeof module!=='undefined'?module.exports:window);
+
+const D={"sheet":[["Order ID","Channel","Amount","Month"],["ORD-101","Amazon Prime",1200,7],["ORD-102","Flipkart",850,3],["ORD-103","Amazon Fresh",430,7],["ORD-104","Myntra",1500,5],["ORD-105","Amazon Prime",990,7],["ORD-106","Flipkart",2100,9],["ORD-107","Myntra",640,3],["ORD-108","Amazon Fresh",780,11],["ORD-109","Flipkart",1350,7],["ORD-110","Amazon Prime",560,5]],"sections":[{"id":"text","title":"IFERROR and text functions","blurb":"Handle errors gracefully and pull pieces out of text.","fns":[{"name":"IFERROR","syntax":"=IFERROR(value, value_if_error)","what":"Returns your own fallback value instead of an error such as #N/A or #DIV/0!.","ex":[{"f":"=IFERROR(XLOOKUP(\"ORD-999\",A2:A11,C2:C11),\"Not found\")","n":"ORD-999 does not exist, so the lookup errors and \"Not found\" is shown instead.","x":"Not found"},{"f":"=IFERROR(C2/0,0)","n":"Dividing by zero would give #DIV/0!, so 0 is returned.","x":"0"}]},{"name":"LEFT","syntax":"=LEFT(text, [num_chars])","what":"Extracts characters from the start of the text.","ex":[{"f":"=LEFT(A2,3)","n":"Takes the first 3 characters of ORD-101.","x":"ORD"}]},{"name":"RIGHT","syntax":"=RIGHT(text, [num_chars])","what":"Extracts characters from the end of the text.","ex":[{"f":"=RIGHT(A2,3)","n":"Takes the last 3 characters of ORD-101.","x":"101"}]},{"name":"MID","syntax":"=MID(text, start_num, num_chars)","what":"Extracts a set number of characters from the middle of the text, starting at a position you choose.","ex":[{"f":"=MID(B2,8,5)","n":"Starts at character 8 of \"Amazon Prime\" and takes 5 characters.","x":"Prime"}]}]},{"id":"dynamic","title":"Text joins and dynamic arrays","blurb":"Join text, generate number sequences and move dates by months.","fns":[{"name":"& (ampersand)","syntax":"=A2 & \", \" & B2","what":"Joins pieces of text (and cell values) into one string.","ex":[{"f":"=A2&\" - \"&B2","n":"Combines the order ID, a dash and the channel.","x":"ORD-101 - Amazon Prime"}]},{"name":"SEQUENCE","syntax":"=SEQUENCE(rows, [columns], [start], [step])","what":"Generates a series of numbers that spills into the cells below and beside it.","ex":[{"f":"=SEQUENCE(4,1,10,5)","n":"4 rows, 1 column, starting at 10, stepping by 5."},{"f":"=SEQUENCE(3,2)","n":"A 3 by 2 grid counting from 1."}]},{"name":"EDATE","syntax":"=EDATE(start_date, months)","what":"Moves a date forward or backward by a number of months. Use a negative number to go back.","ex":[{"f":"=EDATE(\"2026-01-31\",1)","n":"One month after 31 Jan lands on the last day of February.","x":"2026-02-28"},{"f":"=EDATE(\"2026-03-15\",-2)","n":"A negative value moves two months earlier.","x":"2026-01-15"}]}]},{"id":"rank","title":"LARGE, SMALL, SUMIFS and FILTER","blurb":"Rank values, add up by condition and pull out matching rows.","fns":[{"name":"LARGE","syntax":"=LARGE(array, k)","what":"Returns the nth highest value in a range. k is the rank.","ex":[{"f":"=LARGE(C2:C11,2)","n":"The 2nd highest amount.","x":"1500"}]},{"name":"SMALL","syntax":"=SMALL(array, k)","what":"Returns the nth lowest value in a range. k is the rank.","ex":[{"f":"=SMALL(C2:C11,1)","n":"The lowest amount.","x":"430"}]},{"name":"SUMIFS","syntax":"=SUMIFS(sum_range, criteria_range1, criteria1, [criteria_range2, criteria2], ...)","what":"Adds up values that meet one or more conditions. Wildcards such as * work in text criteria.","ex":[{"f":"=SUMIFS(C2:C11,D2:D11,7)","n":"Total amount for month 7.","x":"3970"},{"f":"=SUMIFS(C2:C11,B2:B11,\"Amazon*\")","n":"Total for every channel that starts with Amazon.","x":"3960"}]},{"name":"FILTER","syntax":"=FILTER(array, include, [if_empty])","what":"Extracts the rows that meet a condition. The results spill into the adjacent cells.","ex":[{"f":"=FILTER(A2:C11,D2:D11=7)","n":"All orders placed in month 7."},{"f":"=FILTER(A2:C11,C2:C11>5000,\"None\")","n":"No amount is above 5000, so the if_empty text is returned.","x":"None"}]}]},{"id":"lookup","title":"XLOOKUP and INDEX MATCH","blurb":"Find a value in one column and return the matching value from another.","fns":[{"name":"XLOOKUP","syntax":"=XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode], [search_mode])","what":"A modern lookup that can replace VLOOKUP and HLOOKUP. It finds a value in one column and returns the matching value from another.","ex":[{"f":"=XLOOKUP(\"ORD-106\",A2:A11,C2:C11,\"Not found\")","n":"Finds ORD-106 and returns its amount. The 4th argument is shown if nothing matches.","x":"2100"}]},{"name":"INDEX + MATCH","syntax":"=INDEX(return_array, MATCH(lookup_value, lookup_array, match_type), [column_num])","what":"MATCH finds the position of a value (match_type 0 means exact match) and INDEX returns the item at that position. Together they are very flexible, especially for the intersection of a row and a column.","ex":[{"f":"=INDEX(C2:C11,MATCH(\"ORD-106\",A2:A11,0))","n":"MATCH returns position 6 and INDEX returns the 6th amount.","x":"2100"},{"f":"=INDEX(A2:D11,MATCH(\"ORD-106\",A2:A11,0),2)","n":"Uses the optional column number to return the 2nd column (Channel) of that row.","x":"Flipkart"}]}]}],"quiz":[{"s":"text","q":"What does =IFERROR(A1/B1,0) return when B1 is 0?","o":["#DIV/0!","0","A blank cell","The value of A1"],"a":1,"e":"IFERROR replaces the error with the fallback value you supplied, here 0."},{"s":"text","q":"What does =LEFT(\"ORD-101\",3) return?","o":["ORD","101","D-1","ORD-"],"a":0,"e":"LEFT takes characters from the start of the text."},{"s":"text","q":"Which function extracts characters from the middle of a text?","o":["LEFT","RIGHT","MID","IFERROR"],"a":2,"e":"MID needs a start position and a number of characters."},{"s":"dynamic","q":"Which operator joins text together?","o":["+","&",",","|"],"a":1,"e":"The ampersand joins text, for example =A2 & \", \" & B2."},{"s":"dynamic","q":"What does =SEQUENCE(4,1,10,5) generate?","o":["10, 15, 20, 25","1, 2, 3, 4","10, 11, 12, 13","5, 10, 15, 20"],"a":0,"e":"4 rows, 1 column, start at 10, step 5."},{"s":"dynamic","q":"What does =EDATE(\"2026-01-31\",-1) return?","o":["2025-12-31","2026-02-28","2026-01-30","2025-12-01"],"a":0,"e":"A negative month count moves the date back, so 31 Jan 2026 becomes 31 Dec 2025."},{"s":"rank","q":"In =LARGE(array,k), what does k mean?","o":["The rank","The row number","The number of columns","The criteria"],"a":0,"e":"k=1 is the highest value, k=2 the second highest, and so on."},{"s":"rank","q":"Which function adds values that match a pattern such as \"Amazon*\"?","o":["SUMIFS","LARGE","MID","EDATE"],"a":0,"e":"SUMIFS sums by one or more criteria and supports wildcards in text criteria."},{"s":"rank","q":"What does FILTER do?","o":["Extracts rows that meet a condition into adjacent cells","Joins text from two cells","Finds the nth lowest value","Moves a date by months"],"a":0,"e":"FILTER returns only the rows where the include condition is true, and the results spill into neighbouring cells."},{"s":"lookup","q":"Which XLOOKUP argument shows a fallback when nothing is found?","o":["if_not_found","match_mode","search_mode","return_array"],"a":0,"e":"The 4th argument, if_not_found, replaces the #N/A error."},{"s":"lookup","q":"In MATCH, which match_type finds an exact match?","o":["0","1","-1","2"],"a":0,"e":"0 means exact match, which is the usual choice inside INDEX MATCH."},{"s":"lookup","q":"What does MATCH return inside INDEX(return_array, MATCH(...))?","o":["A position number","The value itself","A column letter","TRUE or FALSE"],"a":0,"e":"MATCH gives the position, and INDEX uses it to return the item at that position."}],"tasks":[{"s":"text","t":"Show the first 3 characters of the Order ID in A2.","ans":"=LEFT(A2,3)"},{"s":"text","t":"Show the last 3 characters of the Order ID in A5.","ans":"=RIGHT(A5,3)"},{"s":"text","t":"Show the Amount for ORD-107, or \"Not found\" if the order is missing. Wrap a lookup in IFERROR.","ans":"=IFERROR(XLOOKUP(\"ORD-107\",A2:A11,C2:C11),\"Not found\")"},{"s":"dynamic","t":"Join the Order ID and Channel from row 3 with \" - \" between them.","ans":"=A3&\" - \"&B3"},{"s":"dynamic","t":"Generate the numbers 1 to 5 down a single column.","ans":"=SEQUENCE(5)"},{"s":"dynamic","t":"Find the date 3 months after 2026-11-30.","ans":"=EDATE(\"2026-11-30\",3)"},{"s":"rank","t":"Find the 3rd highest Amount.","ans":"=LARGE(C2:C11,3)"},{"s":"rank","t":"Total the Amount for orders placed in month 7.","ans":"=SUMIFS(C2:C11,D2:D11,7)"},{"s":"rank","t":"List every row where the Channel is Flipkart (columns A to D).","ans":"=FILTER(A2:D11,B2:B11=\"Flipkart\")"},{"s":"lookup","t":"Return the Channel for ORD-110 using INDEX and MATCH.","ans":"=INDEX(B2:B11,MATCH(\"ORD-110\",A2:A11,0))"}]};
+const {evaluate,fmt}=XL;
+const S=D.sections;
+const allFns=S.flatMap(s=>s.fns.map(f=>({...f,sec:s.id,secTitle:s.title})));
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const store={get(k,d){try{const v=localStorage.getItem('xfl_'+k);return v===null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem('xfl_'+k,JSON.stringify(v))}catch(e){}}};
+const TABS=[['ref','Reference'],['quiz','Quiz'],['cards','Flashcards'],['lab','Practice']];
+const HEAD={ref:['Excel formulas','Every function from your notes with a plain explanation and a worked example.'],quiz:['Quiz','Pick the right answer. You get an explanation after each question.'],cards:['Flashcards','Read the function, recall the syntax, then flip to check.'],lab:['Practice','Type a formula against the sample sheet. Pick a task or try your own.']};
+const st={tab:store.get('tab','ref'),sec:'all'};
+let Q=null,F=null,P={t:-1,f:'',res:null,show:false},installEv=null;
+function resHTML(v){if(Array.isArray(v))return '<table class="out">'+v.map(r=>'<tr>'+r.map(c=>`<td>${esc(c===null?'':c)}</td>`).join('')+'</tr>').join('')+'</table>';return `<span class="val">${esc(v===null?'':v)}</span>`}
+function run(f){const r=evaluate(f,D.sheet);return r.ok?resHTML(r.value):`<span class="err">${esc(r.error)}</span>`}
+function chips(){return `<div class="chips" role="group" aria-label="Section">${[['all','All sections'],...S.map(s=>[s.id,s.title])].map(([id,t])=>`<button class="chip" data-act="sec" data-v="${id}" aria-pressed="${st.sec===id}">${esc(t)}</button>`).join('')}</div>`}
+function ref(){return S.filter(s=>st.sec==='all'||s.id===st.sec).map(s=>`<section><h2>${esc(s.title)}</h2><p class="lead">${esc(s.blurb)}</p>${s.fns.map(f=>`<article class="fn"><h3>${esc(f.name)}</h3><p>${esc(f.what)}</p><code class="syn">${esc(f.syntax)}</code>${f.ex.map(e=>`<div class="ex"><div class="fx"><b>fx</b><code>${esc(e.f)}</code></div><div class="res">${run(e.f)}</div><p class="note">${esc(e.n)}</p></div>`).join('')}</article>`).join('')}</section>`).join('')}
+function quiz(){
+ if(!Q){const pool=D.quiz.filter(q=>st.sec==='all'||q.s===st.sec);Q={list:shuffle(pool).map(q=>({...q,idx:shuffle(q.o.map((_,i)=>i))})),i:0,score:0,picked:null}}
+ if(Q.i>=Q.list.length){const k='best_'+st.sec,b=Math.max(store.get(k,0),Q.score);store.set(k,b);
+  return `<div class="card"><p class="meta">Quiz complete</p><h2 class="big">${Q.score} / ${Q.list.length}</h2><p>Best score for this selection: ${b} / ${Q.list.length}</p><button class="go" data-act="restart">Try again</button></div>`}
+ const q=Q.list[Q.i],done=Q.picked!==null;
+ return `<div class="card"><p class="meta">Question ${Q.i+1} of ${Q.list.length}</p><h2 class="q">${esc(q.q)}</h2><div class="opts">${q.idx.map((oi,k)=>{let c='';if(done){if(oi===q.a)c='right';else if(k===Q.picked)c='wrong'}return `<button class="opt ${c}" data-act="pick" data-v="${k}" ${done?'disabled':''}>${esc(q.o[oi])}</button>`}).join('')}</div>${done?`<p class="why"><b>${q.idx[Q.picked]===q.a?'Correct.':'Not quite.'}</b> ${esc(q.e)}</p><button class="go" data-act="next">${Q.i+1<Q.list.length?'Next question':'See score'}</button>`:''}</div>`}
+function cards(){
+ if(!F)F={list:allFns.filter(f=>st.sec==='all'||f.sec===st.sec),i:0,flip:false};
+ const f=F.list[F.i],e=f.ex[0];
+ const front=`<div class="face"><p class="meta">${esc(f.secTitle)}</p><h2 class="mono">${esc(f.name)}</h2><p>${esc(f.what)}</p><p class="hint">Tap the card to see the syntax and an example.</p></div>`;
+ const back=`<div class="face"><p class="meta">Syntax</p><code class="blk">${esc(f.syntax)}</code><p class="meta">Example</p><div class="fx"><b>fx</b><code>${esc(e.f)}</code></div><div class="res">${run(e.f)}</div><p class="note">${esc(e.n)}</p></div>`;
+ return `<p class="meta">Card ${F.i+1} of ${F.list.length}</p><div class="flash" data-act="flip" role="button" tabindex="0" aria-label="Flip card">${F.flip?back:front}</div><div class="row"><button class="go sec" data-act="prev">Previous</button><button class="go" data-act="flip">Flip</button><button class="go sec" data-act="nextc">Next</button><button class="go sec" data-act="shuf">Shuffle</button></div>`}
+function lab(){
+ const done=store.get('done',[]),cur=P.t>=0?D.tasks[P.t]:null;
+ const tasks=D.tasks.map((t,i)=>({...t,i})).filter(t=>st.sec==='all'||t.s===st.sec);
+ const sheet=`<div class="sheetwrap"><table class="sheet"><tr><th></th>${['A','B','C','D'].map(c=>`<th>${c}</th>`).join('')}</tr>${D.sheet.map((r,i)=>`<tr><th>${i+1}</th>${r.map(c=>`<td${i?'':' style="font-weight:700"'}>${esc(c)}</td>`).join('')}</tr>`).join('')}</table></div>`;
+ let out='';
+ if(P.res){if(!P.res.ok)out=`<div class="res"><span class="err">${esc(P.res.error)}</span></div>`;
+  else{out=`<div class="res">${resHTML(P.res.value)}</div>`;if(cur)out+=P.res.correct?'<p class="verdict ok">Correct. That matches the expected result.</p>':'<p class="verdict">The result differs from what the task asks for. Check the task and try again.</p>'}}
+ const ans=cur?(P.show?`<p class="note">Answer: <code>${esc(cur.ans)}</code></p>`:`<button class="go sec" data-act="ans">Show answer</button>`):'';
+ return `<p class="meta">Sample sheet (cells A1 to D11)</p>${sheet}
+ <div class="tasks"><button class="task" data-act="task" data-v="-1" aria-pressed="${P.t===-1}">Free practice</button>${tasks.map(t=>`<button class="task" data-act="task" data-v="${t.i}" aria-pressed="${P.t===t.i}">${done.includes(t.i)?'&#10003; ':''}${esc(t.t)}</button>`).join('')}</div>
+ <div class="fx"><b>fx</b><input id="fi" class="mono" value="${esc(P.f)}" placeholder="=LEFT(A2,3)" aria-label="Formula" autocapitalize="off" autocomplete="off" spellcheck="false"><button class="go" data-act="run" style="border-radius:0">Run</button></div>${out}<div class="row">${ans}</div>`}
+function runLab(){const r=evaluate(P.f,D.sheet);P.res=r;P.show=false;
+ if(P.t>=0&&r.ok){const exp=evaluate(D.tasks[P.t].ans,D.sheet);r.correct=fmt(r.value)===fmt(exp.value);
+  if(r.correct){const d=store.get('done',[]);if(!d.includes(P.t)){d.push(P.t);store.set('done',d)}}}
+ render();const i=$('#fi');if(i)i.focus()}
+function render(){
+ $('.tabs').innerHTML=TABS.map(([id,t])=>`<button class="tab" role="tab" data-act="tab" data-v="${id}" aria-selected="${st.tab===id}">${t}</button>`).join('');
+ const [h,sub]=HEAD[st.tab];
+ $('#view').innerHTML=`<div class="top"><div><h1>${h}</h1><p class="lead">${sub}</p></div>${installEv?'<button class="go" data-act="install">Install app</button>':''}</div>${chips()}${({ref,quiz,cards,lab})[st.tab]()}`}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-act]');if(!b)return;const a=b.dataset.act,v=b.dataset.v;
+ if(a==='tab'){st.tab=v;store.set('tab',v)}
+ else if(a==='sec'){st.sec=v;Q=null;F=null;P={t:-1,f:'',res:null,show:false}}
+ else if(a==='pick'){const q=Q.list[Q.i];if(Q.picked!==null)return;Q.picked=+v;if(q.idx[+v]===q.a)Q.score++}
+ else if(a==='next'){Q.i++;Q.picked=null}
+ else if(a==='restart')Q=null;
+ else if(a==='flip')F.flip=!F.flip;
+ else if(a==='prev'){F.i=(F.i-1+F.list.length)%F.list.length;F.flip=false}
+ else if(a==='nextc'){F.i=(F.i+1)%F.list.length;F.flip=false}
+ else if(a==='shuf'){F.list=shuffle(F.list);F.i=0;F.flip=false}
+ else if(a==='task'){P={t:+v,f:'',res:null,show:false}}
+ else if(a==='ans')P.show=true;
+ else if(a==='run'){const i=$('#fi');if(i)P.f=i.value;runLab();return}
+ else if(a==='install'){installEv.prompt();installEv=null}
+ render()});
+document.addEventListener('input',e=>{if(e.target.id==='fi')P.f=e.target.value});
+document.addEventListener('keydown',e=>{
+ if(e.target.id==='fi'&&e.key==='Enter'){P.f=e.target.value;runLab();return}
+ if(st.tab!=='cards'||!F||e.target.closest('input'))return;
+ if(e.key==='ArrowRight'){F.i=(F.i+1)%F.list.length;F.flip=false;render()}
+ else if(e.key==='ArrowLeft'){F.i=(F.i-1+F.list.length)%F.list.length;F.flip=false;render()}
+ else if(e.key===' '||e.key==='Enter'){e.preventDefault();F.flip=!F.flip;render()}});
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installEv=e;render()});
+if('serviceWorker' in navigator&&location.protocol!=='file:')navigator.serviceWorker.register('sw.js').catch(()=>{});
+render();
+</script></body></html>
