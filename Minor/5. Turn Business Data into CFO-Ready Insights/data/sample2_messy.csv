@@ -1,0 +1,36 @@
+Invoice_ID,Client_name,Issue_date,Due_date,Amount(USD),Payment_status,Payment_date,Project_type,any_notes_or_remarks
+INV1016,Acme Corp,18/11/2025,18/12/2025,"USD 6,970",PAID,23-Feb-26,Consulting,Paid after reminder
+INV-1048,Birch & Co,26-May-26,2026-07-10,-2500,,07-Oct-26,Development,Paid after reminder
+inv 1030,Sable Finance,08/02/2026,"Mar 25, 2026",,paid,09 July 2026,Web Design,Paid after reminder
+INV-1006,Sable Finance Ltd,2025-10-16,,"3,150.00",PAID,01-Jan-26,Web Design,Paid after reminder
+INV-1012,,"Nov 05, 2025",20-Nov-25,1700,paid,2025-12-31,Web Design,Paid after reminder
+INV1018,sable finance,"Nov 25, 2025",25-Dec-25,"USD 2,020",paid,2026-03-22,Content,Paid after reminder
+INV1058,Lumen Studio,10 July 2026,2026-08-24,1130,paid,"Sep 23, 2026",Content,Paid after reminder
+INV1063,,2026-08-01,"Sep 15, 2026",3810.00,paid,"Oct 11, 2026",Web Design,Client requested net-45
+INV1064,Northwnd Traders,07 August 2026,"Sep 21, 2026","$2,060",pending,,Branding,Retainer
+INV-1065,NORTHWIND TRADERS,11/08/2026,25 September 2026,"USD 6,980",,2026-10-06,Development,Disputed line item
+INV-1066,Northwind Traders,17 August 2026,"Sep 16, 2026","USD 5,450",Late,,Web Design,
+inv 1067,Northwnd Traders,17 August 2026,,"3,300.00",Pending,not yet,Branding,
+INV-1068,Helix Labs,2026-08-19,03 October 2026,,pending,,Web Design,Partial payment received
+INV1069,Birch & Co,"Aug 20, 2026",04/09/2026,"$1,300",pending,,Content,
+INV-1070,Sable Finance,20-Aug-26,19-Sep-26,,overdue,,Branding,Partial payment received
+inv 1071,Sable Finance Ltd,21 August 2026,05/09/2026,1270.00,paid,not yet,Content,Disputed line item
+INV1072,Northwind Traders,"Aug 21, 2026","Oct 05, 2026",,Paid,21/10/2026,Consulting,
+INV-1073,Acme Corp,"Aug 23, 2026",2026-09-07,5750.00,Late,,Development,
+inv 1074,Acme Corporation,2026-08-27,11/09/2026,2570,overdue,,Content,
+INV-1075,Acme Corp,2026-09-03,2026-10-03,6670.00,pending,,Web Design,
+inv 1076,Northwnd Traders,2026-09-04,04/10/2026,"$1,790",,,Content,Rush job
+INV-1077,Lumen Studio,04/09/2026,"Sep 19, 2026",1330.00,Late,,Content,Disputed line item
+INV-1078,Sable Finance Ltd,11/09/2026,26 September 2026,"$2,410",PAID,"Oct 07, 2026",Branding,Retainer
+INV-1079,acme,15/09/2026,"Oct 15, 2026","1,940.00",overdue,,Content,
+INV-1080,Helix Labs Inc,2026-09-23,2026-10-23,"USD 3,010",overdue,,Branding,Client requested net-45
+INV-1081,Northwind Traders,2026-09-23,23 October 2026,7260,Late,,Development,
+inv 1082,Birch & Co,06 October 2026,2026-11-05,"2,930.00",pending,,Web Design,Rush job
+INV-1083,Helix Labs,"Oct 06, 2026",2026-10-21,6330,Unpaid,,,Retainer
+INV-1084,Sable Finance,08 October 2026,,1240,Unpaid,,,Client requested net-45
+INV1085,Birch & Co,13/10/2026,2026-11-12,3010,Pending,,Development,Disputed line item
+INV1086,helix labs ,2026-10-17,01 November 2026,"$2,740",overdue,,Web Design,
+INV-1087,Orchard Media,18 October 2026,17-Nov-26,,,,Consulting,
+inv 1088,Lumen Studio ,2026-10-19,2026-11-18,"1,390.00",pending,,,
+INV-1065,NORTHWIND TRADERS,11/08/2026,25 September 2026,"USD 6,980",,2026-10-06,Development,Disputed line item
+INV-1006,Sable Finance Ltd,2025-10-16,,"3,150.00",PAID,01-Jan-26,Web Design,Paid after reminder

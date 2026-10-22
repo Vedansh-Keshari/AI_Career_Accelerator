@@ -1,0 +1,53 @@
+CFO INSIGHTS - APP (version 2)
+===============================
+A Streamlit app that cleans messy invoice data and turns it into a CFO-style dashboard
+(Dashboard, Invoices, Analytics, Overdue, Data quality, Ask your invoices tabs + downloadable Excel dashboard).
+No API key or internet connection is needed for any feature.
+
+HOW TO RUN (Windows, Mac or Linux)
+----------------------------------
+1. Install Python 3.9 or newer from https://www.python.org (tick "Add Python to PATH" on Windows).
+2. Unzip this folder and open a terminal / Command Prompt inside it
+   (Windows: open the folder, click the address bar, type  cmd  and press Enter).
+3. (Recommended) create a virtual environment:
+      python -m venv venv
+      Windows:     venv\Scripts\activate
+      Mac/Linux:   source venv/bin/activate
+4. Install the requirements (one time only):
+      pip install -r requirements.txt
+5. Start the app:
+      streamlit run app.py
+6. Your browser opens at http://localhost:8501 . To stop the app press Ctrl+C in the terminal.
+
+HOW TO USE
+----------
+* Sidebar > Dataset
+    - "Sample 1 (cleaned)"      : the messy 1-year invoice file, cleaned and mapped to the dashboard.
+    - "Sample 1 + 2 (synced)"   : Sample 2 (new invoices + payment updates) appended and re-synced with Sample 1.
+    - "Upload my own CSV"       : any messy CSV with the columns
+        Invoice_ID, Client_name, Issue_date, Due_date, Amount(USD), Payment_status, Payment_date,
+        Project_type, any_notes_or_remarks
+* Sidebar > "Download Excel dashboard" gives a formatted .xlsx (sparklines, charts, filters, cell comments).
+* Invoices tab: search, filter by status/client, click any column header to sort.
+* Ask your invoices tab: type a question or pick one of 25 ready questions / 13 graphs. Answers, tables and graphs are worked out
+  from the loaded data at the moment you ask. Try: "which client owes me the most", "invoices over $5,000", "details of INV-1020",
+  "heatmap of clients by quarter". Follow-up buttons appear under each answer; switching dataset starts a fresh conversation.
+* Data quality tab: every fix the cleaner made (and a raw-vs-clean comparison).
+* The yellow sticky note at the very bottom shows notes and suggestions for the dataset you have open.
+* To add new data: upload a new/updated CSV (the app re-cleans it and refreshes every tab).
+
+FILES
+-----
+app.py            the app
+pipeline.py       cleaning, KPIs, overdue days, Excel export
+qa.py             the Ask engine: 25 questions, 13 graphs, question matcher
+make_data.py      regenerates the two messy sample files (python make_data.py)
+data/             sample1_messy.csv, sample2_messy.csv
+requirements.txt  Python packages
+
+NOTES
+-----
+* "Today" for overdue-day calculations is fixed to 22 Oct 2026 (ASOF in pipeline.py) so the samples stay
+  consistent. Change ASOF to pd.Timestamp.today().normalize() to use the real date with your own data.
+* Dates like 03/11/2025 are read day-first (3 Nov 2025).
+* If port 8501 is busy:  streamlit run app.py --server.port 8600
