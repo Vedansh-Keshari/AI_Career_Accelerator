@@ -1,0 +1,8 @@
+{
+  "canva": {
+    "client_id": "YOUR_CANVA_CLIENT_ID",
+    "client_secret": "YOUR_CANVA_CLIENT_SECRET",
+    "web_redirect_uri": "http://127.0.0.1:5000/oauth/callback",
+    "desktop_redirect_uri": "http://127.0.0.1:5001/oauth/callback"
+  }
+}

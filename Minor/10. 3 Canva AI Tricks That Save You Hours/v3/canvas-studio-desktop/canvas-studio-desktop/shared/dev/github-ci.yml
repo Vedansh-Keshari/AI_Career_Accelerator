@@ -1,0 +1,64 @@
+# Copy this file to  .github/workflows/ci.yml  in a Git repository whose root is this package folder (app.py, tests/, shared/).
+# Runs lint, type checks, all automated tests and the browser test on Windows, macOS and Linux.
+name: CI
+on: [push, pull_request]
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+        python: ["3.10", "3.12"]
+    runs-on: ${{ matrix.os }}
+    env:
+      CANVAS_NO_KEYRING: "1"
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt pytest ruff mypy types-requests playwright
+      - name: Lint (ruff)
+        run: ruff check shared app.py tests --config shared/pyproject.toml
+      - name: Types (mypy)
+        working-directory: shared
+        run: mypy --config-file pyproject.toml
+      - name: Tests - shared engine
+        run: python -m pytest shared/tests -q
+      - name: Tests - this package
+        run: python -m pytest tests -q
+      - name: Browser end-to-end
+        if: matrix.os != 'macos-latest'
+        run: |
+          python -m playwright install --with-deps chromium
+          python shared/tests/e2e_browser.py
+        env:
+          E2E_SHOTS: ${{ runner.temp }}/shots
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: screenshots-${{ matrix.os }}-${{ matrix.python }}
+          path: ${{ runner.temp }}/shots
+          if-no-files-found: ignore
+
+  windows-package:
+    needs: test
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build CanvasStudio.exe
+        shell: cmd
+        run: build_windows.bat
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CanvasStudio-windows
+          path: dist/CanvasStudio

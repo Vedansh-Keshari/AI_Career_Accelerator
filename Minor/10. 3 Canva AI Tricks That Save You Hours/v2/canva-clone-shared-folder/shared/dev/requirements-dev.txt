@@ -1,0 +1,7 @@
+-r ../../web/requirements.txt
+pytest>=8
+ruff>=0.5
+mypy>=1.10
+types-requests
+playwright>=1.48
+pyinstaller>=6.6

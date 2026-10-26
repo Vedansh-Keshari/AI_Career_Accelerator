@@ -1,0 +1,219 @@
+{
+  "note": "Option lists mirror the Canva AI notes (audience, style, length, theme, colour, feature, format; 15 document types). The examples below are the notes' three scenarios, used as model test data.",
+  "examples": [
+    {
+      "id": "yoga-presentation",
+      "name": "Benefits of yoga (presentation)",
+      "kind": "presentation",
+      "description": "Module 2: a casual but educational deck for a social media page.",
+      "prompt": "Create a presentation for a social media page that posts random general content. The topic is the benefits of yoga, something casual yet genuinely educational for the audience.",
+      "project": {
+        "type": "presentation",
+        "title": "Benefits of Yoga",
+        "options": {
+          "audience": "Casual",
+          "style": "Organic",
+          "length": "Short and sharp (1 to 5 pages)",
+          "theme": "Health",
+          "color": "Green",
+          "feature": "None",
+          "format": "Presentation (16:9)"
+        },
+        "slides": [
+          {
+            "title": "Benefits of Yoga",
+            "body": "A friendly guide to what a few minutes on the mat can do",
+            "layout": "title",
+            "image": ""
+          },
+          {
+            "title": "What is Yoga?",
+            "body": "- An old practice that joins movement, breath and focus\n- Made for every age, body and fitness level\n- All you need is a mat and a quiet corner",
+            "layout": "bullets",
+            "image": ""
+          },
+          {
+            "title": "Top 3 Benefits of Yoga",
+            "body": "- Flexibility and strength that build up gently\n- Stress that melts away with slow breathing\n- Better sleep and a calmer mind",
+            "layout": "bullets",
+            "image": ""
+          },
+          {
+            "title": "Why Try Yoga?",
+            "body": "Because feeling better shouldn't need a gym membership.",
+            "layout": "statement",
+            "image": ""
+          },
+          {
+            "title": "Give it a Go",
+            "body": "- Start with ten minutes a day\n- Follow a beginner video\n- Rest whenever your body asks",
+            "layout": "bullets",
+            "image": ""
+          },
+          {
+            "title": "Call to action",
+            "body": "Roll out a mat today and share your first session.",
+            "layout": "cta",
+            "image": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "workout-blog-first",
+      "name": "Daily workout blog (first draft)",
+      "kind": "document",
+      "description": "Module 3: a detailed blog post with five benefits of moving every day.",
+      "prompt": "Write a blog post on the health benefits of working out daily, highlighting five benefits of moving your body every day. Keep the post detailed and interesting to read.",
+      "project": {
+        "type": "document",
+        "title": "The Health Benefits of Working Out Daily",
+        "options": {
+          "audience": "Casual",
+          "style": "Professional",
+          "color": "Blue",
+          "theme": "Fitness"
+        },
+        "doc": {
+          "doc_type": "Blog post",
+          "sections": [
+            {
+              "heading": "Introduction",
+              "body": "Moving your body every day is one of the simplest habits you can build. It doesn't need a gym or a perfect plan, just a little time and a bit of regularity. Here are five ways a daily workout pays you back."
+            },
+            {
+              "heading": "1. Boosts Mood and Mental Health",
+              "body": "Exercise releases chemicals that lift your mood and ease worry. Even a brisk twenty-minute walk can change how the rest of your day feels."
+            },
+            {
+              "heading": "2. Enhances Cardiovascular Health",
+              "body": "A stronger heart pumps more blood with less effort. Over time, regular movement helps keep blood pressure and cholesterol in a healthier range."
+            },
+            {
+              "heading": "3. Increases Energy Levels",
+              "body": "It sounds backwards, but spending energy creates energy. Your muscles and lungs get more efficient, so everyday tasks feel lighter."
+            },
+            {
+              "heading": "4. Promotes Better Sleep",
+              "body": "People who move daily tend to fall asleep faster and wake up less often. Try finishing hard workouts a few hours before bed."
+            },
+            {
+              "heading": "5. Strengthens Bones and Muscles",
+              "body": "Weight-bearing activity tells your body to keep bones dense and muscles firm. That protects your joints and keeps you independent as you age."
+            },
+            {
+              "heading": "Conclusion",
+              "body": "Start small, keep it enjoyable and let the habit grow. Your future self will thank you."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "workout-blog-refined",
+      "name": "Daily workout blog (refined)",
+      "kind": "document",
+      "description": "Module 3 follow-up: new palette, catchier title, five fresh benefits, key takeaways and a conclusion.",
+      "prompt": "Use a different colour palette and come up with a more interesting non-generic blog title.",
+      "project": {
+        "type": "document",
+        "title": "Move Your Body, Upgrade Your Life",
+        "options": {
+          "audience": "Casual",
+          "style": "Playful",
+          "color": "Orange",
+          "theme": "Fitness"
+        },
+        "tune": {
+          "boldness": 1,
+          "text_scale": 1.0
+        },
+        "doc": {
+          "doc_type": "Blog post",
+          "sections": [
+            {
+              "heading": "Introduction",
+              "body": "What if one daily habit could sharpen your thinking, calm your nerves and make you sleep like a log? Spoiler: it's moving your body. Here are five surprising upgrades."
+            },
+            {
+              "heading": "Supercharge Your Brainpower",
+              "body": "Exercise sends more blood and oxygen to the brain and supports memory and focus. Many people solve problems better after a walk."
+            },
+            {
+              "heading": "Become a Stress-Busting Ninja",
+              "body": "A workout gives stress somewhere to go. You leave with a clearer head and a steadier response to whatever comes next."
+            },
+            {
+              "heading": "Unlock Your Sleep Sanctuary",
+              "body": "A tired body and a settled mind make bedtime easier. Regular movement helps you fall asleep sooner and sleep deeper."
+            },
+            {
+              "heading": "Ignite Your Inner Creativity",
+              "body": "Movement loosens up your thinking. Plenty of writers and designers keep their best ideas for the walk home."
+            },
+            {
+              "heading": "Fortify Your Immune Fortress",
+              "body": "Moderate daily exercise supports your immune system, so common colds hit less often and pass faster."
+            },
+            {
+              "heading": "Key takeaways",
+              "body": "- Moving daily helps your mind as much as your body\n- Short, regular sessions beat rare marathon ones\n- Choose something you actually enjoy"
+            },
+            {
+              "heading": "Conclusion",
+              "body": "You don't need a perfect routine. You just need to start moving today."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cafe-logo",
+      "name": "Boho cafe-bookstore logo",
+      "kind": "logo",
+      "description": "Module 4: a logo for a cafe that is also a bookstore.",
+      "prompt": "A cafe that is also a bookstore. People can borrow books, read them while enjoying food, and spend hours there. The vibe is boho, airy, well-lit, and full of books from every genre.",
+      "project": {
+        "type": "logo",
+        "title": "Page & Pour",
+        "options": {
+          "style": "Organic",
+          "color": "Orange"
+        },
+        "logo": {
+          "brand": "Page & Pour",
+          "tagline": "Books, brews and long afternoons",
+          "description": "A cafe that is also a bookstore. People can borrow books and read them while enjoying food. Boho, airy and well-lit.",
+          "icon": "auto",
+          "variant": 0
+        }
+      }
+    },
+    {
+      "id": "cafe-logo-bright",
+      "name": "Cafe-bookstore logo (brighter, bolder)",
+      "kind": "logo",
+      "description": "Module 4 follow-up: the same logo with brighter, bolder, more vibrant colours.",
+      "prompt": "Make the logos a little more bright, with bolder, more vibrant colours.",
+      "project": {
+        "type": "logo",
+        "title": "Page & Pour",
+        "options": {
+          "style": "Bold",
+          "color": "Pink"
+        },
+        "tune": {
+          "boldness": 3,
+          "text_scale": 1.0
+        },
+        "logo": {
+          "brand": "Page & Pour",
+          "tagline": "Books, brews and long afternoons",
+          "description": "A cafe that is also a bookstore. Boho, airy and well-lit.",
+          "icon": "auto",
+          "variant": 2
+        }
+      }
+    }
+  ]
+}
