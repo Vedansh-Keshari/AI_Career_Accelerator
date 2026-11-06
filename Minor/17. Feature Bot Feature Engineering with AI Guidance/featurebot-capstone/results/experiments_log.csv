@@ -1,0 +1,7 @@
+config_id,features_enabled,model,cv_auc,cv_auc_sd,cv_f1,val_auc,val_f1,threshold,runtime_s,comments
+cfg_01,none,LogisticRegression,0.9042,0.0013,0.6838,0.9073,0.6961,0.36,2.1,
+cfg_02,cycle1,LogisticRegression,0.9116,0.0012,0.6962,0.9149,0.7047,0.32,3.6,
+cfg_03,cycle1+2,LogisticRegression,0.9118,0.0014,0.6962,0.915,0.7031,0.32,5.0,
+cfg_04,none,HistGradientBoosting,0.9247,0.0014,0.7216,0.9294,0.7292,0.38,10.9,
+cfg_05,cycle1,HistGradientBoosting,0.924,0.0014,0.7148,0.9292,0.7286,0.33,11.9,
+cfg_06,cycle1+2,HistGradientBoosting,0.9241,0.0016,0.7185,0.9294,0.7297,0.33,19.3,

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+# the dataset is generated locally by prepare_data.py
+adult.csv
+Resources_Dataset.xlsx
+# script output folder (regenerated on every run)
+featurebot_outputs/

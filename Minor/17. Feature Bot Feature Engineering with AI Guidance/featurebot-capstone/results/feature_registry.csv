@@ -1,0 +1,14 @@
+name,definition,type,dependencies,leakage_risk,added_in_cycle,delta_auc,delta_f1,notes
+capital_gain_gt0,1 if capital_gain > 0,binary,capital_gain,none,1,0.0023,0.0047,Keep
+capital_loss_gt0,1 if capital_loss > 0,binary,capital_loss,none,1,0.0003,0.0016,Keep
+log_capital_gain,log1p(capital_gain),numeric,capital_gain,none,1,0.002,0.0043,Keep
+log_capital_loss,log1p(capital_loss),numeric,capital_loss,none,1,0.0003,0.0019,Keep
+age_bin,"bins <=25,26-35,36-45,46-55,56+",categorical,age,none,1,0.0036,0.0047,Keep
+hours_bin,"bins <=30,31-40,41-50,51+",categorical,hours_per_week,none,1,0.002,0.0006,Keep
+overtime,1 if hours_per_week > 40,binary,hours_per_week,none,1,0.0005,0.0015,Keep (marginal)
+age_x_education,age * education_num,numeric,age; education_num,none,1,-0.0003,-0.0,Drop
+education_bucket,HS-or-less/Some-College/Bachelors/Advanced,categorical,education,none,2,-0.0,0.0008,Drop
+region,Americas/Europe/Asia/Other,categorical,native_country,low,2,0.0001,0.0005,Drop
+marital_relationship,marital_status|relationship,categorical,marital_status; relationship,medium (sensitive),2,-0.0002,0.0007,Drop
+workclass_hoursbin,workclass|hours bin,categorical,workclass; hours_per_week,none,2,0.0015,-0.0001,Keep (marginal)
+gain_x_education,(capital_gain>0)*education_num,numeric,capital_gain; education_num,none,2,0.0022,0.0032,Keep
