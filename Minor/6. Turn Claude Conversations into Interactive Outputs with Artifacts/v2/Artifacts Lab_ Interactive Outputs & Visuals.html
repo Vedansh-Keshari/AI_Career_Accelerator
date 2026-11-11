@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Artifacts Lab: Interactive Outputs & Visuals</title>
+<style>
+:root{--bg:#f7f6f2;--surface:#fff;--text:#1d1d1b;--muted:#6a6963;--line:#e2e0d8;--accent:#e8731a;--soft:#f0ede4;--bar:#2f6fed;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171716;--surface:#222221;--text:#f1efe8;--muted:#a3a198;--line:#383835;--soft:#2b2b29;--bar:#6b9bff;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#171716;--surface:#222221;--text:#f1efe8;--muted:#a3a198;--line:#383835;--soft:#2b2b29;--bar:#6b9bff;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surface);z-index:30}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:25;background:var(--surface);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:16px;padding:10px 20px;flex-wrap:wrap}
+.logo{font-weight:700;font-size:1.1rem}.logo span{color:var(--accent)}
+nav{display:flex;gap:4px;flex:1}nav a{color:var(--muted);text-decoration:none;padding:6px 14px;border-radius:20px;font-size:.92rem;font-weight:500}
+nav a.on{background:var(--text);color:var(--bg)}
+main{max-width:1000px;margin:0 auto;padding:28px 20px 60px}main.wide{max-width:none;padding:16px 20px}
+.hid{display:none}
+h1{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.15;letter-spacing:-.03em;margin:0 0 10px}h3{margin:0;font-size:1.05rem}
+.lead{color:var(--muted);max-width:62ch}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:14px 0;break-inside:avoid}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.head{display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap}.head h3{flex:1}
+.num{background:var(--accent);color:#fff;border-radius:8px;font-weight:700;font-size:.8rem;padding:2px 9px}
+.chk{display:flex;gap:6px;align-items:center;font-size:.85rem;color:var(--muted)}
+.lvl{display:flex;gap:12px;align-items:baseline;margin-top:38px;border-bottom:2px solid var(--text);padding-bottom:4px}.lvl h2{margin:0;font-size:1.4rem}.lvl small{color:var(--muted)}
+blockquote{margin:0 0 12px;padding:10px 14px;border-left:3px solid var(--accent);background:var(--soft);border-radius:0 8px 8px 0;font-size:.9rem;color:var(--muted)}
+pre{background:#1e1e1c;color:#f1efe8;padding:12px 14px;border-radius:10px;overflow-x:auto;font:.84rem/1.5 ui-monospace,Menlo,Consolas,monospace}
+table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}th{background:var(--soft)}
+.scroll{overflow-x:auto}svg{width:100%;height:auto;display:block}
+.ax{fill:var(--muted);font-size:11px}.lab{fill:var(--text);font-size:12px;font-weight:600}.gl{stroke:var(--line)}
+input,select,textarea,button{font:inherit;color:var(--text)}
+input[type=text],input[type=number],input[type=date],input[type=time],select,textarea{padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--bg);width:100%}
+.btn{background:var(--text);color:var(--bg);border:0;border-radius:8px;padding:7px 14px;font-weight:600;cursor:pointer}.btn.alt{background:var(--soft);color:var(--text)}.btn.sm{padding:2px 10px;font-size:.78rem;margin-left:10px}.btn.on{background:var(--accent);color:#fff}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.prog{height:10px;border-radius:6px;background:var(--soft);overflow:hidden}.prog i{display:block;height:100%;background:var(--accent);transition:width .3s}
+.bar{display:grid;grid-template-columns:130px 1fr 40px;gap:10px;align-items:center;margin:6px 0;font-size:.9rem}.bar div{height:12px;background:var(--soft);border-radius:6px;overflow:hidden}.bar i{display:block;height:100%;background:var(--bar)}
+.fb{display:flex;align-items:flex-end;gap:3px;height:70px;margin:10px 0}.fb i{flex:1;background:var(--bar);border-radius:3px 3px 0 0;min-height:3px}
+/* calendar */
+.cw{display:flex;flex-direction:column;height:calc(100vh - 150px);min-height:540px}
+.tb{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px}.tb h2{margin:0;font-size:1.35rem;min-width:190px}
+.seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}.seg button{border:0;background:var(--surface);padding:6px 12px;cursor:pointer}.seg button.on{background:var(--text);color:var(--bg)}
+.fl{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:10px;font-size:.86rem}
+.fl label{display:flex;gap:6px;align-items:center;padding:3px 10px 3px 6px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}.fl input[type=color]{width:22px;height:22px;border:0;padding:0;background:none;cursor:pointer}
+.dow,.days{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.dow div{background:var(--soft);text-align:center;font-size:.76rem;font-weight:600;padding:5px;color:var(--muted)}
+.days{flex:1;grid-auto-rows:1fr;min-height:0;border-top:0}
+.day{background:var(--surface);padding:4px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;gap:2px;min-width:0;min-height:0}.day:hover{background:var(--soft)}.day.off b{opacity:.4}
+.day b,.wd b{font-size:.78rem;font-weight:600;color:var(--muted);align-self:flex-start;padding:0 7px;border-radius:10px}
+.day.today{box-shadow:inset 0 0 0 2px var(--accent)}.today>b,.wd.today b,.mini .today{background:var(--accent)!important;color:#fff!important}
+.chip{color:#fff;font-size:.72rem;padding:1px 6px;border-radius:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer;border:0;text-align:left;width:100%}
+.more{font-size:.7rem;color:var(--muted);background:none;border:0;text-align:left;cursor:pointer;padding:0}
+.wk{display:grid;grid-template-columns:48px repeat(7,1fr);border:1px solid var(--line);background:var(--surface)}
+.wd{padding:4px;text-align:center;font-size:.75rem;color:var(--muted);border-left:1px solid var(--line)}.wd b{align-self:auto;display:inline-block;font-size:1rem}
+.ad{padding:2px;border-left:1px solid var(--line);min-height:26px;display:flex;flex-direction:column;gap:2px}
+.wkb{flex:1;overflow:auto;border:1px solid var(--line);border-top:0;background:var(--surface)}
+.wkb .wk{border:0;position:relative}
+.hl div{height:44px;font-size:.68rem;color:var(--muted);text-align:right;padding-right:6px}
+.col{position:relative;height:748px;border-left:1px solid var(--line);background:repeating-linear-gradient(var(--surface) 0 43px,var(--line) 43px 44px)}.col.today{background-color:var(--soft)}
+.ev{position:absolute;color:#fff;border-radius:5px;padding:2px 5px;font-size:.72rem;overflow:hidden;cursor:pointer;border:1px solid var(--surface);text-align:left;line-height:1.25}
+.now{position:absolute;left:0;right:0;border-top:2px solid var(--accent);z-index:2;pointer-events:none}
+.yr{flex:1;overflow:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;align-content:start}
+.mini{display:grid;grid-template-columns:repeat(7,1fr);font-size:.72rem;text-align:center;gap:1px}.mini span{padding:3px 0;border-radius:50%;cursor:pointer}.mini span.has{box-shadow:inset 0 -3px 0 var(--bar)}.mini .hd{color:var(--muted);cursor:default;font-weight:600}
+.ytl{font-weight:700;background:none;border:0;cursor:pointer;padding:4px 0;text-align:left}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;z-index:40;padding:16px}
+.dlg{background:var(--surface);border-radius:14px;padding:20px;width:min(460px,100%);max-height:92vh;overflow:auto;display:flex;flex-direction:column;gap:10px}
+.dk{display:flex;gap:6px}.dk button{flex:1;border:2px solid transparent;border-radius:8px;padding:6px;cursor:pointer;color:#fff;font-weight:600;opacity:.55}.dk button.on{opacity:1;border-color:var(--text)}
+.err{color:#d33;font-size:.85rem}
+@media(max-width:640px){header{padding:8px 12px}main{padding:20px 12px 48px}.day .chip{font-size:0;height:6px;padding:0}.bar{grid-template-columns:90px 1fr 36px}}
+@page{margin:12mm}
+@media print{.noprint,header,body::before{display:none!important}.hid{display:block!important}body{background:#fff}.view+.view{break-before:page}main,main.wide{max-width:none;padding:0 0 12px}.cw{height:auto}.days{grid-auto-rows:minmax(92px,auto)}.chip{white-space:normal}.card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/htm@3.1.1/dist/htm.umd.js"></script>
+<script>
+const {useState,useEffect}=React,{flushSync}=ReactDOM,html=htm.bind(React.createElement);
+const D=[['Marketing','#2f6fed'],['Sales','#17805a'],['Product','#8a45c9']];
+const pad=n=>String(n).padStart(2,'0'),ymd=d=>d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+const pd=s=>{const[a,b,c]=s.split('-');return new Date(+a,+b-1,+c)},addD=(d,n)=>new Date(d.getFullYear(),d.getMonth(),d.getDate()+n),sow=d=>addD(d,-d.getDay());
+const mins=t=>{const[a,b]=t.split(':');return +a*60+ +b},MN=['January','February','March','April','May','June','July','August','September','October','November','December'];
+function useStore(k,init){const[v,s]=useState(()=>{try{const x=localStorage.getItem(k);if(x)return JSON.parse(x)}catch(e){}return init});useEffect(()=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}},[v]);return[v,s]}
+function CopyBtn({t}){const[s,setS]=useState('Copy prompt');const go=()=>{(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>setS('Copied'),()=>setS('Copy blocked'));setTimeout(()=>setS('Copy prompt'),1800)};return html`<button class="btn alt sm noprint" onClick=${go}>${s}</button>`}
+function Asg({id,title,prompt,done,setDone,children}){return html`<div class="card"><div class="head"><span class="num">${id}</span><h3>${title}</h3><label class="chk noprint"><input type="checkbox" checked=${!!done[id]} onChange=${e=>setDone({...done,[id]:e.target.checked})}/>Done</label></div><blockquote>${prompt}<${CopyBtn} t=${prompt}/></blockquote>${children}</div>`}
+
+const TONES={Professional:'A flagship built for people who work from anywhere. A 6.7-inch adaptive display stays crisp in sunlight, a two-day battery outlasts your schedule, and the on-device assistant drafts, summarises and translates offline.',Playful:'Meet the phone that never taps out. Two days of battery, a screen that laughs at sunlight, and an assistant that writes your emails while you grab coffee.',Concise:'Techmaster X1000: 6.7" adaptive display, two-day battery, offline AI assistant, triple camera.'};
+function Tone(){const[t,setT]=useState('Professional');return html`<div><div class="row noprint" style=${{marginBottom:10}}>${Object.keys(TONES).map(k=>html`<button key=${k} class=${'btn alt'+(t===k?' on':'')} onClick=${()=>setT(k)}>${k}</button>`)}</div><p><b>Techmaster X1000.</b> ${TONES[t]}</p></div>`}
+
+const F=['Battery','Display','On-device AI','Value'],P=[['Techmaster X1000',[9,8,9,6]],['Rival A',[7,7,5,7]],['Rival B',[5,9,6,9]]];
+function Compare(){const[w,setW]=useState([3,3,3,3]);const s=w.reduce((a,x)=>a+x,0)||1,tot=P.map(p=>p[1].reduce((a,v,i)=>a+v*w[i],0)/s),best=tot.indexOf(Math.max(...tot));
+return html`<div><div class="scroll"><table><tr><th>Score /10</th>${F.map(f=>html`<th key=${f}>${f}</th>`)}</tr>${P.map(p=>html`<tr key=${p[0]}><td>${p[0]}</td>${p[1].map((v,i)=>html`<td key=${i}>${v}</td>`)}</tr>`)}</table></div>
+<div class="g noprint" style=${{margin:'12px 0'}}>${F.map((f,i)=>html`<label key=${f}>${f} importance: ${w[i]}<input type="range" min="0" max="5" value=${w[i]} onChange=${e=>setW(w.map((x,j)=>j===i?+e.target.value:x))}/></label>`)}</div>
+${P.map((p,i)=>html`<div class="bar" key=${p[0]}><span>${p[0]}</span><div><i style=${{width:tot[i]*10+'%'}}></i></div><b>${tot[i].toFixed(1)}</b></div>`)}
+<p><b>Verdict:</b> with these priorities, ${P[best][0]} comes out ahead. Move the sliders to change it. (Scores are illustrative.)</p></div>`}
+
+function fib(n){if(n<1)return[0];const s=[0,1];while(s[s.length-1]+s[s.length-2]<=n)s.push(s[s.length-1]+s[s.length-2]);return s}
+function Fib(){const[n,setN]=useState(100);const v=Math.max(0,Math.min(1e6,Math.floor(+n)||0)),s=fib(v),mx=s[s.length-1]||1;
+return html`<div><pre>${`def fibonacci(limit):
+    """Return every Fibonacci number up to and including limit."""
+    if limit < 1:
+        return [0]
+    seq = [0, 1]
+    while seq[-1] + seq[-2] <= limit:
+        seq.append(seq[-1] + seq[-2])
+    return seq`}</pre><div class="row noprint"><label>Limit</label><input type="number" style=${{width:130}} value=${n} min="0" max="1000000" onChange=${e=>setN(e.target.value)}/></div>
+<div class="fb">${s.map((x,i)=>html`<i key=${i} title=${x} style=${{height:Math.max(4,x/mx*100)+'%'}}></i>`)}</div><code style=${{wordBreak:'break-word'}}>[${s.join(', ')}]</code></div>`}
+
+function Sales(){const[r,setR]=useStore('al-sales',[['Q1',48,22],['Q2',60,24],['Q3',54,21],['Q4',76,27]]);
+const W=640,l=48,pw=W-l-24,bw=pw/r.length,mx=Math.ceil((Math.max(...r.map(x=>x[1]))+8)/20)*20,mm=Math.ceil((Math.max(...r.map(x=>x[2]))+4)/10)*10,A=[30,170],B=[272,90];
+const set=(i,j,v)=>setR(r.map((x,k)=>k===i?x.map((y,m)=>m===j?Math.max(0,+v||0):y):x));
+const g=(y0,h,max,u)=>[0,1,2,3,4].map(i=>{const y=y0+h-h*i/4;return html`<g key=${i}><line class="gl" x1=${l} x2=${W-24} y1=${y} y2=${y}/><text class="ax" x=${l-8} y=${y+4} text-anchor="end">${Math.round(max*i/4)}${u}</text></g>`});
+const pts=r.map((x,i)=>[l+i*bw+bw/2,B[0]+B[1]-B[1]*x[2]/mm]);
+return html`<div><svg viewBox="0 0 640 392" role="img" aria-label="Quarterly revenue bars and profit margin line in two panels"><text class="lab" x=${l} y="16">Revenue ($M)</text>${g(A[0],A[1],mx,'')}
+${r.map((x,i)=>{const h=A[1]*x[1]/mx,y=A[0]+A[1]-h,cx=l+i*bw+bw/2;return html`<g key=${i}><rect x=${cx-bw*.3} y=${y} width=${bw*.6} height=${h} rx="4" fill="var(--bar)"/><text class="lab" x=${cx} y=${y-6} text-anchor="middle">$${x[1]}M</text><text class="ax" x=${cx} y=${A[0]+A[1]+16} text-anchor="middle">${x[0]}</text></g>`})}
+<text class="lab" x=${l} y="254">Profit margin (%)</text>${g(B[0],B[1],mm,'%')}<polyline points=${pts.map(p=>p.join(',')).join(' ')} fill="none" stroke="var(--accent)" stroke-width="3"/>
+${pts.map((p,i)=>html`<g key=${i}><circle cx=${p[0]} cy=${p[1]} r="5" fill="var(--surface)" stroke="var(--accent)" stroke-width="3"/><text class="lab" x=${p[0]} y=${p[1]-11} text-anchor="middle" style=${{fill:'var(--accent)'}}>${r[i][2]}%</text><text class="ax" x=${p[0]} y=${B[0]+B[1]+16} text-anchor="middle">${r[i][0]}</text></g>`)}</svg>
+<div class="scroll"><table><tr><th>Quarter</th><th>Revenue ($M)</th><th>Margin (%)</th><th>Profit ($M)</th></tr>${r.map((x,i)=>html`<tr key=${i}><td>${x[0]}</td><td><input type="number" min="0" style=${{width:90}} value=${x[1]} onChange=${e=>set(i,1,e.target.value)}/></td><td><input type="number" min="0" max="100" style=${{width:90}} value=${x[2]} onChange=${e=>set(i,2,e.target.value)}/></td><td>${(x[1]*x[2]/100).toFixed(1)}</td></tr>`)}</table></div>
+<p class="lead noprint" style=${{fontSize:'.88rem'}}>Edit any number and both charts update. Figures are fictional.</p></div>`}
+
+const MS=[['Q1','Prototype','Hardware and AI chip validated'],['Q2','Beta','500 testers and a feedback loop'],['Q3','Launch','X1000 on sale worldwide'],['Q4','X1000 Pro','Camera and battery upgrade']],ST=['Planned','In progress','Done'],SC=['var(--muted)','var(--accent)','#17805a'];
+function Road(){const[st,setSt]=useStore('al-road',[2,1,0,0]);const[sel,setSel]=useState(1);
+return html`<div><svg viewBox="0 0 640 210" role="img" aria-label="Product roadmap"><line x1="40" x2="600" y1="105" y2="105" stroke="var(--line)" stroke-width="4" stroke-linecap="round"/>
+${MS.map((m,i)=>{const x=95+i*150,up=i%2===0,ty=up?58:152;return html`<g key=${i} style=${{cursor:'pointer'}} onClick=${()=>{setSel(i);setSt(st.map((v,j)=>j===i?(v+1)%3:v))}}><line x1=${x} x2=${x} y1=${up?76:105} y2=${up?105:134} stroke="var(--line)" stroke-width="2"/><circle cx=${x} cy="105" r=${i===sel?15:12} fill=${SC[st[i]]}/><text x=${x} y="109" text-anchor="middle" style=${{fill:'#fff',fontSize:'10px',fontWeight:700}}>${m[0]}</text><text class="lab" x=${x} y=${ty} text-anchor="middle">${m[1]}</text><text class="ax" x=${x} y=${ty+16} text-anchor="middle">${ST[st[i]]}</text></g>`})}</svg>
+<p><b>${MS[sel][1]}:</b> ${MS[sel][2]}. <span class="lead noprint">Click a milestone to cycle Planned, In progress, Done.</span></p></div>`}
+
+const V=['overview','assignments','calendar'],NAMES={A1:'Product description',A2:'Competitor comparison',A3:'Fibonacci function',A45:'Sales chart with margin',A6:'Product roadmap',A7:'Content calendar'},LV=[['Level 1 · Beginner',['A1','A2']],['Level 2 · Foundation',['A3']],['Level 3 · Intermediate',['A45','A6']],['Level 4 · Advanced',['A7']]];
+function Overview({done,go}){const n=Object.keys(NAMES).filter(k=>done[k]).length,t=Object.keys(NAMES).length;
+return html`<div><h1>Claude Artifacts: interactive outputs & visuals</h1><p class="lead">Six hands-on assignments built from the prompts in your notes, from beginner to advanced. Tick each one off as you finish; everything is saved in this browser.</p>
+<div class="card"><div class="head"><h3>Your progress</h3><b>${n} of ${t} complete</b></div><div class="prog"><i style=${{width:n/t*100+'%'}}></i></div></div>
+<div class="g">${LV.map(([l,ids])=>html`<div class="card" key=${l} style=${{margin:0}}><h3>${l}</h3><ul style=${{paddingLeft:0,listStyle:'none',margin:'8px 0 0'}}>${ids.map(k=>html`<li key=${k}>${done[k]?'✅':'⬜'} ${NAMES[k]}</li>`)}</ul></div>`)}</div>
+<div class="card"><h3>When an artifact is the right choice</h3><div class="scroll"><table><tr><th>Use it for</th><th>Why</th></tr><tr><td>Lengthy content (15+ lines)</td><td>Lives in its own window beside the chat</td></tr><tr><td>Self-contained work</td><td>Understandable without the conversation</td></tr><tr><td>Content you will iterate on</td><td>Version history lets you compare changes</td></tr><tr><td>Reference material</td><td>Copy, download, or add to project knowledge</td></tr></table></div></div>
+<div class="row noprint"><button class="btn" onClick=${()=>go('assignments')}>Open the assignments</button><button class="btn alt" onClick=${()=>go('calendar')}>Open the calendar</button></div></div>`}
+
+function Assignments({done,setDone,go}){const a={done,setDone};
+return html`<div><h1>Assignments</h1><p class="lead">Related prompts share a card. Fictional product: the Techmaster X1000 smartphone.</p>
+<div class="lvl"><h2>Level 1</h2><small>Beginner · document artifacts</small></div>
+<${Asg} ...${a} id="A1" title="Product description" prompt="Create a brief product description for a fictional smartphone called Techmaster X1000 as an artifact."><${Tone}/><//>
+<${Asg} ...${a} id="A2" title="Is it better than its competitors?" prompt="Explain whether the Techmaster X1000 is better than its competitors."><${Compare}/><//>
+<div class="lvl"><h2>Level 2</h2><small>Foundation · code artifacts</small></div>
+<${Asg} ...${a} id="A3" title="Fibonacci function" prompt="Create a python function that calculates the Fibonacci sequence, up to a given number and present it as a code artifact."><${Fib}/><//>
+<div class="lvl"><h2>Level 3</h2><small>Intermediate · visual artifacts</small></div>
+<${Asg} ...${a} id="A45" title="Quarterly sales, then profit margin" prompt="Create a simple bar chart showing quarterly sales for a fictional Techmaster X1000 smartphone. Include profit margin in this visualization as well."><${Sales}/><//>
+<${Asg} ...${a} id="A6" title="Product roadmap (SVG)" prompt="Create an SVG image of a simplified product roadmap for our Techmaster smartphone timeline."><${Road}/><//>
+<div class="lvl"><h2>Level 4</h2><small>Advanced · interactive artifacts</small></div>
+<${Asg} ...${a} id="A7" title="Interactive content calendar" prompt="Create an interactive content calendar where a user can click a date, add a post title, choose a department (Marketing, Sales, Product) and save it, with colour-coded departments and example entries."><p>Built as a Google Calendar-style app with month, week (timeline) and year views, time slots, filters and search.</p><button class="btn noprint" onClick=${()=>go('calendar')}>Open the calendar app</button><//></div>`}
+
+const seed=[[3,'Launch teaser video','Marketing','10:00','11:00'],[5,'Q4 pipeline review','Sales','14:00','15:30'],[10,'Release notes v2.4','Product','09:30','10:30'],[12,'Blog: AI tips','Marketing','11:00','12:00'],[12,'Customer story','Sales','15:00','16:00'],[18,'Partner webinar','Sales','16:00','17:00'],[20,'Feature demo','Product','13:00','14:00'],[24,'Black Friday promo','Marketing','09:00','10:00'],[27,'Roadmap preview','Product','11:00','12:30']].map((p,i)=>({id:i+1,t:p[1],k:p[2],date:'2026-11-'+pad(p[0]),s:p[3],e:p[4],all:false,desc:''})).concat([{id:20,t:'Year-end recap',k:'Marketing',date:'2026-12-08',s:'10:00',e:'11:00',all:false,desc:''},{id:21,t:'Q1 planning',k:'Product',date:'2027-01-12',s:'09:00',e:'12:00',all:false,desc:''}]);
+
+function Editor({ed,setEd,save,del}){const[err,setErr]=useState('');const f=(k,v)=>setEd({...ed,[k]:v});
+useEffect(()=>{const h=e=>{if(e.key==='Escape')setEd(null)};addEventListener('keydown',h);return()=>removeEventListener('keydown',h)},[]);
+const ok=()=>{if(!ed.t.trim())return setErr('Add a title');if(!ed.date)return setErr('Pick a date');if(!ed.all&&mins(ed.e)<=mins(ed.s))return setErr('End time must be after start time');save(ed)};
+return html`<div class="ov noprint" onClick=${e=>e.target===e.currentTarget&&setEd(null)}><div class="dlg" role="dialog" aria-modal="true"><h3>${ed.id?'Edit post':'New post'}</h3>
+<input type="text" placeholder="Add title" maxLength="80" autoFocus=${true} value=${ed.t} onChange=${e=>f('t',e.target.value)} onKeyDown=${e=>e.key==='Enter'&&ok()}/>
+<div class="dk">${D.map(d=>html`<button key=${d[0]} class=${ed.k===d[0]?'on':''} style=${{background:d[1]}} onClick=${()=>f('k',d[0])}>${d[0]}</button>`)}</div>
+<input type="date" value=${ed.date} onChange=${e=>f('date',e.target.value)}/><label class="chk"><input type="checkbox" checked=${ed.all} onChange=${e=>f('all',e.target.checked)}/>All day</label>
+${!ed.all&&html`<div class="row"><input type="time" style=${{flex:1}} value=${ed.s} onChange=${e=>f('s',e.target.value)}/><span>to</span><input type="time" style=${{flex:1}} value=${ed.e} onChange=${e=>f('e',e.target.value)}/></div>`}
+<textarea rows="3" placeholder="Description" value=${ed.desc} onChange=${e=>f('desc',e.target.value)}></textarea>${err&&html`<div class="err">${err}</div>`}
+<div class="row"><button class="btn" onClick=${ok}>Save</button>${ed.id?html`<button class="btn alt" onClick=${()=>del(ed.id)}>Delete</button>`:null}<button class="btn alt" onClick=${()=>setEd(null)}>Cancel</button></div></div></div>`}
+
+function Cal(){const[cur,setCur]=useState(new Date()),[view,setView]=useState('month'),[ev,setEv]=useStore('al-events',seed),[cols,setCols]=useStore('al-cols',D.map(x=>x[1])),[on,setOn]=useState({Marketing:1,Sales:1,Product:1}),[q,setQ]=useState(''),[ed,setEd]=useState(null);
+const today=new Date(),tk=ymd(today),y=cur.getFullYear(),m=cur.getMonth(),color=k=>cols[D.findIndex(d=>d[0]===k)]||cols[0];
+const vis=ev.filter(e=>on[e.k]&&e.t.toLowerCase().includes(q.toLowerCase())),day=d=>vis.filter(e=>e.date===ymd(d)).sort((a,b)=>(a.all?'':a.s).localeCompare(b.all?'':b.s));
+const sv=React.useRef(null);
+useEffect(()=>{const bp=()=>{if(!sv.current)sv.current={v:view,c:cur};flushSync(()=>{setView('month');setCur(new Date())})},ap=()=>{const s=sv.current;sv.current=null;if(s)flushSync(()=>{setView(s.v);setCur(s.c)})};addEventListener('beforeprint',bp);addEventListener('afterprint',ap);return()=>{removeEventListener('beforeprint',bp);removeEventListener('afterprint',ap)}},[view,cur]);
+const nav=n=>setCur(view==='month'?new Date(y,m+n,1):view==='week'?addD(cur,7*n):new Date(y+n,m,1));
+const newEv=(date,s='09:00')=>setEd({id:0,t:'',k:'Marketing',date,s,e:pad(Math.min(23,+s.slice(0,2)+1))+s.slice(2),all:false,desc:''});
+const save=x=>{const n={...x,t:x.t.trim(),id:x.id||Date.now()};setEv(x.id?ev.map(e=>e.id===x.id?n:e):[...ev,n]);setEd(null)};
+const del=id=>{setEv(ev.filter(e=>e.id!==id));setEd(null)};
+const ws=sow(cur),we=addD(ws,6),title=view==='month'?MN[m]+' '+y:view==='year'?String(y):ws.getDate()+' '+MN[ws.getMonth()].slice(0,3)+' – '+we.getDate()+' '+MN[we.getMonth()].slice(0,3)+' '+we.getFullYear();
+const chip=(e,t)=>html`<button key=${e.id} class="chip" title=${e.t} style=${{background:color(e.k)}} onClick=${x=>{x.stopPropagation();setEd({...e})}}>${t}</button>`;
+let body;
+if(view==='month'){const first=new Date(y,m,1),rows=Math.ceil((first.getDay()+new Date(y,m+1,0).getDate())/7),st=sow(first);
+ body=html`<${React.Fragment}><div class="dow">${['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map(d=>html`<div key=${d}>${d}</div>`)}</div><div class="days">${Array.from({length:rows*7},(_,i)=>{const d=addD(st,i),es=day(d);return html`<div key=${i} class=${'day'+(d.getMonth()!==m?' off':'')+(ymd(d)===tk?' today':'')} onClick=${()=>newEv(ymd(d))}><b>${d.getDate()}</b>${es.slice(0,3).map(e=>chip(e,(e.all?'':e.s+' ')+e.t))}${es.length>3&&html`<button class="more noprint" onClick=${x=>{x.stopPropagation();setCur(d);setView('week')}}>+${es.length-3} more</button>`}</div>`})}</div><//>`}
+else if(view==='week'){const ds=Array.from({length:7},(_,i)=>addD(ws,i)),nm=new Date().getHours()*60+new Date().getMinutes(),R=44/60;
+ body=html`<${React.Fragment}><div class="wk"><div></div>${ds.map(d=>html`<div key=${+d} class=${'wd'+(ymd(d)===tk?' today':'')}>${'SunMonTueWedThuFriSat'.slice(d.getDay()*3,d.getDay()*3+3)}<br/><b>${d.getDate()}</b></div>`)}<div class="ax" style=${{fontSize:'.65rem',padding:4}}>all-day</div>${ds.map(d=>html`<div key=${+d} class="ad">${day(d).filter(e=>e.all).map(e=>chip(e,e.t))}</div>`)}</div>
+<div class="wkb"><div class="wk"><div class="hl">${Array.from({length:17},(_,i)=>html`<div key=${i}>${pad(i+6)}:00</div>`)}</div>${ds.map(d=>{const L=day(d).filter(e=>!e.all).map((a,_,l)=>{const o=l.filter(b=>mins(b.s)<mins(a.e)&&mins(a.s)<mins(b.e));return{...a,li:o.indexOf(a),n:o.length}});
+ return html`<div key=${+d} class=${'col'+(ymd(d)===tk?' today':'')} onClick=${e=>{const r=e.currentTarget.getBoundingClientRect(),h=Math.max(6,Math.min(22,6+Math.floor((e.clientY-r.top)/44)));newEv(ymd(d),pad(h)+':00')}}>${ymd(d)===tk&&nm>=360&&nm<1380&&html`<div class="now" style=${{top:(nm-360)*R}}></div>`}${L.map(e=>html`<button key=${e.id} class="ev" style=${{background:color(e.k),top:Math.max(0,(mins(e.s)-360)*R),height:Math.max(20,(mins(e.e)-mins(e.s))*R),left:e.li*100/e.n+'%',width:100/e.n+'%'}} onClick=${x=>{x.stopPropagation();setEd({...e})}}><b>${e.s}</b> ${e.t}</button>`)}</div>`})}</div></div><//>`}
+else body=html`<div class="yr">${Array.from({length:12},(_,mo)=>{const f=new Date(y,mo,1);return html`<div key=${mo}><button class="ytl" onClick=${()=>{setCur(f);setView('month')}}>${MN[mo]}</button><div class="mini">${'SMTWTFS'.split('').map((c,i)=>html`<span class="hd" key=${i}>${c}</span>`)}${Array.from({length:f.getDay()},(_,i)=>html`<span key=${'p'+i}></span>`)}${Array.from({length:new Date(y,mo+1,0).getDate()},(_,i)=>{const d=new Date(y,mo,i+1);return html`<span key=${i} class=${(ymd(d)===tk?'today ':'')+(day(d).length?'has':'')} onClick=${()=>{setCur(d);setView('week')}}>${i+1}</span>`})}</div></div>`})}</div>`;
+return html`<div class="cw"><div class="tb noprint"><button class="btn" onClick=${()=>newEv(ymd(cur))}>+ Create</button><button class="btn alt" onClick=${()=>setCur(new Date())}>Today</button><button class="btn alt" aria-label="Previous" onClick=${()=>nav(-1)}>‹</button><button class="btn alt" aria-label="Next" onClick=${()=>nav(1)}>›</button><h2>${title}</h2><div class="seg">${['week','month','year'].map(v=>html`<button key=${v} class=${view===v?'on':''} onClick=${()=>setView(v)}>${v[0].toUpperCase()+v.slice(1)}</button>`)}</div><input type="text" placeholder="Search posts" style=${{width:170}} value=${q} onChange=${e=>setQ(e.target.value)}/></div>
+<div class="fl">${D.map((d,i)=>html`<label key=${d[0]}><input type="checkbox" checked=${!!on[d[0]]} onChange=${e=>setOn({...on,[d[0]]:e.target.checked?1:0})}/><span style=${{width:12,height:12,borderRadius:3,background:cols[i]}}></span>${d[0]}<input class="noprint" type="color" value=${cols[i]} aria-label=${d[0]+' colour'} onChange=${e=>setCols(cols.map((c,j)=>j===i?e.target.value:c))}/></label>`)}<span class="chk"><span style=${{width:12,height:12,borderRadius:3,background:'var(--accent)'}}></span>Today</span></div>
+${body}${ed&&html`<${Editor} ed=${ed} setEd=${setEd} save=${save} del=${del}/>`}</div>`}
+
+function App(){const[tab,setTab]=useState(()=>V.includes(location.hash.slice(1))?location.hash.slice(1):'overview'),[done,setDone]=useStore('al-done',{});
+useEffect(()=>{const f=()=>{const h=location.hash.slice(1);setTab(V.includes(h)?h:'overview');try{scrollTo(0,0)}catch(e){}};addEventListener('hashchange',f);return()=>removeEventListener('hashchange',f)},[]);
+const go=v=>{location.hash=v};const pr=()=>{try{print()}catch(e){}};const c=v=>'view'+(tab===v?'':' hid');
+return html`<${React.Fragment}><header><div class="logo">Artifacts<span>Lab</span></div><nav>${V.map(v=>html`<a key=${v} href=${'#'+v} class=${tab===v?'on':''}>${{overview:'Overview',assignments:'Assignments',calendar:'Calendar app'}[v]}</a>`)}</nav><button class="btn alt" onClick=${pr} title="Opens the print dialog: choose Save as PDF">Export PDF</button></header>
+<main class=${c('overview')}><${Overview} done=${done} go=${go}/></main><main class=${c('assignments')}><${Assignments} done=${done} setDone=${setDone} go=${go}/></main><main class=${'wide '+c('calendar')}><${Cal}/></main><//>`}
+ReactDOM.createRoot(document.getElementById('root')).render(html`<${App}/>`);
+</script>
+</body>
+</html>

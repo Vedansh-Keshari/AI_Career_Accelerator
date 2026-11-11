@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Artifacts Lab: Interactive Outputs & Visuals</title>
+<style>
+:root{--bg:#f7f6f2;--surface:#fff;--text:#1d1d1b;--muted:#6a6963;--line:#e2e0d8;--accent:#c4571f;--soft:#f0ede4;--bar:#2f6fed;--ln:#c4571f;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171716;--surface:#222221;--text:#f1efe8;--muted:#a3a198;--line:#383835;--accent:#ee8a55;--soft:#2b2b29;--bar:#6b9bff;--ln:#ee8a55;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#171716;--surface:#222221;--text:#f1efe8;--muted:#a3a198;--line:#383835;--accent:#ee8a55;--soft:#2b2b29;--bar:#6b9bff;--ln:#ee8a55;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surface);z-index:10}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--surface);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:20px;padding:12px 24px;flex-wrap:wrap}
+.logo{font-weight:700;letter-spacing:-.02em;font-size:1.1rem}.logo span{color:var(--accent)}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;padding:6px 14px;border-radius:20px;font-size:.92rem;font-weight:500}
+nav a.on{background:var(--text);color:var(--bg)}
+main{max-width:1000px;margin:0 auto;padding:32px 24px 64px}
+main.wide{max-width:none}
+h1{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.15;letter-spacing:-.03em;margin:0 0 12px}
+h2{font-size:1.5rem;letter-spacing:-.02em;margin:40px 0 4px}
+h3{margin:0 0 6px;font-size:1.05rem}
+.lead{color:var(--muted);font-size:1.1rem;max-width:62ch}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.stat{font-size:2rem;font-weight:700;color:var(--accent);line-height:1}
+.pill{display:inline-block;font-size:.72rem;font-weight:600;padding:2px 10px;border-radius:12px;background:var(--soft);color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.lvl{display:flex;align-items:baseline;gap:12px;margin-top:44px;border-bottom:2px solid var(--text);padding-bottom:6px}
+.lvl h2{margin:0}.lvl small{color:var(--muted)}
+.asg{margin:18px 0}
+.asg .head{display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap}
+.num{background:var(--accent);color:#fff;border-radius:8px;font-weight:700;font-size:.8rem;padding:2px 9px}
+blockquote{margin:0 0 14px;padding:10px 14px;border-left:3px solid var(--accent);background:var(--soft);border-radius:0 8px 8px 0;font-size:.93rem;color:var(--muted)}
+pre{background:#1e1e1c;color:#f1efe8;padding:14px 16px;border-radius:10px;overflow-x:auto;font:.85rem/1.5 ui-monospace,Menlo,Consolas,monospace;margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:left}
+th{background:var(--soft);font-weight:600}
+.scroll{overflow-x:auto}
+svg{width:100%;height:auto;display:block}
+.grid{stroke:var(--line);stroke-width:1}.ax{fill:var(--muted);font-size:11px}.lab{fill:var(--text);font-size:12px;font-weight:600}
+input,select,button{font:inherit}
+input[type=text],input[type=number],select{padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text)}
+.btn{background:var(--text);color:var(--bg);border:0;border-radius:8px;padding:8px 16px;font-weight:600;cursor:pointer}
+.btn.alt{background:var(--soft);color:var(--text)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+ul.tick{padding-left:20px}ul.tick li{margin:4px 0}
+/* calendar app */
+.cal-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:0 0 12px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:.88rem}
+.legend label{display:flex;gap:6px;align-items:center}
+.legend input[type=color]{width:26px;height:26px;border:0;padding:0;background:none;cursor:pointer}
+.dow,.days{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.dow div{background:var(--soft);text-align:center;font-size:.78rem;font-weight:600;padding:6px;color:var(--muted)}
+.days{height:calc(100vh - 230px);min-height:520px;grid-template-rows:repeat(5,1fr);border-top:0}
+.day{background:var(--surface);padding:5px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;gap:3px;min-width:0;min-height:0}
+.day:hover{background:var(--soft)}.day.off{background:var(--bg);cursor:default}
+.day b{font-size:.8rem;color:var(--muted);font-weight:600}
+.day.today b{background:var(--accent);color:#fff;border-radius:10px;padding:0 7px;align-self:flex-start}
+.chip{color:#fff;font-size:.72rem;padding:2px 6px;border-radius:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.more{font-size:.7rem;color:var(--muted)}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;z-index:20;padding:16px}
+.ov[hidden]{display:none}
+.dlg{background:var(--surface);border-radius:14px;padding:22px;width:min(440px,100%);max-height:90vh;overflow:auto}
+.plist{list-style:none;padding:0;margin:10px 0}
+.plist li{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:6px 10px;border-radius:6px;color:#fff;margin:4px 0;font-size:.9rem}
+.plist button{background:rgba(255,255,255,.25);border:0;color:#fff;border-radius:4px;cursor:pointer;padding:0 8px}
+@media(max-width:600px){header{padding:10px 14px}main{padding:24px 14px 48px}.chip{font-size:0;height:6px;padding:0}.days{height:calc(100vh - 260px)}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Artifacts<span>Lab</span></div>
+  <nav>
+    <a href="#home" data-v="home">Overview</a>
+    <a href="#assignments" data-v="assignments">Assignments</a>
+    <a href="#calendar" data-v="calendar">Calendar app</a>
+  </nav>
+</header>
+
+<main id="v-home">
+  <span class="pill">Course companion</span>
+  <h1>Claude Artifacts: interactive outputs & visuals</h1>
+  <p class="lead">Seven completed assignments, arranged from beginner to advanced, built from the prompts in your notes. Each one shows the prompt, the finished output and, where it helps, a table or chart.</p>
+  <div class="grid3">
+    <div class="card"><div class="stat">7</div>assignments completed</div>
+    <div class="card"><div class="stat">4</div>levels, beginner to advanced</div>
+    <div class="card"><div class="stat">1</div>working calendar app</div>
+  </div>
+  <h2>When an artifact is the right choice</h2>
+  <div class="scroll"><table>
+    <tr><th>Use it for</th><th>Why</th></tr>
+    <tr><td>Lengthy content (15+ lines)</td><td>Lives in its own window beside the chat</td></tr>
+    <tr><td>Self-contained work</td><td>Understandable without the conversation</td></tr>
+    <tr><td>Content you will iterate on</td><td>Version history lets you compare changes</td></tr>
+    <tr><td>Reference material</td><td>Copy, download, or add to project knowledge</td></tr>
+  </table></div>
+  <h2>Learning path</h2>
+  <div class="scroll"><table>
+    <tr><th>Level</th><th>Assignments</th><th>Skill</th></tr>
+    <tr><td>1 Beginner</td><td>A1–A2</td><td>Document artifacts</td></tr>
+    <tr><td>2 Foundation</td><td>A3</td><td>Code artifacts</td></tr>
+    <tr><td>3 Intermediate</td><td>A4–A6</td><td>Charts and SVG visuals</td></tr>
+    <tr><td>4 Advanced</td><td>A7</td><td>Interactive apps</td></tr>
+  </table></div>
+  <p style="margin-top:24px"><a class="btn" style="text-decoration:none;display:inline-block" href="#assignments">Start the assignments</a></p>
+</main>
+
+<main id="v-assignments" hidden>
+  <h1>Assignments</h1>
+  <p class="lead">Related prompts are grouped together. Fictional product: the Techmaster X1000 smartphone.</p>
+
+  <div class="lvl"><h2>Level 1: Beginner</h2><small>Document artifacts</small></div>
+  <div class="card asg">
+    <div class="head"><span class="num">A1</span><h3>Product description</h3></div>
+    <blockquote>Create a brief product description for a fictional smartphone called Techmaster X1000 as an artifact.</blockquote>
+    <p><b>Techmaster X1000.</b> A flagship built for people who work from anywhere. A 6.7-inch adaptive display stays crisp in sunlight, a two-day battery outlasts your schedule, and the on-device assistant drafts, summarises and translates without a connection. A pro-grade triple camera and an aluminium frame complete a phone that feels as sharp as it performs.</p>
+  </div>
+  <div class="card asg">
+    <div class="head"><span class="num">A2</span><h3>Is it better than its competitors?</h3></div>
+    <blockquote>Explain whether the Techmaster X1000 is better than its competitors.</blockquote>
+    <div class="scroll"><table>
+      <tr><th>Feature</th><th>Techmaster X1000</th><th>Rival A</th><th>Rival B</th></tr>
+      <tr><td>Battery life</td><td>Two days</td><td>1.5 days</td><td>1 day</td></tr>
+      <tr><td>Display</td><td>6.7" adaptive</td><td>6.5" fixed</td><td>6.8" adaptive</td></tr>
+      <tr><td>On-device AI</td><td>Yes</td><td>Cloud only</td><td>Limited</td></tr>
+      <tr><td>Price tier</td><td>Premium</td><td>Premium</td><td>Mid</td></tr>
+    </table></div>
+    <p><b>Verdict:</b> it leads on battery and AI, so it suits heavy mobile workers best. Rival B wins for buyers on a tighter budget. (All figures are illustrative.)</p>
+  </div>
+
+  <div class="lvl"><h2>Level 2: Foundation</h2><small>Code artifacts</small></div>
+  <div class="card asg">
+    <div class="head"><span class="num">A3</span><h3>Fibonacci function</h3></div>
+    <blockquote>Create a python function that calculates the Fibonacci sequence, up to a given number and present it as a code artifact.</blockquote>
+<pre>def fibonacci(limit):
+    """Return every Fibonacci number up to and including limit."""
+    if limit < 1:
+        return [0]
+    seq = [0, 1]
+    while seq[-1] + seq[-2] <= limit:
+        seq.append(seq[-1] + seq[-2])
+    return seq
+
+print(fibonacci(100))  # [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]</pre>
+    <div class="row"><label for="fn">Try it (limit):</label><input id="fn" type="number" value="100" min="0" max="1000000"><button class="btn" id="fgo">Run</button></div>
+    <p id="fout" style="font-family:ui-monospace,monospace;font-size:.9rem;word-break:break-word"></p>
+  </div>
+
+  <div class="lvl"><h2>Level 3: Intermediate</h2><small>Visual artifacts</small></div>
+  <div class="card asg">
+    <div class="head"><span class="num">A4</span><span class="num">A5</span><h3>Quarterly sales, then profit margin</h3></div>
+    <blockquote>Create a simple bar chart showing quarterly sales for a fictional Techmaster X1000 smartphone. Include profit margin in this visualization as well.</blockquote>
+    <div id="chart"></div>
+    <div class="scroll"><table id="stbl"></table></div>
+    <p class="lead" style="font-size:.9rem">Q4 is the strongest quarter for both revenue and margin. Q3 dipped on both. Figures are fictional.</p>
+  </div>
+  <div class="card asg">
+    <div class="head"><span class="num">A6</span><h3>Product roadmap (SVG)</h3></div>
+    <blockquote>Create an SVG image of a simplified product roadmap for our Techmaster smartphone timeline.</blockquote>
+    <div id="road"></div>
+    <p class="lead" style="font-size:.9rem">SVG stays crisp at any size and drops straight into slides or web pages.</p>
+  </div>
+
+  <div class="lvl"><h2>Level 4: Advanced</h2><small>Interactive artifacts</small></div>
+  <div class="card asg">
+    <div class="head"><span class="num">A7</span><h3>Interactive content calendar, November 2026</h3></div>
+    <blockquote>Create an interactive content calendar for November 2026 where a user can click a date, add a post title, choose a department (Marketing, Sales, Product) and save it. Colour-code departments, equal tiles, full page width and height, with example entries.</blockquote>
+    <p>Completed as a working app: click any date to add or remove posts, and change department colours from the legend.</p>
+    <a class="btn" style="text-decoration:none;display:inline-block" href="#calendar">Open the calendar app</a>
+  </div>
+</main>
+
+<main id="v-calendar" class="wide" hidden>
+  <div class="cal-top">
+    <h1 style="font-size:1.6rem;margin:0">November 2026</h1>
+    <div class="legend" id="legend"></div>
+  </div>
+  <div class="dow"><div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div></div>
+  <div class="days" id="days"></div>
+</main>
+
+<div class="ov" id="ov" hidden>
+  <div class="dlg" role="dialog" aria-modal="true" aria-labelledby="dt">
+    <h3 id="dt"></h3>
+    <ul class="plist" id="plist"></ul>
+    <div class="row" style="flex-direction:column;align-items:stretch">
+      <input type="text" id="ttl" placeholder="Post title" maxlength="80" aria-label="Post title">
+      <select id="dep" aria-label="Department"></select>
+      <div class="row"><button class="btn" id="save">Save post</button><button class="btn alt" id="close">Close</button></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const $=s=>document.querySelector(s);
+const views=['home','assignments','calendar'];
+function route(){let h=location.hash.slice(1);if(!views.includes(h))h='home';
+  views.forEach(v=>{$('#v-'+v).hidden=v!==h});
+  document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.dataset.v===h));
+  window.scrollTo(0,0);}
+addEventListener('hashchange',route);route();
+
+/* A3 Fibonacci */
+function fib(n){if(n<1)return[0];const s=[0,1];while(s[s.length-1]+s[s.length-2]<=n)s.push(s[s.length-1]+s[s.length-2]);return s}
+$('#fgo').onclick=()=>{const n=Math.floor(Number($('#fn').value));$('#fout').textContent=isNaN(n)?'Enter a number.':'['+fib(n).join(', ')+']'};
+$('#fgo').onclick();
+
+/* A4/A5 chart + table */
+const Q=['Q1','Q2','Q3','Q4'],rev=[48,60,54,76],mar=[22,24,21,27];
+(function(){const W=640,H=320,l=50,r=50,t=24,b=40,pw=W-l-r,ph=H-t-b,bw=pw/4;
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Quarterly revenue bars with profit margin line">`;
+  for(let i=0;i<=4;i++){const y=t+ph-ph*i/4;
+    s+=`<line class="grid" x1="${l}" x2="${W-r}" y1="${y}" y2="${y}"/><text class="ax" x="${l-8}" y="${y+4}" text-anchor="end">${20*i}</text><text class="ax" x="${W-r+8}" y="${y+4}">${8*i}%</text>`}
+  s+=`<text class="ax" x="${l}" y="12">Revenue ($M)</text><text class="ax" x="${W-r}" y="12" text-anchor="end">Margin</text>`;
+  const pts=[];
+  Q.forEach((q,i)=>{const x=l+i*bw+bw*.2,w=bw*.6,h=ph*rev[i]/80,y=t+ph-h,cx=x+w/2,my=t+ph-ph*mar[i]/32;
+    s+=`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="4" fill="var(--bar)"/><text class="lab" x="${cx}" y="${y-6}" text-anchor="middle">$${rev[i]}M</text><text class="ax" x="${cx}" y="${H-16}" text-anchor="middle">${q}</text>`;
+    pts.push([cx,my])});
+  s+=`<polyline points="${pts.map(p=>p.join(',')).join(' ')}" fill="none" stroke="var(--ln)" stroke-width="3"/>`;
+  pts.forEach((p,i)=>{s+=`<circle cx="${p[0]}" cy="${p[1]}" r="5" fill="var(--surface)" stroke="var(--ln)" stroke-width="3"/><text class="lab" x="${p[0]}" y="${p[1]-11}" text-anchor="middle" fill="var(--ln)" style="fill:var(--ln)">${mar[i]}%</text>`});
+  $('#chart').innerHTML=s+'</svg>';
+  $('#stbl').innerHTML='<tr><th>Quarter</th><th>Revenue ($M)</th><th>Margin</th><th>Profit ($M)</th></tr>'+Q.map((q,i)=>`<tr><td>${q}</td><td>${rev[i]}</td><td>${mar[i]}%</td><td>${(rev[i]*mar[i]/100).toFixed(1)}</td></tr>`).join('')})();
+
+/* A6 roadmap */
+(function(){const M=[['Q1','Prototype','Hardware and AI chip validated'],['Q2','Beta','500 testers, feedback loop'],['Q3','Launch','X1000 on sale worldwide'],['Q4','X1000 Pro','Camera and battery upgrade']];
+  let s='<svg viewBox="0 0 640 220" role="img" aria-label="Techmaster product roadmap"><line x1="40" x2="600" y1="110" y2="110" stroke="var(--line)" stroke-width="4" stroke-linecap="round"/>';
+  M.forEach((m,i)=>{const x=95+i*150,up=i%2===0,ty=up?64:156;
+    s+=`<line x1="${x}" x2="${x}" y1="${up?82:110}" y2="${up?110:138}" stroke="var(--line)" stroke-width="2"/><circle cx="${x}" cy="110" r="11" fill="${i==2?'var(--accent)':'var(--bar)'}"/><text x="${x}" y="114" text-anchor="middle" style="fill:#fff;font-size:10px;font-weight:700">${m[0]}</text><text class="lab" x="${x}" y="${ty}" text-anchor="middle">${m[1]}</text><text class="ax" x="${x}" y="${ty+16}" text-anchor="middle">${m[2]}</text>`});
+  $('#road').innerHTML=s+'</svg>'})();
+
+/* A7 calendar app */
+const D=[{k:'Marketing',c:'#2f6fed'},{k:'Sales',c:'#17805a'},{k:'Product',c:'#8a45c9'}];
+let posts=[[3,'Launch teaser video','Marketing'],[5,'Q4 pipeline review','Sales'],[10,'Release notes v2.4','Product'],[12,'Blog: AI tips','Marketing'],[12,'Customer story','Sales'],[18,'Partner webinar','Sales'],[20,'Feature demo','Product'],[24,'Black Friday promo','Marketing'],[27,'Roadmap preview','Product']].map((p,i)=>({id:i,d:p[0],t:p[1],k:p[2]}));
+let nid=100,sel=0;
+try{const saved=JSON.parse(localStorage.getItem('cal-nov-2026')||'null');if(saved&&saved.posts){posts=saved.posts;nid=saved.nid||100;(saved.cols||[]).forEach((c,i)=>{if(D[i])D[i].c=c})}}catch(e){}
+function persist(){try{localStorage.setItem('cal-nov-2026',JSON.stringify({posts,nid,cols:D.map(x=>x.c)}))}catch(e){}}
+const col=k=>(D.find(x=>x.k===k)||D[0]).c;
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function legend(){$('#legend').innerHTML=D.map((x,i)=>`<label><input type="color" data-i="${i}" value="${x.c}" aria-label="${x.k} colour">${x.k}</label>`).join('');
+  document.querySelectorAll('#legend input').forEach(inp=>inp.oninput=()=>{D[inp.dataset.i].c=inp.value;persist();render();paintList()})}
+function render(){const first=new Date(2026,10,1).getDay(),now=new Date();let h='';
+  for(let c=0;c<35;c++){const d=c-first+1;
+    if(d<1||d>30){h+='<div class="day off"></div>';continue}
+    const ps=posts.filter(p=>p.d===d),tod=now.getFullYear()===2026&&now.getMonth()===10&&now.getDate()===d;
+    h+=`<div class="day${tod?' today':''}" data-d="${d}" tabindex="0" role="button" aria-label="November ${d}, ${ps.length} posts"><b>${d}</b>`+ps.slice(0,3).map(p=>`<div class="chip" style="background:${col(p.k)}" title="${esc(p.t)}">${esc(p.t)}</div>`).join('')+(ps.length>3?`<div class="more">+${ps.length-3} more</div>`:'')+'</div>'}
+  $('#days').innerHTML=h;
+  document.querySelectorAll('.day[data-d]').forEach(el=>{el.onclick=()=>openDay(+el.dataset.d);el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openDay(+el.dataset.d)}}})}
+function paintList(){if(!sel)return;const ps=posts.filter(p=>p.d===sel);
+  $('#plist').innerHTML=ps.map(p=>`<li style="background:${col(p.k)}"><span>${esc(p.t)} · ${p.k}</span><button data-id="${p.id}" aria-label="Remove">×</button></li>`).join('')||'<li style="background:var(--soft);color:var(--muted)">No posts yet</li>';
+  document.querySelectorAll('#plist button').forEach(b=>b.onclick=()=>{posts=posts.filter(p=>p.id!==+b.dataset.id);persist();render();paintList()})}
+function openDay(d){sel=d;const wd=new Date(2026,10,d).toLocaleDateString('en-GB',{weekday:'long'});
+  $('#dt').textContent=`${wd}, ${d} November 2026`;$('#ttl').value='';paintList();$('#ov').hidden=false;$('#ttl').focus()}
+function closeDlg(){$('#ov').hidden=true;sel=0}
+function save(){const t=$('#ttl').value.trim();if(!t){$('#ttl').focus();return}
+  posts.push({id:nid++,d:sel,t,k:$('#dep').value});persist();render();paintList();$('#ttl').value='';$('#ttl').focus()}
+$('#dep').innerHTML=D.map(x=>`<option>${x.k}</option>`).join('');
+$('#save').onclick=save;$('#close').onclick=closeDlg;
+$('#ttl').onkeydown=e=>{if(e.key==='Enter')save()};
+$('#ov').onclick=e=>{if(e.target===$('#ov'))closeDlg()};
+addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#ov').hidden)closeDlg()});
+legend();render();
+</script>
+</body>
+</html>
