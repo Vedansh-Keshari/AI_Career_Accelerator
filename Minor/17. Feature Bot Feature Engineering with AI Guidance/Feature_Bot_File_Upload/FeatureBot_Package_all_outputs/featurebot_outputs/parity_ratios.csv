@@ -1,0 +1,37 @@
+model,attribute,metric,lowest_group,lowest,highest_group,highest,parity_ratio,gap,groups_compared,note
+Baseline,gender,selection_rate,Female,0.1023,Male,0.3387,0.302,0.2364,2,groups with n < 50 excluded
+Baseline,gender,TPR,Female,0.6327,Male,0.7379,0.8574,0.1052,2,groups with n < 50 excluded
+Baseline,gender,FPR,Female,0.0325,Male,0.1681,0.1932,0.1356,2,groups with n < 50 excluded
+Baseline,marital_status,selection_rate,Never-married,0.025,Married-civ-spouse,0.5249,0.0477,0.4999,6,groups with n < 50 excluded
+Baseline,marital_status,TPR,Never-married,0.3057,Married-civ-spouse,0.7824,0.3908,0.4767,6,groups with n < 50 excluded
+Baseline,marital_status,FPR,Widowed,0.0106,Married-civ-spouse,0.3203,0.0332,0.3097,6,groups with n < 50 excluded
+Baseline,race,selection_rate,Amer-Indian-Eskimo,0.0928,Asian-Pac-Islander,0.3288,0.2822,0.236,5,groups with n < 50 excluded
+Baseline,race,TPR,Other,0.5556,Asian-Pac-Islander,0.7949,0.6989,0.2393,5,groups with n < 50 excluded
+Baseline,race,FPR,Amer-Indian-Eskimo,0.012,Asian-Pac-Islander,0.1589,0.0758,0.1468,5,groups with n < 50 excluded
+Enhanced (no mitigation),gender,selection_rate,Female,0.1004,Male,0.3252,0.3089,0.2247,2,groups with n < 50 excluded
+Enhanced (no mitigation),gender,TPR,Female,0.6783,Male,0.7603,0.8921,0.082,2,groups with n < 50 excluded
+Enhanced (no mitigation),gender,FPR,Female,0.0244,Male,0.1392,0.175,0.1148,2,groups with n < 50 excluded
+Enhanced (no mitigation),marital_status,selection_rate,Never-married,0.0293,Married-civ-spouse,0.5,0.0587,0.4707,6,groups with n < 50 excluded
+Enhanced (no mitigation),marital_status,TPR,Widowed,0.4062,Married-civ-spouse,0.794,0.5116,0.3878,6,groups with n < 50 excluded
+Enhanced (no mitigation),marital_status,FPR,Widowed,0.0071,Married-civ-spouse,0.2665,0.0266,0.2594,6,groups with n < 50 excluded
+Enhanced (no mitigation),race,selection_rate,Other,0.0595,Asian-Pac-Islander,0.2979,0.1998,0.2384,5,groups with n < 50 excluded
+Enhanced (no mitigation),race,TPR,Other,0.4444,Asian-Pac-Islander,0.7564,0.5876,0.312,5,groups with n < 50 excluded
+Enhanced (no mitigation),race,FPR,Amer-Indian-Eskimo,0.012,Asian-Pac-Islander,0.1308,0.0921,0.1188,5,groups with n < 50 excluded
+Enhanced + M1 exclude sensitive features,gender,selection_rate,Female,0.0951,Male,0.2895,0.3286,0.1944,2,groups with n < 50 excluded
+Enhanced + M1 exclude sensitive features,gender,TPR,Female,0.6649,Male,0.7115,0.9345,0.0466,2,groups with n < 50 excluded
+Enhanced + M1 exclude sensitive features,gender,FPR,Female,0.0201,Male,0.1092,0.1843,0.0891,2,groups with n < 50 excluded
+Enhanced + M1 exclude sensitive features,marital_status,selection_rate,Never-married,0.0269,Married-civ-spouse,0.4494,0.0598,0.4225,6,groups with n < 50 excluded
+Enhanced + M1 exclude sensitive features,marital_status,TPR,Widowed,0.375,Married-civ-spouse,0.7485,0.501,0.3735,6,groups with n < 50 excluded
+Enhanced + M1 exclude sensitive features,marital_status,FPR,Married-spouse-absent,0.0,Married-civ-spouse,0.2118,0.0,0.2118,6,groups with n < 50 excluded
+Enhanced + M1 exclude sensitive features,race,selection_rate,Other,0.0595,Asian-Pac-Islander,0.2603,0.2287,0.2008,5,groups with n < 50 excluded
+Enhanced + M1 exclude sensitive features,race,TPR,Other,0.4444,Amer-Indian-Eskimo,0.7143,0.6222,0.2698,5,groups with n < 50 excluded
+Enhanced + M1 exclude sensitive features,race,FPR,Other,0.0133,Asian-Pac-Islander,0.1028,0.1297,0.0895,5,groups with n < 50 excluded
+Enhanced + M2 gender thresholds,gender,selection_rate,Female,0.1319,Male,0.3157,0.4179,0.1838,2,groups with n < 50 excluded
+Enhanced + M2 gender thresholds,gender,TPR,Male,0.7466,Female,0.7641,0.9771,0.0175,2,groups with n < 50 excluded
+Enhanced + M2 gender thresholds,gender,FPR,Female,0.0487,Male,0.1316,0.3702,0.0829,2,groups with n < 50 excluded
+Enhanced + M2 gender thresholds,marital_status,selection_rate,Never-married,0.0337,Married-civ-spouse,0.5009,0.0672,0.4672,6,groups with n < 50 excluded
+Enhanced + M2 gender thresholds,marital_status,TPR,Widowed,0.4375,Married-civ-spouse,0.792,0.5524,0.3545,6,groups with n < 50 excluded
+Enhanced + M2 gender thresholds,marital_status,FPR,Never-married,0.0104,Married-civ-spouse,0.2697,0.0385,0.2593,6,groups with n < 50 excluded
+Enhanced + M2 gender thresholds,race,selection_rate,Other,0.0714,Asian-Pac-Islander,0.3082,0.2317,0.2368,5,groups with n < 50 excluded
+Enhanced + M2 gender thresholds,race,TPR,Other,0.5556,Asian-Pac-Islander,0.7564,0.7345,0.2009,5,groups with n < 50 excluded
+Enhanced + M2 gender thresholds,race,FPR,Amer-Indian-Eskimo,0.012,Asian-Pac-Islander,0.1449,0.0832,0.1328,5,groups with n < 50 excluded

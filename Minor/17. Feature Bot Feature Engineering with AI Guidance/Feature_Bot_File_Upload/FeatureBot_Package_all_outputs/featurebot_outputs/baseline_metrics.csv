@@ -1,0 +1,4 @@
+split,AUC,PR_AUC,F1,Precision,Recall,Brier,threshold,TN,FP,FN,TP
+validation (threshold tuned on validation),0.907,0.7688,0.695,0.6621,0.7313,0.1013,0.3645,6559.0,872.0,628.0,1709.0
+validation (threshold 0.5),0.907,0.7688,0.6645,0.742,0.6016,0.1013,0.5,6942.0,489.0,931.0,1406.0
+5-fold CV on train (threshold 0.5),0.9037,0.7579,0.6513,,,,,,,,

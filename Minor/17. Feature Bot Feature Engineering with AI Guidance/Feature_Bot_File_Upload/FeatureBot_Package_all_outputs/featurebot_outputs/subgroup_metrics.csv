@@ -1,0 +1,57 @@
+model,attribute,group,n,positives,selection_rate,TPR,FPR,Precision,Recall,F1,AUC
+Baseline,gender,Female,3206,373,0.1023,0.6327,0.0325,0.7195,0.6327,0.6733,0.9409
+Baseline,gender,Male,6563,1965,0.3387,0.7379,0.1681,0.6523,0.7379,0.6925,0.8806
+Baseline,race,Amer-Indian-Eskimo,97,14,0.0928,0.5714,0.012,0.8889,0.5714,0.6957,0.9475
+Baseline,race,Asian-Pac-Islander,292,78,0.3288,0.7949,0.1589,0.6458,0.7949,0.7126,0.8841
+Baseline,race,Black,972,120,0.107,0.6333,0.0329,0.7308,0.6333,0.6786,0.9311
+Baseline,race,Other,84,9,0.0952,0.5556,0.04,0.625,0.5556,0.5882,0.92
+Baseline,race,White,8324,2117,0.2804,0.7251,0.1287,0.6577,0.7251,0.6897,0.9018
+Baseline,marital_status,Divorced,1323,137,0.0673,0.4599,0.0219,0.7079,0.4599,0.5575,0.8817
+Baseline,marital_status,Married-AF-spouse,5,3,0.6,1.0,0.0,1.0,1.0,1.0,1.0
+Baseline,marital_status,Married-civ-spouse,4464,1976,0.5249,0.7824,0.3203,0.6598,0.7824,0.7159,0.8129
+Baseline,marital_status,Married-spouse-absent,143,12,0.0629,0.5833,0.0153,0.7778,0.5833,0.6667,0.8906
+Baseline,marital_status,Never-married,3238,157,0.025,0.3057,0.0107,0.5926,0.3057,0.4034,0.9166
+Baseline,marital_status,Separated,282,21,0.0426,0.381,0.0153,0.6667,0.381,0.4848,0.9073
+Baseline,marital_status,Widowed,314,32,0.0446,0.3438,0.0106,0.7857,0.3438,0.4783,0.9317
+Enhanced (no mitigation),gender,Female,3206,373,0.1004,0.6783,0.0244,0.7857,0.6783,0.7281,0.9568
+Enhanced (no mitigation),gender,Male,6563,1965,0.3252,0.7603,0.1392,0.7001,0.7603,0.729,0.9078
+Enhanced (no mitigation),race,Amer-Indian-Eskimo,97,14,0.0928,0.5714,0.012,0.8889,0.5714,0.6957,0.9449
+Enhanced (no mitigation),race,Asian-Pac-Islander,292,78,0.2979,0.7564,0.1308,0.6782,0.7564,0.7152,0.9155
+Enhanced (no mitigation),race,Black,972,120,0.107,0.65,0.0305,0.75,0.65,0.6964,0.9482
+Enhanced (no mitigation),race,Other,84,9,0.0595,0.4444,0.0133,0.8,0.4444,0.5714,0.9422
+Enhanced (no mitigation),race,White,8324,2117,0.2704,0.7548,0.1052,0.7099,0.7548,0.7317,0.9249
+Enhanced (no mitigation),marital_status,Divorced,1323,137,0.068,0.5474,0.0126,0.8333,0.5474,0.6608,0.9082
+Enhanced (no mitigation),marital_status,Married-AF-spouse,5,3,0.8,1.0,0.5,0.75,1.0,0.8571,1.0
+Enhanced (no mitigation),marital_status,Married-civ-spouse,4464,1976,0.5,0.794,0.2665,0.703,0.794,0.7457,0.8581
+Enhanced (no mitigation),marital_status,Married-spouse-absent,143,12,0.049,0.5,0.0076,0.8571,0.5,0.6316,0.9345
+Enhanced (no mitigation),marital_status,Never-married,3238,157,0.0293,0.4522,0.0078,0.7474,0.4522,0.5635,0.938
+Enhanced (no mitigation),marital_status,Separated,282,21,0.0461,0.4762,0.0115,0.7692,0.4762,0.5882,0.9022
+Enhanced (no mitigation),marital_status,Widowed,314,32,0.0478,0.4062,0.0071,0.8667,0.4062,0.5532,0.9256
+Enhanced + M1 exclude sensitive features,gender,Female,3206,373,0.0951,0.6649,0.0201,0.8131,0.6649,0.7316,0.9523
+Enhanced + M1 exclude sensitive features,gender,Male,6563,1965,0.2895,0.7115,0.1092,0.7358,0.7115,0.7234,0.9076
+Enhanced + M1 exclude sensitive features,race,Amer-Indian-Eskimo,97,14,0.134,0.7143,0.0361,0.7692,0.7143,0.7407,0.9484
+Enhanced + M1 exclude sensitive features,race,Asian-Pac-Islander,292,78,0.2603,0.6923,0.1028,0.7105,0.6923,0.7013,0.9147
+Enhanced + M1 exclude sensitive features,race,Black,972,120,0.108,0.6583,0.0305,0.7524,0.6583,0.7022,0.9489
+Enhanced + M1 exclude sensitive features,race,Other,84,9,0.0595,0.4444,0.0133,0.8,0.4444,0.5714,0.9348
+Enhanced + M1 exclude sensitive features,race,White,8324,2117,0.241,0.7081,0.0817,0.7473,0.7081,0.7271,0.9238
+Enhanced + M1 exclude sensitive features,marital_status,Divorced,1323,137,0.0597,0.4964,0.0093,0.8608,0.4964,0.6296,0.906
+Enhanced + M1 exclude sensitive features,marital_status,Married-AF-spouse,5,3,0.6,1.0,0.0,1.0,1.0,1.0,1.0
+Enhanced + M1 exclude sensitive features,marital_status,Married-civ-spouse,4464,1976,0.4494,0.7485,0.2118,0.7373,0.7485,0.7428,0.8582
+Enhanced + M1 exclude sensitive features,marital_status,Married-spouse-absent,143,12,0.042,0.5,0.0,1.0,0.5,0.6667,0.9243
+Enhanced + M1 exclude sensitive features,marital_status,Never-married,3238,157,0.0269,0.4459,0.0055,0.8046,0.4459,0.5738,0.9364
+Enhanced + M1 exclude sensitive features,marital_status,Separated,282,21,0.039,0.381,0.0115,0.7273,0.381,0.5,0.8854
+Enhanced + M1 exclude sensitive features,marital_status,Widowed,314,32,0.0414,0.375,0.0035,0.9231,0.375,0.5333,0.9086
+Enhanced + M2 gender thresholds,gender,Female,3206,373,0.1319,0.7641,0.0487,0.6738,0.7641,0.7161,0.9568
+Enhanced + M2 gender thresholds,gender,Male,6563,1965,0.3157,0.7466,0.1316,0.708,0.7466,0.7268,0.9078
+Enhanced + M2 gender thresholds,race,Amer-Indian-Eskimo,97,14,0.0928,0.5714,0.012,0.8889,0.5714,0.6957,0.9449
+Enhanced + M2 gender thresholds,race,Asian-Pac-Islander,292,78,0.3082,0.7564,0.1449,0.6556,0.7564,0.7024,0.9155
+Enhanced + M2 gender thresholds,race,Black,972,120,0.1121,0.675,0.0329,0.7431,0.675,0.7074,0.9482
+Enhanced + M2 gender thresholds,race,Other,84,9,0.0714,0.5556,0.0133,0.8333,0.5556,0.6667,0.9422
+Enhanced + M2 gender thresholds,race,White,8324,2117,0.274,0.7553,0.1099,0.701,0.7553,0.7271,0.9249
+Enhanced + M2 gender thresholds,marital_status,Divorced,1323,137,0.0794,0.562,0.0236,0.7333,0.562,0.6364,0.9082
+Enhanced + M2 gender thresholds,marital_status,Married-AF-spouse,5,3,0.8,1.0,0.5,0.75,1.0,0.8571,1.0
+Enhanced + M2 gender thresholds,marital_status,Married-civ-spouse,4464,1976,0.5009,0.792,0.2697,0.6999,0.792,0.7431,0.8581
+Enhanced + M2 gender thresholds,marital_status,Married-spouse-absent,143,12,0.0559,0.5,0.0153,0.75,0.5,0.6,0.9345
+Enhanced + M2 gender thresholds,marital_status,Never-married,3238,157,0.0337,0.4904,0.0104,0.7064,0.4904,0.5789,0.938
+Enhanced + M2 gender thresholds,marital_status,Separated,282,21,0.0532,0.4762,0.0192,0.6667,0.4762,0.5556,0.9022
+Enhanced + M2 gender thresholds,marital_status,Widowed,314,32,0.0573,0.4375,0.0142,0.7778,0.4375,0.56,0.9256

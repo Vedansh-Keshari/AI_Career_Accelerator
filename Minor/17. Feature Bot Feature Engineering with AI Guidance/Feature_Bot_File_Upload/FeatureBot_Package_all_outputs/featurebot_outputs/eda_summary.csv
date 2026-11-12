@@ -1,0 +1,16 @@
+column,dtype,n_unique,n_missing,pct_missing,skew,top_value,top_value_share
+age,numeric,72,0,0.0,0.551,35,0.028
+workclass,categorical,8,1667,5.69,,Private,0.692
+fnlwgt,numeric,20164,0,0.0,1.315,203488,0.0
+education,categorical,16,0,0.0,,HS-grad,0.325
+educational_num,numeric,16,0,0.0,-0.321,9,0.325
+marital_status,categorical,7,0,0.0,,Married-civ-spouse,0.456
+occupation,categorical,14,1677,5.72,,Prof-specialty,0.128
+relationship,categorical,6,0,0.0,,Husband,0.401
+race,categorical,5,0,0.0,,White,0.857
+gender,categorical,2,0,0.0,,Male,0.667
+capital_gain,numeric,120,0,0.0,12.533,0,0.918
+capital_loss,numeric,94,0,0.0,4.533,0,0.953
+hours_per_week,numeric,93,0,0.0,0.232,40,0.464
+native_country,categorical,41,499,1.7,,United-States,0.897
+income,numeric,2,0,0.0,1.222,0,0.761

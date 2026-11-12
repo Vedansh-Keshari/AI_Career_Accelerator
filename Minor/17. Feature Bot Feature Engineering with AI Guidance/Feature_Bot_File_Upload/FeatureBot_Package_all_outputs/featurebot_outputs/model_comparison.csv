@@ -1,0 +1,11 @@
+model,feature_set,cv_auc_mean,cv_f1_mean,val_auc,val_f1,holdout_auc,holdout_f1
+Logistic Regression (L2),baseline features,0.9037,0.6513,0.907,0.695,0.9066,0.6897
+Logistic Regression (L2),enhanced features,0.912,0.673,0.9144,0.7057,0.9143,0.6966
+Random Forest,baseline features,0.9148,0.6761,0.9167,0.7076,0.9168,0.7099
+Random Forest,enhanced features,0.9137,0.6724,0.9163,0.7083,0.9159,0.7114
+Gradient Boosting (HistGB),baseline features,0.9258,0.7038,0.9285,0.7293,0.927,0.7222
+Gradient Boosting (HistGB),enhanced features,0.9259,0.7017,0.929,0.7311,0.9265,0.7215
+XGBoost,baseline features,0.9276,0.7074,0.9286,0.7285,0.9281,0.722
+XGBoost,enhanced features,0.9278,0.7065,0.9296,0.7345,0.9283,0.7288
+LightGBM,baseline features,0.9251,0.7048,0.928,0.7315,0.9278,0.7219
+LightGBM,enhanced features,0.9257,0.7048,0.9293,0.7336,0.9271,0.7224

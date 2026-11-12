@@ -1,0 +1,16 @@
+check,rule,result,detail
+Rows / columns,adult.csv has 15 columns,PASS,48842 rows x 15 columns
+Column names normalised,"strip, lower-case, '-' -> '_'",PASS,"age, workclass, fnlwgt, education, educational_num, marital_status, occupation, relationship, race, gender, capital_gain, capital_loss, hours_per_week, native_country, income"
+Type enforcement,"age, fnlwgt, educational_num, capital_gain, capital_loss, hours_per_week numeric",PASS,"all six columns numeric, no coercion failures"
+Missing '?' handled,"'?' -> NaN in workclass, occupation, native_country",PASS,workclass: 2799 '?' replaced; occupation: 2809 '?' replaced; native_country: 857 '?' replaced
+Target labels normalised,dotted variants '>50K.' / '<=50K.' mapped; binary 0/1,PASS,"raw labels ['<=50K', '>50K']; dotted variants found: 0; mapped to {<=50K:0, >50K:1}"
+Range: age,16 <= age <= 100,PASS,"violations: 0 (min 17, max 90)"
+Range: hours_per_week,0 <= hours_per_week <= 100,PASS,"violations: 0 (min 1, max 99)"
+Range: capital_gain,capital_gain >= 0,PASS,violations: 0
+Range: capital_loss,capital_loss >= 0,PASS,violations: 0
+Remaining missing values,"imputed inside the pipeline (train-only): categorical most frequent, numeric median",PASS,workclass: 2799; occupation: 2809; native_country: 857
+Split: train,"stratified 60/20/20, seed 42",PASS,29305 rows (60.0%); >50K rate 0.239
+Split: val,"stratified 60/20/20, seed 42",PASS,9768 rows (20.0%); >50K rate 0.239
+Split: test,"stratified 60/20/20, seed 42",PASS,9769 rows (20.0%); >50K rate 0.239
+Leakage control,imputers / encoders / scalers fitted on train only,PASS,all preprocessing and target/frequency encoders live inside sklearn Pipelines fitted on the training rows of each fold
+Holdout integrity,selection decisions never read the holdout,PASS,keep/prune decisions use 5-fold CV on train only; holdout metrics are logged for stability monitoring

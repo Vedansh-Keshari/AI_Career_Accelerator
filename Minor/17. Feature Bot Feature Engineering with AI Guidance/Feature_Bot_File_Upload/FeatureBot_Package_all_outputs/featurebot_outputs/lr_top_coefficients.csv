@@ -1,0 +1,16 @@
+feature,coefficient,abs_coefficient
+num__capital_gain,3.967,3.967
+cat__marital_status_Married-AF-spouse,1.6151,1.6151
+cat__marital_status_Married-civ-spouse,1.4965,1.4965
+cat__native_country_Columbia,-1.2755,1.2755
+cat__age_bin_<=25,-1.2754,1.2754
+cat__marital_status_Never-married,-1.1368,1.1368
+cat__hours_bin_<=30,-1.0365,1.0365
+cat__native_country_Ireland,0.9737,0.9737
+cat__native_country_South,-0.9733,0.9733
+cat__native_country_Dominican-Republic,-0.96,0.96
+cat__marital_status_Divorced,-0.8471,0.8471
+cat__relationship_Wife,0.8454,0.8454
+cat__marital_status_Separated,-0.8434,0.8434
+cat__gender_Female,-0.7821,0.7821
+cat__native_country_Haiti,0.7813,0.7813

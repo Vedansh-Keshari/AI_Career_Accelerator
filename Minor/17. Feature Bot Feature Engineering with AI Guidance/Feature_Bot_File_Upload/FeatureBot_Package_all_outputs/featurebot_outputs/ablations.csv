@@ -1,0 +1,10 @@
+ablation,features,cv_auc_mean,cv_auc_std,cv_f1_mean,cv_f1_std,val_auc,val_f1,holdout_auc,holdout_f1,delta_cv_auc_vs_final,delta_val_f1_vs_final
+kept features (reference),4,0.912,0.003,0.673,0.0064,0.9144,0.7057,0.9143,0.6966,0.0,0.0
+no engineered features (baseline),0,0.9037,0.004,0.6513,0.0118,0.907,0.695,0.9066,0.6897,-0.0083,-0.0107
+kept + all five cycle-2 interactions,9,0.9116,0.0033,0.6707,0.0071,0.914,0.7046,0.9131,0.6945,-0.0004,-0.001
+all 18 candidate features (no pruning),18,0.9119,0.0034,0.6717,0.0066,0.9145,0.7052,0.9136,0.6974,-0.0001,-0.0004
+without age_bin,3,0.909,0.0028,0.6625,0.0079,0.9121,0.698,0.9118,0.69,-0.003,-0.0077
+without capital_gain_gt0,3,0.9097,0.0035,0.6673,0.0066,0.9123,0.7054,0.9118,0.6919,-0.0023,-0.0002
+without hours_bin,3,0.9107,0.0035,0.6671,0.0093,0.9137,0.7077,0.9133,0.6958,-0.0013,0.002
+without occupation_catboost,3,0.9114,0.003,0.67,0.0074,0.9136,0.7047,0.9138,0.6986,-0.0006,-0.001
+without bins (age_bin + hours_bin),2,0.9074,0.0034,0.6611,0.0083,0.9111,0.6984,0.9106,0.6962,-0.0046,-0.0072

@@ -1,0 +1,7 @@
+model,AUC,PR_AUC,F1,Precision,Recall,Brier,threshold,TN,FP,FN,TP
+"Baseline: Logistic Regression, raw columns (train+val fit)",0.9068,0.7698,0.6888,0.6618,0.7181,0.1014,0.3645,6573,858,659,1679
+Enhanced LR: FeatureBot features only (train+val fit),0.9145,0.7918,0.6994,0.6541,0.7515,0.0968,0.3477,6502,929,581,1757
+Enhanced model of record: XGBoost - sensitive features excluded (M1) (train+val fit),0.9283,0.8324,0.7234,0.7501,0.6985,0.0873,0.4319,6887,544,705,1633
+Baseline (threshold 0.5),0.9068,0.7698,0.6588,0.7392,0.5941,0.1014,0.5,6941,490,949,1389
+Enhanced LR (threshold 0.5),0.9145,0.7918,0.6774,0.7618,0.6099,0.0968,0.5,6985,446,912,1426
+Enhanced model of record (threshold 0.5),0.9283,0.8324,0.7132,0.7975,0.645,0.0873,0.5,7048,383,830,1508
