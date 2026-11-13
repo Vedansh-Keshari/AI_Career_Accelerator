@@ -1,0 +1,52 @@
+{
+  "persona": "thought_leader",
+  "name": "Meera Kapoor (Sample)",
+  "email": "meera.sample@example.com",
+  "google_email": "meera.sample@example.com",
+  "linkedin_url": "https://www.linkedin.com/in/meera-kapoor-sample",
+  "taplio_account": "meera.sample@example.com",
+  "current_role": "Founder",
+  "company": "Clearpath Analytics",
+  "industry": "data and AI consulting",
+  "years_experience": "9",
+  "skills": "Data Strategy, AI Adoption, Analytics Leadership, Storytelling with Data",
+  "target_audience": "founders and heads of data at mid-size companies",
+  "goal": "Grow authority and generate three or more qualified inbound conversations a month",
+  "target_roles": "",
+  "offer": "AI adoption workshops for mid-size companies",
+  "tone": "Direct and analytical",
+  "pillars": [
+    "career_insights",
+    "thought_leadership",
+    "personal_journey",
+    "industry_trends",
+    "actionable_tips"
+  ],
+  "story_win": "A workshop I ran helped a 60-person company launch its first AI-assisted reporting process in three weeks.",
+  "story_mistake": "I once built a beautiful data roadmap that nobody owned, and it stalled in the first month.",
+  "story_lesson": "A plan without a named owner is just a document.",
+  "achievements": "Ran 25 AI adoption workshops for mid-size teams\nAdvised 9 founders on first-year data strategy\nSpoke at 4 industry meetups",
+  "role_models": "Sample Founder A | https://www.linkedin.com/in/sample-founder-a | Contrarian takes backed by one example\nSample Author B | https://www.linkedin.com/in/sample-author-b | Weekly series with a recognisable format\nSample Speaker C | https://www.linkedin.com/in/sample-speaker-c | Carousels that get saved and shared",
+  "current_headline": "Founder at Clearpath Analytics",
+  "current_about": "I help companies use data and AI. Message me if you want to talk.",
+  "followers": 3200,
+  "connections": 2100,
+  "posts_per_month_now": 5,
+  "checks": {
+    "photo": true,
+    "banner": true,
+    "custom_url": true,
+    "featured": true,
+    "skills_15": true,
+    "recs_3": true,
+    "experience_metrics": false,
+    "visibility": true
+  },
+  "days": [
+    "Tuesday",
+    "Thursday",
+    "Saturday"
+  ],
+  "time": "08:00",
+  "timezone": "Asia/Kolkata"
+}

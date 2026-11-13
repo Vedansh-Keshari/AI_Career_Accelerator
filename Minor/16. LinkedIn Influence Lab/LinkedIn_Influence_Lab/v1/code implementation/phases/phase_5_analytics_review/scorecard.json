@@ -1,0 +1,19 @@
+{
+  "parts": {
+    "Content Quality & Relevance": {
+      "weight": 30,
+      "score": 93.3
+    },
+    "Personal Branding Alignment": {
+      "weight": 15,
+      "score": 100.0
+    },
+    "Documentation & Clarity": {
+      "weight": 10,
+      "score": 100.0
+    }
+  },
+  "total": 96.4,
+  "provisional": true,
+  "covered_weight": 55
+}

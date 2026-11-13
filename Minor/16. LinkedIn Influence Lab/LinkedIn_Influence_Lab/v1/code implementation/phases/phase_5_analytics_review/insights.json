@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "🏆",
+    "finding": "'Actionable Tips' is your strongest pillar (0.0% engagement).",
+    "action": "Raise its share of the next calendar by about 10 points; keep the others for range."
+  },
+  {
+    "icon": "📝",
+    "finding": "Text post posts perform best (0.0%).",
+    "action": "Use this format at least twice a week; test a new hook style inside it."
+  },
+  {
+    "icon": "📆",
+    "finding": "Monday posts lead on engagement.",
+    "action": "Move one more post to Monday (same time of day) and compare."
+  },
+  {
+    "icon": "⚠️",
+    "finding": "Overall engagement is 0.0% (below the 2% rule of thumb).",
+    "action": "Mitigation - low engagement: shorten hooks, end with a direct question, test an earlier posting time."
+  }
+]

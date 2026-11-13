@@ -1,0 +1,3 @@
+1. Open Google Drive > New > File upload, choose calendar_for_google_sheets.csv
+2. Right-click > Open with > Google Sheets
+3. Share with: (add your Google email in Inputs)

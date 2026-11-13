@@ -1,0 +1,149 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//LinkedIn Influence Lab//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:S01-2026-11-16@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261116T083000
+DTEND;TZID=Asia/Kolkata:20261116T090000
+SUMMARY:LinkedIn post: How I tailor my application for Business Intelligence Analyst in 20 minutes
+DESCRIPTION:Actionable Tips | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S02-2026-11-18@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261118T083000
+DTEND;TZID=Asia/Kolkata:20261118T090000
+SUMMARY:LinkedIn post: Why I am building my personal brand in public
+DESCRIPTION:Personal Journey | poll
+END:VEVENT
+BEGIN:VEVENT
+UID:S03-2026-11-20@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261120T083000
+DTEND;TZID=Asia/Kolkata:20261120T090000
+SUMMARY:LinkedIn post: The project that best proves I can do Business Intelligence Analyst
+DESCRIPTION:Career Insights | micro_story
+END:VEVENT
+BEGIN:VEVENT
+UID:S04-2026-11-23@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261123T083000
+DTEND;TZID=Asia/Kolkata:20261123T090000
+SUMMARY:LinkedIn post: The skill gap in data analytics that nobody is hiring for loudly
+DESCRIPTION:Industry Trends | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S05-2026-11-25@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261125T083000
+DTEND;TZID=Asia/Kolkata:20261125T090000
+SUMMARY:LinkedIn post: How I would make a recruiter's job easier when hiring for Business Intelligence Analyst
+DESCRIPTION:Actionable Tips | poll
+END:VEVENT
+BEGIN:VEVENT
+UID:S06-2026-11-27@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261127T083000
+DTEND;TZID=Asia/Kolkata:20261127T090000
+SUMMARY:LinkedIn post: A lesson from a failure nobody saw
+DESCRIPTION:Personal Journey | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S07-2026-11-30@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261130T083000
+DTEND;TZID=Asia/Kolkata:20261130T090000
+SUMMARY:LinkedIn post: 3 skills that quietly separate good Data Analysts from great ones
+DESCRIPTION:Career Insights | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S08-2026-12-02@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261202T083000
+DTEND;TZID=Asia/Kolkata:20261202T090000
+SUMMARY:LinkedIn post: The 15-minute habit that improved my Excel fastest
+DESCRIPTION:Actionable Tips | micro_story
+END:VEVENT
+BEGIN:VEVENT
+UID:S09-2026-12-04@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261204T083000
+DTEND;TZID=Asia/Kolkata:20261204T090000
+SUMMARY:LinkedIn post: What the latest wave of AI tools means for Data Analysts
+DESCRIPTION:Industry Trends | carousel
+END:VEVENT
+BEGIN:VEVENT
+UID:S10-2026-12-07@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261207T083000
+DTEND;TZID=Asia/Kolkata:20261207T090000
+SUMMARY:LinkedIn post: What a bad day at work taught me about Excel
+DESCRIPTION:Personal Journey | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S11-2026-12-09@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261209T083000
+DTEND;TZID=Asia/Kolkata:20261209T090000
+SUMMARY:LinkedIn post: Do this before you hit send: a quick quality check for hiring managers and early-career analysts
+DESCRIPTION:Actionable Tips | poll
+END:VEVENT
+BEGIN:VEVENT
+UID:S12-2026-12-11@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261211T083000
+DTEND;TZID=Asia/Kolkata:20261211T090000
+SUMMARY:LinkedIn post: How I decide whether a new opportunity is worth a yes
+DESCRIPTION:Career Insights | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S13-2026-12-14@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261214T083000
+DTEND;TZID=Asia/Kolkata:20261214T090000
+SUMMARY:LinkedIn post: A small win this month that reminded me why I chose data analytics
+DESCRIPTION:Personal Journey | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S14-2026-12-16@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261216T083000
+DTEND;TZID=Asia/Kolkata:20261216T090000
+SUMMARY:LinkedIn post: How I structure my week to protect deep work
+DESCRIPTION:Actionable Tips | micro_story
+END:VEVENT
+BEGIN:VEVENT
+UID:S15-2026-12-18@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261218T083000
+DTEND;TZID=Asia/Kolkata:20261218T090000
+SUMMARY:LinkedIn post: I read a lot about data analytics this week. Three ideas worth your time.
+DESCRIPTION:Industry Trends | carousel
+END:VEVENT
+BEGIN:VEVENT
+UID:S16-2026-12-21@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261221T083000
+DTEND;TZID=Asia/Kolkata:20261221T090000
+SUMMARY:LinkedIn post: Visibility beats busyness: what 2 years in data analytics taught me about getting noticed
+DESCRIPTION:Career Insights | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S17-2026-12-23@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261223T083000
+DTEND;TZID=Asia/Kolkata:20261223T090000
+SUMMARY:LinkedIn post: What my job search taught me about telling my own story
+DESCRIPTION:Personal Journey | poll
+END:VEVENT
+BEGIN:VEVENT
+UID:S18-2026-12-25@linkedin-influence-lab
+DTSTAMP:20261112T165545Z
+DTSTART;TZID=Asia/Kolkata:20261225T083000
+DTEND;TZID=Asia/Kolkata:20261225T090000
+SUMMARY:LinkedIn post: Steal this structure for your next data analytics project update
+DESCRIPTION:Actionable Tips | text
+END:VEVENT
+END:VCALENDAR

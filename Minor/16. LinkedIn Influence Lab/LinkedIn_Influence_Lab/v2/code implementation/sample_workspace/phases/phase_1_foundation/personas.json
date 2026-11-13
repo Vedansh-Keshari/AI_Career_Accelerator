@@ -1,0 +1,74 @@
+[
+  {
+    "key": "professional",
+    "label": "Working Professional",
+    "emoji": "💼",
+    "color": "#4F46E5",
+    "story": "I want a guided content workflow so that I can post consistently and grow my personal brand.",
+    "goal": "Visibility and credibility inside my niche.",
+    "kpis": [
+      "Impressions",
+      "Comments",
+      "Profile visits"
+    ],
+    "days": "Tue, Wed, Thu",
+    "mix": {
+      "Career Insights": "29%",
+      "Thought Leadership": "24%",
+      "Industry Trends": "24%",
+      "Actionable Tips": "24%"
+    },
+    "formats": "text > micro_story > text > poll > carousel > text",
+    "headline": "Senior Operations Analyst at Northwind Logistics | Helping operations and supply chain professionals with Excel | SQL · Power BI",
+    "sample_hook": "How I earned trust on my team as a Senior Operations Analyst",
+    "slots": 18
+  },
+  {
+    "key": "job_seeker",
+    "label": "Job Seeker",
+    "emoji": "🎯",
+    "color": "#EC4899",
+    "story": "I want to optimize my LinkedIn presence so that I attract recruiters and opportunities.",
+    "goal": "Recruiter attention, interviews and inbound opportunities.",
+    "kpis": [
+      "Profile visits",
+      "Recruiter messages",
+      "Connection requests"
+    ],
+    "days": "Mon, Wed, Fri",
+    "mix": {
+      "Actionable Tips": "33%",
+      "Personal Journey": "28%",
+      "Career Insights": "22%",
+      "Industry Trends": "17%"
+    },
+    "formats": "text > micro_story > carousel > text > poll > text",
+    "headline": "Senior Operations Analyst | Excel · SQL · Power BI | Open to Senior Operations Analyst",
+    "sample_hook": "How I tailor my application for Senior Operations Analyst in 20 minutes",
+    "slots": 18
+  },
+  {
+    "key": "thought_leader",
+    "label": "Thought Leader / Entrepreneur",
+    "emoji": "🚀",
+    "color": "#F97316",
+    "story": "I want to scale influence by using AI to generate impactful content aligned with my brand voice.",
+    "goal": "Authority, followers, shares and inbound leads.",
+    "kpis": [
+      "Followers gained",
+      "Shares",
+      "Inbound leads"
+    ],
+    "days": "Tue, Thu, Sat",
+    "mix": {
+      "Thought Leadership": "33%",
+      "Industry Trends": "28%",
+      "Actionable Tips": "22%",
+      "Personal Journey": "17%"
+    },
+    "formats": "text > carousel > micro_story > text > poll > carousel",
+    "headline": "Excel | Helping operations and supply chain professionals win with Excel | Writing on supply chain analytics",
+    "sample_hook": "The myth about Excel that holds operations and supply chain professionals back",
+    "slots": 18
+  }
+]

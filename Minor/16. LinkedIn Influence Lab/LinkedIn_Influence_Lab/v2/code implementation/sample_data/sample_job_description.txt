@@ -1,0 +1,16 @@
+Business Intelligence Analyst (sample posting written for this app)
+
+We are looking for a Business Intelligence Analyst to join our retail analytics team. You will build and maintain dashboards in Power BI, write SQL queries to prepare data, and automate recurring reports with Python. You will work with merchandising and store operations to turn sales data into clear recommendations, and present insights to non-technical stakeholders.
+
+What you will do
+- Build dashboards and KPI reports that leaders use every week
+- Write SQL to extract, clean and model data from several sources
+- Run A/B tests and explain the results in plain language
+- Automate manual reporting with Python or Excel
+- Partner with stakeholders to define metrics and data quality checks
+
+What we look for
+- 1 to 3 years of experience in analytics or a related field
+- Strong SQL, Power BI and Excel skills
+- Experience communicating findings to stakeholders
+- Familiarity with data modelling and A/B testing is a plus

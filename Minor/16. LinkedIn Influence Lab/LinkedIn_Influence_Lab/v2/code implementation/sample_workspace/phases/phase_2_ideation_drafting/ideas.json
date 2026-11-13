@@ -1,0 +1,195 @@
+{
+  "ideas": [
+    {
+      "id": "I01",
+      "pillar": "career_insights",
+      "format": "text",
+      "slot_id": "S01",
+      "hook": "How I earned trust on my team as a Senior Operations Analyst",
+      "angle": "trust",
+      "source": "template"
+    },
+    {
+      "id": "I02",
+      "pillar": "thought_leadership",
+      "format": "poll",
+      "slot_id": "S02",
+      "hook": "If I were starting in supply chain analytics today, I would bet on Excel",
+      "angle": "advice with a bet",
+      "source": "template"
+    },
+    {
+      "id": "I03",
+      "pillar": "industry_trends",
+      "format": "micro_story",
+      "slot_id": "S03",
+      "hook": "A trend in supply chain analytics that looks small today and big in a year",
+      "angle": "early signal",
+      "source": "template"
+    },
+    {
+      "id": "I04",
+      "pillar": "actionable_tips",
+      "format": "poll",
+      "slot_id": "S04",
+      "hook": "Steal this structure for your next supply chain analytics project update",
+      "angle": "template",
+      "source": "template"
+    },
+    {
+      "id": "I05",
+      "pillar": "personal_journey",
+      "format": "carousel",
+      "slot_id": "S05",
+      "hook": "Why I am building my personal brand in public",
+      "angle": "why I post",
+      "source": "template"
+    },
+    {
+      "id": "I06",
+      "pillar": "career_insights",
+      "format": "text",
+      "slot_id": "S06",
+      "hook": "3 skills that quietly separate good Senior Operations Analysts from great ones",
+      "angle": "skills list",
+      "source": "template"
+    },
+    {
+      "id": "I07",
+      "pillar": "industry_trends",
+      "format": "text",
+      "slot_id": "S07",
+      "hook": "The skill gap in supply chain analytics that nobody is hiring for loudly",
+      "angle": "skills gap",
+      "source": "template"
+    },
+    {
+      "id": "I08",
+      "pillar": "thought_leadership",
+      "format": "micro_story",
+      "slot_id": "S08",
+      "hook": "The best Senior Operations Analysts I know do one thing differently",
+      "angle": "observation",
+      "source": "template"
+    },
+    {
+      "id": "I09",
+      "pillar": "actionable_tips",
+      "format": "text",
+      "slot_id": "S09",
+      "hook": "How to explain Excel to a non-expert in 30 seconds",
+      "angle": "communication",
+      "source": "template"
+    },
+    {
+      "id": "I10",
+      "pillar": "career_insights",
+      "format": "poll",
+      "slot_id": "S10",
+      "hook": "Visibility beats busyness: what 6 years in supply chain analytics taught me about getting noticed",
+      "angle": "career growth",
+      "source": "template"
+    },
+    {
+      "id": "I11",
+      "pillar": "personal_journey",
+      "format": "carousel",
+      "slot_id": "S11",
+      "hook": "A small win this month that reminded me why I chose supply chain analytics",
+      "angle": "win",
+      "source": "template"
+    },
+    {
+      "id": "I12",
+      "pillar": "industry_trends",
+      "format": "text",
+      "slot_id": "S12",
+      "hook": "Tools operations and supply chain professionals are quietly adopting in supply chain analytics",
+      "angle": "tool watch",
+      "source": "template"
+    },
+    {
+      "id": "I13",
+      "pillar": "thought_leadership",
+      "format": "text",
+      "slot_id": "S13",
+      "hook": "Hot take: consistency beats brilliance in supply chain analytics",
+      "angle": "opinion",
+      "source": "template"
+    },
+    {
+      "id": "I14",
+      "pillar": "actionable_tips",
+      "format": "micro_story",
+      "slot_id": "S14",
+      "hook": "The 15-minute habit that improved my Excel fastest",
+      "angle": "habit",
+      "source": "template"
+    },
+    {
+      "id": "I15",
+      "pillar": "career_insights",
+      "format": "text",
+      "slot_id": "S15",
+      "hook": "The career move that looked like a step back but was not",
+      "angle": "story with lesson",
+      "source": "template"
+    },
+    {
+      "id": "I16",
+      "pillar": "personal_journey",
+      "format": "poll",
+      "slot_id": "S16",
+      "hook": "How I got my first real break in supply chain analytics",
+      "angle": "origin story",
+      "source": "template"
+    },
+    {
+      "id": "I17",
+      "pillar": "industry_trends",
+      "format": "carousel",
+      "slot_id": "S17",
+      "hook": "Where supply chain analytics hiring is heading and how to prepare",
+      "angle": "hiring outlook",
+      "source": "template"
+    },
+    {
+      "id": "I18",
+      "pillar": "thought_leadership",
+      "format": "text",
+      "slot_id": "S18",
+      "hook": "The myth about Excel that holds operations and supply chain professionals back",
+      "angle": "myth-busting",
+      "source": "template"
+    },
+    {
+      "id": "I19",
+      "pillar": "actionable_tips",
+      "format": "text",
+      "slot_id": null,
+      "hook": "A meeting habit that saved my team hours every week",
+      "angle": "habit",
+      "source": "template"
+    },
+    {
+      "id": "I20",
+      "pillar": "career_insights",
+      "format": "text",
+      "slot_id": null,
+      "hook": "Why I stopped chasing job titles and started chasing problems",
+      "angle": "mindset shift",
+      "source": "template"
+    },
+    {
+      "id": "I21",
+      "pillar": "industry_trends",
+      "format": "text",
+      "slot_id": null,
+      "hook": "What changed in supply chain analytics over the last 12 months, in plain English",
+      "angle": "recap",
+      "source": "template"
+    }
+  ],
+  "source": "Template engine",
+  "warning": ""
+}

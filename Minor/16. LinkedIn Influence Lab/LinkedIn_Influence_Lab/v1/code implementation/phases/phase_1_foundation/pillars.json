@@ -1,0 +1,55 @@
+{
+  "persona": "job_seeker",
+  "pillars": [
+    {
+      "key": "actionable_tips",
+      "label": "Actionable Tips",
+      "weight": 0.3333,
+      "posts": 6,
+      "desc": "Checklists, templates and habits people can use today.",
+      "examples": [
+        "5 minutes a day on Excel: the routine that actually stuck",
+        "A simple checklist I use before every Data Analyst deliverable",
+        "How to explain Excel to a non-expert in 30 seconds"
+      ]
+    },
+    {
+      "key": "personal_journey",
+      "label": "Personal Journey",
+      "weight": 0.2778,
+      "posts": 5,
+      "desc": "Honest stories: wins, mistakes and what you are learning.",
+      "examples": [
+        "My biggest mistake as a Data Analyst (and the lesson I still use)",
+        "A small win this month that reminded me why I chose data analytics",
+        "How I got my first real break in data analytics"
+      ]
+    },
+    {
+      "key": "career_insights",
+      "label": "Career Insights",
+      "weight": 0.2222,
+      "posts": 4,
+      "desc": "Hard-won lessons about growth, promotions and decisions.",
+      "examples": [
+        "The best career advice I ignored for years (and what finally changed my mind)",
+        "Visibility beats busyness: what 2 years in data analytics taught me about getting noticed",
+        "Nobody tells hiring managers and early-career analysts this about moving from junior to senior in data analytics"
+      ]
+    },
+    {
+      "key": "industry_trends",
+      "label": "Industry Trends",
+      "weight": 0.1667,
+      "posts": 3,
+      "desc": "What is changing in your field, explained in plain English.",
+      "examples": [
+        "3 shifts in data analytics that hiring managers and early-career analysts should watch this quarter",
+        "What the latest wave of AI tools means for Data Analysts",
+        "The skill gap in data analytics that nobody is hiring for loudly"
+      ]
+    }
+  ],
+  "posts_per_week": 3,
+  "persona_goal": "Recruiter attention, interviews and inbound opportunities."
+}

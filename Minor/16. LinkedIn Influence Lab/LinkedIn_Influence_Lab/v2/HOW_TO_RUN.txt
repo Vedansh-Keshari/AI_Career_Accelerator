@@ -1,0 +1,66 @@
+LINKEDIN INFLUENCE LAB  -  HOW TO RUN
+=====================================
+
+WHAT YOU NEED
+  * Python 3.10 or newer (python.org).  Windows: tick "Add python.exe to PATH".
+  * An internet connection for the first run (installs packages).
+  * Optional: OpenAI or Anthropic API key, Taplio free account, Google account.
+
+START THE APP (WINDOWS)
+  1. Unzip the folder anywhere.
+  2. Double-click  run_app.bat
+     (first run creates .venv and installs packages, about a minute).
+  3. Your browser opens the app. If not, go to http://localhost:8501
+
+START THE APP (MAC / LINUX)
+  1. Open a terminal in the project folder.
+  2. Run:  ./run_app.sh      (or:  bash run_app.sh)
+
+START THE APP (MANUAL, ANY SYSTEM)
+  python -m pip install -r requirements.txt
+  python -m streamlit run app.py
+
+FIRST 10 MINUTES
+  1. Left menu > "Inputs & Onboarding" > fill in your details > Save.
+     (Try "Load sample inputs" to see an example.)
+  2. Optional: "Plugins" > pick ChatGPT or Claude and paste your API key.
+  3. "Command Center" > "Run full pipeline".
+  4. Open "Phase 2" to review and edit drafts; tick "Human reviewed".
+  5. Open "Deliverables & Backups" to download everything.
+
+WHERE THINGS ARE SAVED
+  deliverables/   client-ready files, one folder per set
+  phases/         working output of each phase
+  backups/        a zip after every phase run
+  logs/lil.log    first place to look if something fails
+  Full map:       docs/03_PROJECT_STRUCTURE_GUIDE.md
+
+RUN THE TESTS (OPTIONAL)
+  python -m pip install pytest
+  python -m pytest tests -q
+
+STOP THE APP
+  Close the black window, or press Ctrl+C in it.
+
+PUT IT ONLINE (OPTIONAL, FOR REVIEWERS)
+  Push the folder to GitHub and deploy app.py on Streamlit Community Cloud.
+  Do NOT upload data/inputs/plugins.json (API keys).
+
+PROBLEMS?  docs/06_TROUBLESHOOTING_FAQ.md
+
+
+NEW IN VERSION 1.1
+==================
+SAMPLE WORKSPACE
+  The first time the app opens it shows a complete fictional example (left sidebar:
+  "Sample data"). Click through every page to see what a finished project looks like.
+  Choose "My workspace" in the sidebar to start with your own data.
+
+ADMIN ACCESS
+  Left sidebar > "Admin access". The first person creates a passcode (8+ characters).
+  Admins can open the Folder map and the project structure guide.
+  For hosted deployments set the environment variable LIL_ADMIN_PASSCODE instead.
+  Forgot it? Stop the app, delete data/admin.json, start again.
+
+BACKUPS
+  Details of snapshots, restore and storage: docs/07_BACKUP_AND_RESTORE.md

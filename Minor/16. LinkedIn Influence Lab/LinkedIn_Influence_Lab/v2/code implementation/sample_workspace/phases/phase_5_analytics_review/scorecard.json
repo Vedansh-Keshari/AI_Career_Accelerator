@@ -1,0 +1,27 @@
+{
+  "parts": {
+    "Content Quality & Relevance": {
+      "weight": 30,
+      "score": 91.3
+    },
+    "Consistency of Posting": {
+      "weight": 25,
+      "score": 100.0
+    },
+    "Engagement Growth": {
+      "weight": 20,
+      "score": 49.7
+    },
+    "Personal Branding Alignment": {
+      "weight": 15,
+      "score": 93.9
+    },
+    "Documentation & Clarity": {
+      "weight": 10,
+      "score": 100.0
+    }
+  },
+  "total": 86.4,
+  "provisional": false,
+  "covered_weight": 100
+}

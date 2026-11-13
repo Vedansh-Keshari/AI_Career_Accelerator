@@ -1,0 +1,149 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//LinkedIn Influence Lab//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:S01-2026-10-13@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261013T083000
+DTEND;TZID=Asia/Kolkata:20261013T090000
+SUMMARY:LinkedIn post: How I earned trust on my team as a Senior Operations Analyst
+DESCRIPTION:Career Insights | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S02-2026-10-14@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261014T083000
+DTEND;TZID=Asia/Kolkata:20261014T090000
+SUMMARY:LinkedIn post: If I were starting in supply chain analytics today\, I would bet on Excel
+DESCRIPTION:Thought Leadership | poll
+END:VEVENT
+BEGIN:VEVENT
+UID:S03-2026-10-15@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261015T083000
+DTEND;TZID=Asia/Kolkata:20261015T090000
+SUMMARY:LinkedIn post: A trend in supply chain analytics that looks small today and big in a year
+DESCRIPTION:Industry Trends | micro_story
+END:VEVENT
+BEGIN:VEVENT
+UID:S04-2026-10-20@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261020T083000
+DTEND;TZID=Asia/Kolkata:20261020T090000
+SUMMARY:LinkedIn post: Steal this structure for your next supply chain analytics project update
+DESCRIPTION:Actionable Tips | poll
+END:VEVENT
+BEGIN:VEVENT
+UID:S05-2026-10-21@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261021T083000
+DTEND;TZID=Asia/Kolkata:20261021T090000
+SUMMARY:LinkedIn post: Why I am building my personal brand in public
+DESCRIPTION:Personal Journey | carousel
+END:VEVENT
+BEGIN:VEVENT
+UID:S06-2026-10-22@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261022T083000
+DTEND;TZID=Asia/Kolkata:20261022T090000
+SUMMARY:LinkedIn post: 3 skills that quietly separate good Senior Operations Analysts from great ones
+DESCRIPTION:Career Insights | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S07-2026-10-27@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261027T083000
+DTEND;TZID=Asia/Kolkata:20261027T090000
+SUMMARY:LinkedIn post: The skill gap in supply chain analytics that nobody is hiring for loudly
+DESCRIPTION:Industry Trends | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S08-2026-10-28@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261028T083000
+DTEND;TZID=Asia/Kolkata:20261028T090000
+SUMMARY:LinkedIn post: The best Senior Operations Analysts I know do one thing differently
+DESCRIPTION:Thought Leadership | micro_story
+END:VEVENT
+BEGIN:VEVENT
+UID:S09-2026-10-29@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261029T083000
+DTEND;TZID=Asia/Kolkata:20261029T090000
+SUMMARY:LinkedIn post: How to explain Excel to a non-expert in 30 seconds
+DESCRIPTION:Actionable Tips | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S10-2026-11-03@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261103T083000
+DTEND;TZID=Asia/Kolkata:20261103T090000
+SUMMARY:LinkedIn post: Visibility beats busyness: what 6 years in supply chain analytics taught me about getting noticed
+DESCRIPTION:Career Insights | poll
+END:VEVENT
+BEGIN:VEVENT
+UID:S11-2026-11-04@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261104T083000
+DTEND;TZID=Asia/Kolkata:20261104T090000
+SUMMARY:LinkedIn post: A small win this month that reminded me why I chose supply chain analytics
+DESCRIPTION:Personal Journey | carousel
+END:VEVENT
+BEGIN:VEVENT
+UID:S12-2026-11-05@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261105T083000
+DTEND;TZID=Asia/Kolkata:20261105T090000
+SUMMARY:LinkedIn post: Tools operations and supply chain professionals are quietly adopting in supply chain analytics
+DESCRIPTION:Industry Trends | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S13-2026-11-10@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261110T083000
+DTEND;TZID=Asia/Kolkata:20261110T090000
+SUMMARY:LinkedIn post: Hot take: consistency beats brilliance in supply chain analytics
+DESCRIPTION:Thought Leadership | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S14-2026-11-11@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261111T083000
+DTEND;TZID=Asia/Kolkata:20261111T090000
+SUMMARY:LinkedIn post: The 15-minute habit that improved my Excel fastest
+DESCRIPTION:Actionable Tips | micro_story
+END:VEVENT
+BEGIN:VEVENT
+UID:S15-2026-11-12@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261112T083000
+DTEND;TZID=Asia/Kolkata:20261112T090000
+SUMMARY:LinkedIn post: The career move that looked like a step back but was not
+DESCRIPTION:Career Insights | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S16-2026-11-17@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261117T083000
+DTEND;TZID=Asia/Kolkata:20261117T090000
+SUMMARY:LinkedIn post: How I got my first real break in supply chain analytics
+DESCRIPTION:Personal Journey | poll
+END:VEVENT
+BEGIN:VEVENT
+UID:S17-2026-11-18@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261118T083000
+DTEND;TZID=Asia/Kolkata:20261118T090000
+SUMMARY:LinkedIn post: Where supply chain analytics hiring is heading and how to prepare
+DESCRIPTION:Industry Trends | carousel
+END:VEVENT
+BEGIN:VEVENT
+UID:S18-2026-11-19@linkedin-influence-lab
+DTSTAMP:20261113T151025Z
+DTSTART;TZID=Asia/Kolkata:20261119T083000
+DTEND;TZID=Asia/Kolkata:20261119T090000
+SUMMARY:LinkedIn post: The myth about Excel that holds operations and supply chain professionals back
+DESCRIPTION:Thought Leadership | text
+END:VEVENT
+END:VCALENDAR

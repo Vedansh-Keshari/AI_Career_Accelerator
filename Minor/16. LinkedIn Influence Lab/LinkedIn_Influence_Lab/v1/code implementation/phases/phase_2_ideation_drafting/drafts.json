@@ -1,0 +1,496 @@
+[
+  {
+    "idea_id": "I01",
+    "slot_id": "S01",
+    "pillar": "actionable_tips",
+    "format": "text",
+    "hook": "How I tailor my application for Business Intelligence Analyst in 20 minutes",
+    "body": "How I tailor my application for Business Intelligence Analyst in 20 minutes\n\nSaving you the trial and error I went through.\n\n1. Pick one thing. Do it for 5 minutes daily for two weeks. Then review.\n2. Write the outcome you want in one sentence before starting any task.\n3. End every update with the decision you need from the reader.\n\nFrom my own experience: I rebuilt a weekly sales report as a Power BI dashboard and cut the prep time from 4 hours to 30 minutes.\n\nI am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.",
+    "hashtags": [
+      "CareerTips",
+      "DataAnalytics",
+      "Excel",
+      "ProfessionalDevelopment"
+    ],
+    "source": "template",
+    "id": "D01",
+    "text": "How I tailor my application for Business Intelligence Analyst in 20 minutes\n\nSaving you the trial and error I went through.\n\n1. Pick one thing. Do it for 5 minutes daily for two weeks. Then review.\n2. Write the outcome you want in one sentence before starting any task.\n3. End every update with the decision you need from the reader.\n\nFrom my own experience: I rebuilt a weekly sales report as a Power BI dashboard and cut the prep time from 4 hours to 30 minutes.\n\nI am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.\n\n#CareerTips #DataAnalytics #Excel #ProfessionalDevelopment",
+    "quality": 100,
+    "issues": [],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I02",
+    "slot_id": "S02",
+    "pillar": "personal_journey",
+    "format": "poll",
+    "hook": "Why I am building my personal brand in public",
+    "body": "Why I am building my personal brand in public\n\nReal talk, since honesty works better than polish.\n\nAsking for help earlier would have saved me weeks.\n\nVote in the poll below, then tell me why in the comments.",
+    "hashtags": [
+      "PersonalBranding",
+      "DataAnalytics",
+      "Excel",
+      "LessonsLearned"
+    ],
+    "source": "template",
+    "poll": {
+      "question": "What do you share least on LinkedIn?",
+      "options": [
+        "Failures",
+        "Wins",
+        "Opinions",
+        "Behind the scenes"
+      ]
+    },
+    "id": "D02",
+    "text": "Why I am building my personal brand in public\n\nReal talk, since honesty works better than polish.\n\nAsking for help earlier would have saved me weeks.\n\nVote in the poll below, then tell me why in the comments.\n\n#PersonalBranding #DataAnalytics #Excel #LessonsLearned",
+    "quality": 88,
+    "issues": [
+      "Short post (208 chars). Aim for 250+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I03",
+    "slot_id": "S03",
+    "pillar": "career_insights",
+    "format": "micro_story",
+    "hook": "The project that best proves I can do Business Intelligence Analyst",
+    "body": "The project that best proves I can do Business Intelligence Analyst\n\nHere is the short version:\nA 5-minute data check before sharing saves hours of explaining later.\n\nWhat it taught me:\nPut numbers on your wins: time saved, errors cut, revenue added.\n\nIf you are hiring managers and early-career analysts, take this with you:\nBuild relationships before you need them. It is far easier than it sounds.\n\nIf this resonated, let us connect. I am always happy to swap notes.",
+    "hashtags": [
+      "CareerGrowth",
+      "DataAnalytics",
+      "Excel",
+      "CareerAdvice"
+    ],
+    "source": "template",
+    "id": "D03",
+    "text": "The project that best proves I can do Business Intelligence Analyst\n\nHere is the short version:\nA 5-minute data check before sharing saves hours of explaining later.\n\nWhat it taught me:\nPut numbers on your wins: time saved, errors cut, revenue added.\n\nIf you are hiring managers and early-career analysts, take this with you:\nBuild relationships before you need them. It is far easier than it sounds.\n\nIf this resonated, let us connect. I am always happy to swap notes.\n\n#CareerGrowth #DataAnalytics #Excel #CareerAdvice",
+    "quality": 100,
+    "issues": [],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I04",
+    "slot_id": "S04",
+    "pillar": "industry_trends",
+    "format": "text",
+    "hook": "The skill gap in data analytics that nobody is hiring for loudly",
+    "body": "The skill gap in data analytics that nobody is hiring for loudly\n\nI spend a lot of time watching how data analytics is moving. Here is what stands out.\n\n→ Teams are shifting from owning tools to owning outcomes.\n→ Employers are asking for Excel alongside the usual job description.\n→ AI is moving from experiment to everyday workflow in data analytics.\n\nI am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.",
+    "hashtags": [
+      "FutureOfWork",
+      "DataAnalytics",
+      "Excel",
+      "Trends"
+    ],
+    "source": "template",
+    "id": "D04",
+    "text": "The skill gap in data analytics that nobody is hiring for loudly\n\nI spend a lot of time watching how data analytics is moving. Here is what stands out.\n\n→ Teams are shifting from owning tools to owning outcomes.\n→ Employers are asking for Excel alongside the usual job description.\n→ AI is moving from experiment to everyday workflow in data analytics.\n\nI am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.\n\n#FutureOfWork #DataAnalytics #Excel #Trends",
+    "quality": 88,
+    "issues": [
+      "Short post (444 chars). Aim for 500+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I05",
+    "slot_id": "S05",
+    "pillar": "actionable_tips",
+    "format": "poll",
+    "hook": "How I would make a recruiter's job easier when hiring for Business Intelligence Analyst",
+    "body": "How I would make a recruiter's job easier when hiring for Business Intelligence Analyst\n\nThis takes minutes, and it works.\n\nEnd every update with the decision you need from the reader.\n\nVote in the poll below, then tell me why in the comments.",
+    "hashtags": [
+      "CareerTips",
+      "DataAnalytics",
+      "Excel",
+      "ProfessionalDevelopment"
+    ],
+    "source": "template",
+    "poll": {
+      "question": "Which habit would you try first?",
+      "options": [
+        "Weekly wins log",
+        "5-minute practice",
+        "Deep-work block",
+        "Teach-back"
+      ]
+    },
+    "id": "D05",
+    "text": "How I would make a recruiter's job easier when hiring for Business Intelligence Analyst\n\nThis takes minutes, and it works.\n\nEnd every update with the decision you need from the reader.\n\nVote in the poll below, then tell me why in the comments.\n\n#CareerTips #DataAnalytics #Excel #ProfessionalDevelopment",
+    "quality": 88,
+    "issues": [
+      "Short post (243 chars). Aim for 250+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I06",
+    "slot_id": "S06",
+    "pillar": "personal_journey",
+    "format": "text",
+    "hook": "A lesson from a failure nobody saw",
+    "body": "A lesson from a failure nobody saw\n\nHere is the short version of a longer story.\n\n→ I am still learning this, and that is exactly why I am sharing it.\n→ The people who helped me most did it without being asked.\n→ Progress rarely looks like progress while it is happening.\n\nFrom my own experience: I rebuilt a weekly sales report as a Power BI dashboard and cut the prep time from 4 hours to 30 minutes.\n\nIf this resonated, let us connect. I am always happy to swap notes.",
+    "hashtags": [
+      "PersonalBranding",
+      "DataAnalytics",
+      "Excel",
+      "LessonsLearned"
+    ],
+    "source": "template",
+    "id": "D06",
+    "text": "A lesson from a failure nobody saw\n\nHere is the short version of a longer story.\n\n→ I am still learning this, and that is exactly why I am sharing it.\n→ The people who helped me most did it without being asked.\n→ Progress rarely looks like progress while it is happening.\n\nFrom my own experience: I rebuilt a weekly sales report as a Power BI dashboard and cut the prep time from 4 hours to 30 minutes.\n\nIf this resonated, let us connect. I am always happy to swap notes.\n\n#PersonalBranding #DataAnalytics #Excel #LessonsLearned",
+    "quality": 88,
+    "issues": [
+      "Short post (471 chars). Aim for 500+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I07",
+    "slot_id": "S07",
+    "pillar": "career_insights",
+    "format": "text",
+    "hook": "3 skills that quietly separate good Data Analysts from great ones",
+    "body": "3 skills that quietly separate good Data Analysts from great ones\n\nI have been thinking about this a lot while working as a Data Analyst in data analytics.\n\n→ Write down what you shipped every Friday. Visibility starts with a record.\n→ Say yes to problems, not titles. Problems build the reputation.\n→ Ask for feedback before the review cycle, not during it.\n\nFrom my own experience: I once sent a report without checking duplicate rows, and the totals were wrong until a teammate caught it.\n\nI am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.",
+    "hashtags": [
+      "CareerGrowth",
+      "DataAnalytics",
+      "Excel",
+      "CareerAdvice"
+    ],
+    "source": "template",
+    "id": "D07",
+    "text": "3 skills that quietly separate good Data Analysts from great ones\n\nI have been thinking about this a lot while working as a Data Analyst in data analytics.\n\n→ Write down what you shipped every Friday. Visibility starts with a record.\n→ Say yes to problems, not titles. Problems build the reputation.\n→ Ask for feedback before the review cycle, not during it.\n\nFrom my own experience: I once sent a report without checking duplicate rows, and the totals were wrong until a teammate caught it.\n\nI am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.\n\n#CareerGrowth #DataAnalytics #Excel #CareerAdvice",
+    "quality": 100,
+    "issues": [],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I08",
+    "slot_id": "S08",
+    "pillar": "actionable_tips",
+    "format": "micro_story",
+    "hook": "The 15-minute habit that improved my Excel fastest",
+    "body": "The 15-minute habit that improved my Excel fastest\n\nHere is the short version:\nA 5-minute data check before sharing saves hours of explaining later.\n\nWhat it taught me:\nEnd every update with the decision you need from the reader.\n\nIf you are hiring managers and early-career analysts, take this with you:\nKeep a running list of questions. Answer one every morning.\n\nWhat would you add to this list? Recruiters and peers, I would value your view.",
+    "hashtags": [
+      "CareerTips",
+      "DataAnalytics",
+      "Excel",
+      "ProfessionalDevelopment"
+    ],
+    "source": "template",
+    "id": "D08",
+    "text": "The 15-minute habit that improved my Excel fastest\n\nHere is the short version:\nA 5-minute data check before sharing saves hours of explaining later.\n\nWhat it taught me:\nEnd every update with the decision you need from the reader.\n\nIf you are hiring managers and early-career analysts, take this with you:\nKeep a running list of questions. Answer one every morning.\n\nWhat would you add to this list? Recruiters and peers, I would value your view.\n\n#CareerTips #DataAnalytics #Excel #ProfessionalDevelopment",
+    "quality": 100,
+    "issues": [],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I09",
+    "slot_id": "S09",
+    "pillar": "industry_trends",
+    "format": "carousel",
+    "hook": "What the latest wave of AI tools means for Data Analysts",
+    "body": "What the latest wave of AI tools means for Data Analysts\n\nI turned this into a short carousel so you can save it for later. Swipe through.\n\nIf this resonated, let us connect. I am always happy to swap notes.",
+    "hashtags": [
+      "FutureOfWork",
+      "DataAnalytics",
+      "Excel",
+      "Trends"
+    ],
+    "source": "template",
+    "slides": [
+      {
+        "title": "What the latest wave of AI tools means for Data Analysts",
+        "body": "A quick guide for hiring managers and early-career analysts"
+      },
+      {
+        "title": "Teams are shifting from owning tools to owning outcomes",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Employers are asking for Excel alongside the usual job description",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "AI is moving from experiment to everyday workflow in data analytics",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Communication and judgment are becoming the differentiators",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "The gap between demand for Excel and people who can actually do it is real",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Your turn",
+        "body": "If this resonated, let us connect. I am always happy to swap notes."
+      }
+    ],
+    "id": "D09",
+    "text": "What the latest wave of AI tools means for Data Analysts\n\nI turned this into a short carousel so you can save it for later. Swipe through.\n\nIf this resonated, let us connect. I am always happy to swap notes.\n\n#FutureOfWork #DataAnalytics #Excel #Trends",
+    "quality": 88,
+    "issues": [
+      "Short post (207 chars). Aim for 250+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I10",
+    "slot_id": "S10",
+    "pillar": "personal_journey",
+    "format": "text",
+    "hook": "What a bad day at work taught me about Excel",
+    "body": "What a bad day at work taught me about Excel\n\nI do not share this often, but it is worth sharing.\n\n→ Progress rarely looks like progress while it is happening.\n→ The mistake taught me more than the win ever did.\n→ Asking for help earlier would have saved me weeks.\n\nFrom my own experience: Trained 5 teammates on pivot tables\n\nI am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.",
+    "hashtags": [
+      "PersonalBranding",
+      "DataAnalytics",
+      "Excel",
+      "LessonsLearned"
+    ],
+    "source": "template",
+    "id": "D10",
+    "text": "What a bad day at work taught me about Excel\n\nI do not share this often, but it is worth sharing.\n\n→ Progress rarely looks like progress while it is happening.\n→ The mistake taught me more than the win ever did.\n→ Asking for help earlier would have saved me weeks.\n\nFrom my own experience: Trained 5 teammates on pivot tables\n\nI am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.\n\n#PersonalBranding #DataAnalytics #Excel #LessonsLearned",
+    "quality": 88,
+    "issues": [
+      "Short post (417 chars). Aim for 500+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I11",
+    "slot_id": "S11",
+    "pillar": "actionable_tips",
+    "format": "poll",
+    "hook": "Do this before you hit send: a quick quality check for hiring managers and early-career analysts",
+    "body": "Do this before you hit send: a quick quality check for hiring managers and early-career analysts\n\nThis takes minutes, and it works.\n\nEnd every update with the decision you need from the reader.\n\nVote in the poll below, then tell me why in the comments.",
+    "hashtags": [
+      "CareerTips",
+      "DataAnalytics",
+      "Excel",
+      "ProfessionalDevelopment"
+    ],
+    "source": "template",
+    "poll": {
+      "question": "Which habit would you try first?",
+      "options": [
+        "Weekly wins log",
+        "5-minute practice",
+        "Deep-work block",
+        "Teach-back"
+      ]
+    },
+    "id": "D11",
+    "text": "Do this before you hit send: a quick quality check for hiring managers and early-career analysts\n\nThis takes minutes, and it works.\n\nEnd every update with the decision you need from the reader.\n\nVote in the poll below, then tell me why in the comments.\n\n#CareerTips #DataAnalytics #Excel #ProfessionalDevelopment",
+    "quality": 100,
+    "issues": [],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I12",
+    "slot_id": "S12",
+    "pillar": "career_insights",
+    "format": "text",
+    "hook": "How I decide whether a new opportunity is worth a yes",
+    "body": "How I decide whether a new opportunity is worth a yes\n\nA quick reflection from my own career so far.\n\n→ Put numbers on your wins: time saved, errors cut, revenue added.\n→ Build relationships before you need them. It is far easier than it sounds.\n→ Write down what you shipped every Friday. Visibility starts with a record.\n\nFrom my own experience: I once sent a report without checking duplicate rows, and the totals were wrong until a teammate caught it.\n\nIf this resonated, let us connect. I am always happy to swap notes.",
+    "hashtags": [
+      "CareerGrowth",
+      "DataAnalytics",
+      "Excel",
+      "CareerAdvice"
+    ],
+    "source": "template",
+    "id": "D12",
+    "text": "How I decide whether a new opportunity is worth a yes\n\nA quick reflection from my own career so far.\n\n→ Put numbers on your wins: time saved, errors cut, revenue added.\n→ Build relationships before you need them. It is far easier than it sounds.\n→ Write down what you shipped every Friday. Visibility starts with a record.\n\nFrom my own experience: I once sent a report without checking duplicate rows, and the totals were wrong until a teammate caught it.\n\nIf this resonated, let us connect. I am always happy to swap notes.\n\n#CareerGrowth #DataAnalytics #Excel #CareerAdvice",
+    "quality": 100,
+    "issues": [],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I13",
+    "slot_id": "S13",
+    "pillar": "personal_journey",
+    "format": "text",
+    "hook": "A small win this month that reminded me why I chose data analytics",
+    "body": "A small win this month that reminded me why I chose data analytics\n\nI do not share this often, but it is worth sharing.\n\n→ Progress rarely looks like progress while it is happening.\n→ The mistake taught me more than the win ever did.\n→ Asking for help earlier would have saved me weeks.\n\nFrom my own experience: A 5-minute data check before sharing saves hours of explaining later.\n\nI am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.",
+    "hashtags": [
+      "PersonalBranding",
+      "DataAnalytics",
+      "Excel",
+      "LessonsLearned"
+    ],
+    "source": "template",
+    "id": "D13",
+    "text": "A small win this month that reminded me why I chose data analytics\n\nI do not share this often, but it is worth sharing.\n\n→ Progress rarely looks like progress while it is happening.\n→ The mistake taught me more than the win ever did.\n→ Asking for help earlier would have saved me weeks.\n\nFrom my own experience: A 5-minute data check before sharing saves hours of explaining later.\n\nI am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.\n\n#PersonalBranding #DataAnalytics #Excel #LessonsLearned",
+    "quality": 88,
+    "issues": [
+      "Short post (473 chars). Aim for 500+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I14",
+    "slot_id": "S14",
+    "pillar": "actionable_tips",
+    "format": "micro_story",
+    "hook": "How I structure my week to protect deep work",
+    "body": "How I structure my week to protect deep work\n\nHere is the short version:\nAutomated a monthly report, saving about 12 hours a month\n\nWhat it taught me:\nEnd every update with the decision you need from the reader.\n\nIf you are hiring managers and early-career analysts, take this with you:\nKeep a running list of questions. Answer one every morning.\n\nWhat would you add to this list? Recruiters and peers, I would value your view.",
+    "hashtags": [
+      "CareerTips",
+      "DataAnalytics",
+      "Excel",
+      "ProfessionalDevelopment"
+    ],
+    "source": "template",
+    "id": "D14",
+    "text": "How I structure my week to protect deep work\n\nHere is the short version:\nAutomated a monthly report, saving about 12 hours a month\n\nWhat it taught me:\nEnd every update with the decision you need from the reader.\n\nIf you are hiring managers and early-career analysts, take this with you:\nKeep a running list of questions. Answer one every morning.\n\nWhat would you add to this list? Recruiters and peers, I would value your view.\n\n#CareerTips #DataAnalytics #Excel #ProfessionalDevelopment",
+    "quality": 100,
+    "issues": [],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I15",
+    "slot_id": "S15",
+    "pillar": "industry_trends",
+    "format": "carousel",
+    "hook": "I read a lot about data analytics this week. Three ideas worth your time.",
+    "body": "I read a lot about data analytics this week. Three ideas worth your time.\n\nI turned this into a short carousel so you can save it for later. Swipe through.\n\nIf this resonated, let us connect. I am always happy to swap notes.",
+    "hashtags": [
+      "FutureOfWork",
+      "DataAnalytics",
+      "Excel",
+      "Trends"
+    ],
+    "source": "template",
+    "slides": [
+      {
+        "title": "I read a lot about data analytics this week. Three ideas worth your time.",
+        "body": "A quick guide for hiring managers and early-career analysts"
+      },
+      {
+        "title": "Teams are shifting from owning tools to owning outcomes",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Employers are asking for Excel alongside the usual job description",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "AI is moving from experiment to everyday workflow in data analytics",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Communication and judgment are becoming the differentiators",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "The gap between demand for Excel and people who can actually do it is real",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Your turn",
+        "body": "If this resonated, let us connect. I am always happy to swap notes."
+      }
+    ],
+    "id": "D15",
+    "text": "I read a lot about data analytics this week. Three ideas worth your time.\n\nI turned this into a short carousel so you can save it for later. Swipe through.\n\nIf this resonated, let us connect. I am always happy to swap notes.\n\n#FutureOfWork #DataAnalytics #Excel #Trends",
+    "quality": 88,
+    "issues": [
+      "Short post (224 chars). Aim for 250+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I16",
+    "slot_id": "S16",
+    "pillar": "career_insights",
+    "format": "text",
+    "hook": "Visibility beats busyness: what 2 years in data analytics taught me about getting noticed",
+    "body": "Visibility beats busyness: what 2 years in data analytics taught me about getting noticed\n\nI have been thinking about this a lot while working as a Data Analyst in data analytics.\n\n→ Write down what you shipped every Friday. Visibility starts with a record.\n→ Say yes to problems, not titles. Problems build the reputation.\n→ Ask for feedback before the review cycle, not during it.\n\nFrom my own experience: I rebuilt a weekly sales report as a Power BI dashboard and cut the prep time from 4 hours to 30 minutes.\n\nI am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.",
+    "hashtags": [
+      "CareerGrowth",
+      "DataAnalytics",
+      "Excel",
+      "CareerAdvice"
+    ],
+    "source": "template",
+    "id": "D16",
+    "text": "Visibility beats busyness: what 2 years in data analytics taught me about getting noticed\n\nI have been thinking about this a lot while working as a Data Analyst in data analytics.\n\n→ Write down what you shipped every Friday. Visibility starts with a record.\n→ Say yes to problems, not titles. Problems build the reputation.\n→ Ask for feedback before the review cycle, not during it.\n\nFrom my own experience: I rebuilt a weekly sales report as a Power BI dashboard and cut the prep time from 4 hours to 30 minutes.\n\nI am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.\n\n#CareerGrowth #DataAnalytics #Excel #CareerAdvice",
+    "quality": 100,
+    "issues": [],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I17",
+    "slot_id": "S17",
+    "pillar": "personal_journey",
+    "format": "poll",
+    "hook": "What my job search taught me about telling my own story",
+    "body": "What my job search taught me about telling my own story\n\nReal talk, since honesty works better than polish.\n\nAsking for help earlier would have saved me weeks.\n\nVote in the poll below, then tell me why in the comments.",
+    "hashtags": [
+      "PersonalBranding",
+      "DataAnalytics",
+      "Excel",
+      "LessonsLearned"
+    ],
+    "source": "template",
+    "poll": {
+      "question": "What is your biggest learning source?",
+      "options": [
+        "Mistakes",
+        "Mentors",
+        "Books and courses",
+        "Side projects"
+      ]
+    },
+    "id": "D17",
+    "text": "What my job search taught me about telling my own story\n\nReal talk, since honesty works better than polish.\n\nAsking for help earlier would have saved me weeks.\n\nVote in the poll below, then tell me why in the comments.\n\n#PersonalBranding #DataAnalytics #Excel #LessonsLearned",
+    "quality": 88,
+    "issues": [
+      "Short post (218 chars). Aim for 250+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I18",
+    "slot_id": "S18",
+    "pillar": "actionable_tips",
+    "format": "text",
+    "hook": "Steal this structure for your next data analytics project update",
+    "body": "Steal this structure for your next data analytics project update\n\nSimple, practical, and you can try it today.\n\n1. Teach it to someone else. If you cannot explain it, you do not own it yet.\n2. Block 90 minutes of deep work on your calendar and defend it.\n3. Pick one thing. Do it for 5 minutes daily for two weeks. Then review.\n\nFrom my own experience: A 5-minute data check before sharing saves hours of explaining later.\n\nIf this resonated, let us connect. I am always happy to swap notes.",
+    "hashtags": [
+      "CareerTips",
+      "DataAnalytics",
+      "Excel",
+      "ProfessionalDevelopment"
+    ],
+    "source": "template",
+    "id": "D18",
+    "text": "Steal this structure for your next data analytics project update\n\nSimple, practical, and you can try it today.\n\n1. Teach it to someone else. If you cannot explain it, you do not own it yet.\n2. Block 90 minutes of deep work on your calendar and defend it.\n3. Pick one thing. Do it for 5 minutes daily for two weeks. Then review.\n\nFrom my own experience: A 5-minute data check before sharing saves hours of explaining later.\n\nIf this resonated, let us connect. I am always happy to swap notes.\n\n#CareerTips #DataAnalytics #Excel #ProfessionalDevelopment",
+    "quality": 88,
+    "issues": [
+      "Short post (491 chars). Aim for 500+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  }
+]

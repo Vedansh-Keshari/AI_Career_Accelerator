@@ -1,0 +1,195 @@
+{
+  "ideas": [
+    {
+      "id": "I01",
+      "pillar": "actionable_tips",
+      "format": "text",
+      "slot_id": "S01",
+      "hook": "How I tailor my application for Business Intelligence Analyst in 20 minutes",
+      "angle": "process",
+      "source": "template"
+    },
+    {
+      "id": "I02",
+      "pillar": "personal_journey",
+      "format": "poll",
+      "slot_id": "S02",
+      "hook": "Why I am building my personal brand in public",
+      "angle": "why I post",
+      "source": "template"
+    },
+    {
+      "id": "I03",
+      "pillar": "career_insights",
+      "format": "micro_story",
+      "slot_id": "S03",
+      "hook": "The project that best proves I can do Business Intelligence Analyst",
+      "angle": "proof of work",
+      "source": "template"
+    },
+    {
+      "id": "I04",
+      "pillar": "industry_trends",
+      "format": "text",
+      "slot_id": "S04",
+      "hook": "The skill gap in data analytics that nobody is hiring for loudly",
+      "angle": "skills gap",
+      "source": "template"
+    },
+    {
+      "id": "I05",
+      "pillar": "actionable_tips",
+      "format": "poll",
+      "slot_id": "S05",
+      "hook": "How I would make a recruiter's job easier when hiring for Business Intelligence Analyst",
+      "angle": "recruiter view",
+      "source": "template"
+    },
+    {
+      "id": "I06",
+      "pillar": "personal_journey",
+      "format": "text",
+      "slot_id": "S06",
+      "hook": "A lesson from a failure nobody saw",
+      "angle": "lesson",
+      "source": "template"
+    },
+    {
+      "id": "I07",
+      "pillar": "career_insights",
+      "format": "text",
+      "slot_id": "S07",
+      "hook": "3 skills that quietly separate good Data Analysts from great ones",
+      "angle": "skills list",
+      "source": "template"
+    },
+    {
+      "id": "I08",
+      "pillar": "actionable_tips",
+      "format": "micro_story",
+      "slot_id": "S08",
+      "hook": "The 15-minute habit that improved my Excel fastest",
+      "angle": "habit",
+      "source": "template"
+    },
+    {
+      "id": "I09",
+      "pillar": "industry_trends",
+      "format": "carousel",
+      "slot_id": "S09",
+      "hook": "What the latest wave of AI tools means for Data Analysts",
+      "angle": "AI impact",
+      "source": "template"
+    },
+    {
+      "id": "I10",
+      "pillar": "personal_journey",
+      "format": "text",
+      "slot_id": "S10",
+      "hook": "What a bad day at work taught me about Excel",
+      "angle": "lesson",
+      "source": "template"
+    },
+    {
+      "id": "I11",
+      "pillar": "actionable_tips",
+      "format": "poll",
+      "slot_id": "S11",
+      "hook": "Do this before you hit send: a quick quality check for hiring managers and early-career analysts",
+      "angle": "checklist",
+      "source": "template"
+    },
+    {
+      "id": "I12",
+      "pillar": "career_insights",
+      "format": "text",
+      "slot_id": "S12",
+      "hook": "How I decide whether a new opportunity is worth a yes",
+      "angle": "decision framework",
+      "source": "template"
+    },
+    {
+      "id": "I13",
+      "pillar": "personal_journey",
+      "format": "text",
+      "slot_id": "S13",
+      "hook": "A small win this month that reminded me why I chose data analytics",
+      "angle": "win",
+      "source": "template"
+    },
+    {
+      "id": "I14",
+      "pillar": "actionable_tips",
+      "format": "micro_story",
+      "slot_id": "S14",
+      "hook": "How I structure my week to protect deep work",
+      "angle": "productivity",
+      "source": "template"
+    },
+    {
+      "id": "I15",
+      "pillar": "industry_trends",
+      "format": "carousel",
+      "slot_id": "S15",
+      "hook": "I read a lot about data analytics this week. Three ideas worth your time.",
+      "angle": "curated reading",
+      "source": "template"
+    },
+    {
+      "id": "I16",
+      "pillar": "career_insights",
+      "format": "text",
+      "slot_id": "S16",
+      "hook": "Visibility beats busyness: what 2 years in data analytics taught me about getting noticed",
+      "angle": "career growth",
+      "source": "template"
+    },
+    {
+      "id": "I17",
+      "pillar": "personal_journey",
+      "format": "poll",
+      "slot_id": "S17",
+      "hook": "What my job search taught me about telling my own story",
+      "angle": "job search lesson",
+      "source": "template"
+    },
+    {
+      "id": "I18",
+      "pillar": "actionable_tips",
+      "format": "text",
+      "slot_id": "S18",
+      "hook": "Steal this structure for your next data analytics project update",
+      "angle": "template",
+      "source": "template"
+    },
+    {
+      "id": "I19",
+      "pillar": "personal_journey",
+      "format": "text",
+      "slot_id": null,
+      "hook": "My biggest mistake as a Data Analyst (and the lesson I still use)",
+      "angle": "mistake",
+      "source": "template"
+    },
+    {
+      "id": "I20",
+      "pillar": "actionable_tips",
+      "format": "text",
+      "slot_id": null,
+      "hook": "A simple checklist I use before every Data Analyst deliverable",
+      "angle": "checklist",
+      "source": "template"
+    },
+    {
+      "id": "I21",
+      "pillar": "career_insights",
+      "format": "text",
+      "slot_id": null,
+      "hook": "What I would tell my first-year self working in data analytics",
+      "angle": "letter to past self",
+      "source": "template"
+    }
+  ],
+  "source": "Template engine",
+  "warning": ""
+}

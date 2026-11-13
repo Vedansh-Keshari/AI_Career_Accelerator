@@ -1,0 +1,182 @@
+[
+  {
+    "slot_id": "S01",
+    "week": 1,
+    "date": "2026-11-16",
+    "weekday": "Monday",
+    "time": "08:30",
+    "pillar": "actionable_tips",
+    "format": "text",
+    "is_pilot": true
+  },
+  {
+    "slot_id": "S02",
+    "week": 1,
+    "date": "2026-11-18",
+    "weekday": "Wednesday",
+    "time": "08:30",
+    "pillar": "personal_journey",
+    "format": "poll",
+    "is_pilot": true
+  },
+  {
+    "slot_id": "S03",
+    "week": 1,
+    "date": "2026-11-20",
+    "weekday": "Friday",
+    "time": "08:30",
+    "pillar": "career_insights",
+    "format": "micro_story",
+    "is_pilot": true
+  },
+  {
+    "slot_id": "S04",
+    "week": 2,
+    "date": "2026-11-23",
+    "weekday": "Monday",
+    "time": "08:30",
+    "pillar": "industry_trends",
+    "format": "text",
+    "is_pilot": false
+  },
+  {
+    "slot_id": "S05",
+    "week": 2,
+    "date": "2026-11-25",
+    "weekday": "Wednesday",
+    "time": "08:30",
+    "pillar": "actionable_tips",
+    "format": "poll",
+    "is_pilot": false
+  },
+  {
+    "slot_id": "S06",
+    "week": 2,
+    "date": "2026-11-27",
+    "weekday": "Friday",
+    "time": "08:30",
+    "pillar": "personal_journey",
+    "format": "text",
+    "is_pilot": false
+  },
+  {
+    "slot_id": "S07",
+    "week": 3,
+    "date": "2026-11-30",
+    "weekday": "Monday",
+    "time": "08:30",
+    "pillar": "career_insights",
+    "format": "text",
+    "is_pilot": false
+  },
+  {
+    "slot_id": "S08",
+    "week": 3,
+    "date": "2026-12-02",
+    "weekday": "Wednesday",
+    "time": "08:30",
+    "pillar": "actionable_tips",
+    "format": "micro_story",
+    "is_pilot": false
+  },
+  {
+    "slot_id": "S09",
+    "week": 3,
+    "date": "2026-12-04",
+    "weekday": "Friday",
+    "time": "08:30",
+    "pillar": "industry_trends",
+    "format": "carousel",
+    "is_pilot": false
+  },
+  {
+    "slot_id": "S10",
+    "week": 4,
+    "date": "2026-12-07",
+    "weekday": "Monday",
+    "time": "08:30",
+    "pillar": "personal_journey",
+    "format": "text",
+    "is_pilot": false
+  },
+  {
+    "slot_id": "S11",
+    "week": 4,
+    "date": "2026-12-09",
+    "weekday": "Wednesday",
+    "time": "08:30",
+    "pillar": "actionable_tips",
+    "format": "poll",
+    "is_pilot": false
+  },
+  {
+    "slot_id": "S12",
+    "week": 4,
+    "date": "2026-12-11",
+    "weekday": "Friday",
+    "time": "08:30",
+    "pillar": "career_insights",
+    "format": "text",
+    "is_pilot": false
+  },
+  {
+    "slot_id": "S13",
+    "week": 5,
+    "date": "2026-12-14",
+    "weekday": "Monday",
+    "time": "08:30",
+    "pillar": "personal_journey",
+    "format": "text",
+    "is_pilot": false
+  },
+  {
+    "slot_id": "S14",
+    "week": 5,
+    "date": "2026-12-16",
+    "weekday": "Wednesday",
+    "time": "08:30",
+    "pillar": "actionable_tips",
+    "format": "micro_story",
+    "is_pilot": false
+  },
+  {
+    "slot_id": "S15",
+    "week": 5,
+    "date": "2026-12-18",
+    "weekday": "Friday",
+    "time": "08:30",
+    "pillar": "industry_trends",
+    "format": "carousel",
+    "is_pilot": false
+  },
+  {
+    "slot_id": "S16",
+    "week": 6,
+    "date": "2026-12-21",
+    "weekday": "Monday",
+    "time": "08:30",
+    "pillar": "career_insights",
+    "format": "text",
+    "is_pilot": false
+  },
+  {
+    "slot_id": "S17",
+    "week": 6,
+    "date": "2026-12-23",
+    "weekday": "Wednesday",
+    "time": "08:30",
+    "pillar": "personal_journey",
+    "format": "poll",
+    "is_pilot": false
+  },
+  {
+    "slot_id": "S18",
+    "week": 6,
+    "date": "2026-12-25",
+    "weekday": "Friday",
+    "time": "08:30",
+    "pillar": "actionable_tips",
+    "format": "text",
+    "is_pilot": false
+  }
+]

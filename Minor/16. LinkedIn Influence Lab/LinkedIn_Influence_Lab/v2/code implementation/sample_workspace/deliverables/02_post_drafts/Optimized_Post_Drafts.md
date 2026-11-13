@@ -1,0 +1,250 @@
+# Optimized Post Drafts
+
+## D01 Career Insights (text)
+
+How I earned trust on my team as a Senior Operations Analyst
+
+I have been thinking about this a lot while working as a Senior Operations Analyst in supply chain analytics.
+
+→ Write down what you shipped every Friday. Visibility starts with a record.
+→ Say yes to problems, not titles. Problems build the reputation.
+→ Ask for feedback before the review cycle, not during it.
+
+From my own experience: Rebuilt our weekly delivery-performance report as a Power BI dashboard, cutting preparation time from 5 hours to 40 minutes.
+
+What has been your experience? I would love to hear it in the comments.
+
+#CareerGrowth #SupplyChainAnalytics #Excel #CareerAdvice
+
+## D02 Thought Leadership (poll)
+
+If I were starting in supply chain analytics today, I would bet on Excel
+
+I have changed my mind on this over the last year.
+
+The people who win in supply chain analytics are rarely the loudest. They are the most consistent.
+
+Vote in the poll below, then tell me why in the comments.
+
+#ThoughtLeadership #SupplyChainAnalytics #Excel #Leadership
+
+## D03 Industry Trends (micro_story)
+
+A trend in supply chain analytics that looks small today and big in a year
+
+Here is the short version:
+A 10-minute data check before any review meeting saves hours of damage control.
+
+What it taught me:
+The gap between demand for Excel and people who can actually do it is real.
+
+If you are operations and supply chain professionals, take this with you:
+Smaller, faster experiments are replacing big annual plans.
+
+If you found this useful, share it with a colleague who needs it.
+
+#FutureOfWork #SupplyChainAnalytics #Excel #Trends
+
+## D04 Actionable Tips (poll)
+
+Steal this structure for your next supply chain analytics project update
+
+Saving you the trial and error I went through.
+
+Pick one thing. Do it for 5 minutes daily for two weeks. Then review.
+
+Vote in the poll below, then tell me why in the comments.
+
+#CareerTips #SupplyChainAnalytics #Excel #ProfessionalDevelopment
+
+## D05 Personal Journey (carousel)
+
+Why I am building my personal brand in public
+
+I turned this into a short carousel so you can save it for later. Swipe through.
+
+How does this show up on your team? Tell me below.
+
+#PersonalBranding #SupplyChainAnalytics #Excel #LessonsLearned
+
+## D06 Career Insights (text)
+
+3 skills that quietly separate good Senior Operations Analysts from great ones
+
+A quick reflection from my own career so far.
+
+→ Put numbers on your wins: time saved, errors cut, revenue added.
+→ Build relationships before you need them. It is far easier than it sounds.
+→ Write down what you shipped every Friday. Visibility starts with a record.
+
+From my own experience: Reduced late-delivery escalations by 18% over two quarters
+
+If you found this useful, share it with a colleague who needs it.
+
+#CareerGrowth #SupplyChainAnalytics #Excel #CareerAdvice
+
+## D07 Industry Trends (text)
+
+The skill gap in supply chain analytics that nobody is hiring for loudly
+
+I spend a lot of time watching how supply chain analytics is moving. Here is what stands out.
+
+→ Teams are shifting from owning tools to owning outcomes.
+→ Employers are asking for Excel alongside the usual job description.
+→ AI is moving from experiment to everyday workflow in supply chain analytics.
+
+What has been your experience? I would love to hear it in the comments.
+
+#FutureOfWork #SupplyChainAnalytics #Excel #Trends
+
+## D08 Thought Leadership (micro_story)
+
+The best Senior Operations Analysts I know do one thing differently
+
+Here is the short version:
+I once presented a cost-saving figure without checking for duplicate shipment IDs; the number was 8% too high until a colleague caught it.
+
+What it taught me:
+The people who win in supply chain analytics are rarely the loudest. They are the most consistent.
+
+If you are operations and supply chain professionals, take this with you:
+Most problems in supply chain analytics are communication problems wearing a technical costume.
+
+How does this show up on your team? Tell me below.
+
+#ThoughtLeadership #SupplyChainAnalytics #Excel #Leadership
+
+## D09 Actionable Tips (text)
+
+How to explain Excel to a non-expert in 30 seconds
+
+Simple, practical, and you can try it today.
+
+1. Teach it to someone else. If you cannot explain it, you do not own it yet.
+2. Block 90 minutes of deep work on your calendar and defend it.
+3. Pick one thing. Do it for 5 minutes daily for two weeks. Then review.
+
+From my own experience: A 10-minute data check before any review meeting saves hours of damage control.
+
+If you found this useful, share it with a colleague who needs it.
+
+#CareerTips #SupplyChainAnalytics #Excel #ProfessionalDevelopment
+
+## D10 Career Insights (poll)
+
+Visibility beats busyness: what 6 years in supply chain analytics taught me about getting noticed
+
+I have been thinking about this a lot while working as a Senior Operations Analyst in supply chain analytics.
+
+Write down what you shipped every Friday. Visibility starts with a record.
+
+Vote in the poll below, then tell me why in the comments.
+
+#CareerGrowth #SupplyChainAnalytics #Excel #CareerAdvice
+
+## D11 Personal Journey (carousel)
+
+A small win this month that reminded me why I chose supply chain analytics
+
+I turned this into a short carousel so you can save it for later. Swipe through.
+
+How does this show up on your team? Tell me below.
+
+#PersonalBranding #SupplyChainAnalytics #Excel #LessonsLearned
+
+## D12 Industry Trends (text)
+
+Tools operations and supply chain professionals are quietly adopting in supply chain analytics
+
+No hype, just what I am noticing.
+
+→ The gap between demand for Excel and people who can actually do it is real.
+→ Smaller, faster experiments are replacing big annual plans.
+→ Teams are shifting from owning tools to owning outcomes.
+
+If you found this useful, share it with a colleague who needs it.
+
+#FutureOfWork #SupplyChainAnalytics #Excel #Trends
+
+## D13 Thought Leadership (text)
+
+Hot take: consistency beats brilliance in supply chain analytics
+
+I know this will not be popular with everyone, so let me explain.
+
+→ The tool matters less than the question you ask it.
+→ Depth in Excel compounds. Breadth just keeps you busy.
+→ The people who win in supply chain analytics are rarely the loudest. They are the most consistent.
+
+What has been your experience? I would love to hear it in the comments.
+
+#ThoughtLeadership #SupplyChainAnalytics #Excel #Leadership
+
+## D14 Actionable Tips (micro_story)
+
+The 15-minute habit that improved my Excel fastest
+
+Here is the short version:
+I once presented a cost-saving figure without checking for duplicate shipment IDs; the number was 8% too high until a colleague caught it.
+
+What it taught me:
+End every update with the decision you need from the reader.
+
+If you are operations and supply chain professionals, take this with you:
+Keep a running list of questions. Answer one every morning.
+
+How does this show up on your team? Tell me below.
+
+#CareerTips #SupplyChainAnalytics #Excel #ProfessionalDevelopment
+
+## D15 Career Insights (text)
+
+The career move that looked like a step back but was not
+
+A quick reflection from my own career so far.
+
+→ Put numbers on your wins: time saved, errors cut, revenue added.
+→ Build relationships before you need them. It is far easier than it sounds.
+→ Write down what you shipped every Friday. Visibility starts with a record.
+
+From my own experience: A 10-minute data check before any review meeting saves hours of damage control.
+
+If you found this useful, share it with a colleague who needs it.
+
+#CareerGrowth #SupplyChainAnalytics #Excel #CareerAdvice
+
+## D16 Personal Journey (poll)
+
+How I got my first real break in supply chain analytics
+
+I do not share this often, but it is worth sharing.
+
+Progress rarely looks like progress while it is happening.
+
+Vote in the poll below, then tell me why in the comments.
+
+#PersonalBranding #SupplyChainAnalytics #Excel #LessonsLearned
+
+## D17 Industry Trends (carousel)
+
+Where supply chain analytics hiring is heading and how to prepare
+
+I turned this into a short carousel so you can save it for later. Swipe through.
+
+How does this show up on your team? Tell me below.
+
+#FutureOfWork #SupplyChainAnalytics #Excel #Trends
+
+## D18 Thought Leadership (text)
+
+The myth about Excel that holds operations and supply chain professionals back
+
+Here is where I have landed, after a lot of thinking.
+
+→ Judgment is the skill that automation makes more valuable, not less.
+→ A clear opinion, shared early, beats a perfect take shared never.
+→ The tool matters less than the question you ask it.
+
+If you found this useful, share it with a colleague who needs it.
+
+#ThoughtLeadership #SupplyChainAnalytics #Excel #Leadership

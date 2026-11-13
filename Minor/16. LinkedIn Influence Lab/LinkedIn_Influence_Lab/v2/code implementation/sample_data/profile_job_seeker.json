@@ -1,0 +1,51 @@
+{
+  "persona": "job_seeker",
+  "name": "Arjun Nair (Sample)",
+  "email": "arjun.sample@example.com",
+  "google_email": "arjun.sample@example.com",
+  "linkedin_url": "https://www.linkedin.com/in/arjun-nair-sample",
+  "taplio_account": "arjun.sample@example.com",
+  "current_role": "Data Analyst",
+  "company": "",
+  "industry": "retail analytics",
+  "years_experience": "2",
+  "skills": "SQL, Excel, Power BI, Python, A/B Testing",
+  "target_audience": "hiring managers and recruiters in analytics",
+  "goal": "Land interviews for Business Intelligence Analyst roles within three months",
+  "target_roles": "Business Intelligence Analyst",
+  "offer": "",
+  "tone": "Warm and encouraging",
+  "pillars": [
+    "career_insights",
+    "personal_journey",
+    "industry_trends",
+    "actionable_tips"
+  ],
+  "story_win": "Built a Power BI dashboard for a retail project that exposed three low-margin product categories, and the team changed pricing on two of them.",
+  "story_mistake": "I once sent the same resume to 20 roles and heard back from almost none; tailoring it to each role changed that.",
+  "story_lesson": "Showing one real project beats listing ten tools.",
+  "achievements": "Analysed 120,000 sales records to find the top three margin leaks\nAutomated a weekly report with Python, saving about 3 hours a week\nCompleted a Power BI project reviewed by a mentor with a score of 92%",
+  "role_models": "Sample Analyst A | https://www.linkedin.com/in/sample-analyst-a | Posts a project walkthrough every week\nSample Recruiter B | https://www.linkedin.com/in/sample-recruiter-b | Explains what recruiters look for in analytics profiles",
+  "current_headline": "Data Analyst",
+  "current_about": "I like working with data and I am looking for my next opportunity.",
+  "followers": 210,
+  "connections": 380,
+  "posts_per_month_now": 1,
+  "checks": {
+    "photo": true,
+    "banner": false,
+    "custom_url": true,
+    "featured": false,
+    "skills_15": false,
+    "recs_3": false,
+    "experience_metrics": false,
+    "visibility": false
+  },
+  "days": [
+    "Monday",
+    "Wednesday",
+    "Friday"
+  ],
+  "time": "09:00",
+  "timezone": "Asia/Kolkata"
+}

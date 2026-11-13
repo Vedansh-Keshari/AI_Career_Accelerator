@@ -1,0 +1,53 @@
+{
+  "name": "Riya Mehta (Sample)",
+  "email": "riya.sample@example.com",
+  "google_email": "riya.sample@example.com",
+  "linkedin_url": "https://www.linkedin.com/in/riya-mehta-sample",
+  "taplio_account": "riya.sample@example.com",
+  "persona": "professional",
+  "current_role": "Senior Operations Analyst",
+  "company": "Northwind Logistics",
+  "industry": "supply chain analytics",
+  "years_experience": "6",
+  "skills": "Excel, SQL, Power BI, Process Improvement, Stakeholder Communication",
+  "target_audience": "operations and supply chain professionals",
+  "goal": "Become a recognised voice in supply chain analytics within my company and industry",
+  "target_roles": "",
+  "offer": "",
+  "tone": "Professional but relatable",
+  "pillars": [
+    "career_insights",
+    "thought_leadership",
+    "personal_journey",
+    "industry_trends",
+    "actionable_tips"
+  ],
+  "story_win": "Rebuilt our weekly delivery-performance report as a Power BI dashboard, cutting preparation time from 5 hours to 40 minutes.",
+  "story_mistake": "I once presented a cost-saving figure without checking for duplicate shipment IDs; the number was 8% too high until a colleague caught it.",
+  "story_lesson": "A 10-minute data check before any review meeting saves hours of damage control.",
+  "achievements": "Cut weekly reporting time by 85% with an automated dashboard\nTrained 12 teammates on pivot tables and Power Query\nReduced late-delivery escalations by 18% over two quarters",
+  "role_models": "Sample Peer A | https://www.linkedin.com/in/sample-peer-a | One clear takeaway in every weekly carousel\nSample Peer B | https://www.linkedin.com/in/sample-peer-b | Short stories about process fixes\nSample Peer C | https://www.linkedin.com/in/sample-peer-c | Honest posts about mistakes and what changed",
+  "current_headline": "Senior Operations Analyst at Northwind Logistics",
+  "current_about": "I work in operations analytics at Northwind Logistics. I enjoy turning messy delivery data into reports teams can act on.",
+  "followers": 640,
+  "connections": 710,
+  "posts_per_month_now": 2,
+  "checks": {
+    "photo": true,
+    "banner": false,
+    "custom_url": true,
+    "featured": false,
+    "skills_15": true,
+    "recs_3": true,
+    "experience_metrics": false,
+    "visibility": false
+  },
+  "days": [
+    "Tuesday",
+    "Wednesday",
+    "Thursday"
+  ],
+  "time": "08:30",
+  "timezone": "Asia/Kolkata",
+  "start_date": "2026-10-12"
+}

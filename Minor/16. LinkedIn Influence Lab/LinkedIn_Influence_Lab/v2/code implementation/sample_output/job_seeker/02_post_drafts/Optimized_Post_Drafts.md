@@ -1,0 +1,262 @@
+# Optimized Post Drafts
+
+## D01 Actionable Tips (text)
+
+A simple checklist I use before every Data Analyst deliverable
+
+Saving you the trial and error I went through.
+
+1. Pick one thing. Do it for 5 minutes daily for two weeks. Then review.
+2. Write the outcome you want in one sentence before starting any task.
+3. End every update with the decision you need from the reader.
+
+From my own experience: Built a Power BI dashboard for a retail project that exposed three low-margin product categories, and the team changed pricing on two of them.
+
+I would love your thoughts. I am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.
+
+#CareerTips #RetailAnalytics #Sql #ProfessionalDevelopment
+
+## D02 Personal Journey (poll)
+
+What a bad day at work taught me about SQL
+
+Real talk, since honesty works better than polish.
+
+Asking for help earlier would have saved me weeks.
+
+Vote in the poll below, then tell me why in the comments.
+
+#PersonalBranding #RetailAnalytics #Sql #LessonsLearned
+
+## D03 Career Insights (micro_story)
+
+The best career advice I ignored for years (and what finally changed my mind)
+
+Here is the short version:
+Showing one real project beats listing ten tools.
+
+What it taught me:
+Put numbers on your wins: time saved, errors cut, revenue added.
+
+If you are hiring managers and recruiters in analytics, take this with you:
+Build relationships before you need them. It is far easier than it sounds.
+
+I would love your thoughts. If this resonated, let us connect. I am always happy to swap notes.
+
+#CareerGrowth #RetailAnalytics #Sql #CareerAdvice
+
+## D04 Industry Trends (text)
+
+I read a lot about retail analytics this week. Three ideas worth your time.
+
+I spend a lot of time watching how retail analytics is moving. Here is what stands out.
+
+→ Teams are shifting from owning tools to owning outcomes.
+→ Employers are asking for SQL alongside the usual job description.
+→ AI is moving from experiment to everyday workflow in retail analytics.
+
+I would love your thoughts. I am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.
+
+#FutureOfWork #RetailAnalytics #Sql #Trends
+
+## D05 Actionable Tips (poll)
+
+Steal this structure for your next retail analytics project update
+
+This takes minutes, and it works.
+
+End every update with the decision you need from the reader.
+
+Vote in the poll below, then tell me why in the comments.
+
+#CareerTips #RetailAnalytics #Sql #ProfessionalDevelopment
+
+## D06 Personal Journey (text)
+
+The moment I realised I needed to get serious about SQL
+
+Here is the short version of a longer story.
+
+→ I am still learning this, and that is exactly why I am sharing it.
+→ The people who helped me most did it without being asked.
+→ Progress rarely looks like progress while it is happening.
+
+From my own experience: Completed a Power BI project reviewed by a mentor with a score of 92%
+
+I would love your thoughts. If this resonated, let us connect. I am always happy to swap notes.
+
+#PersonalBranding #RetailAnalytics #Sql #LessonsLearned
+
+## D07 Career Insights (text)
+
+3 skills that quietly separate good Data Analysts from great ones
+
+I have been thinking about this a lot while working as a Data Analyst in retail analytics.
+
+→ Write down what you shipped every Friday. Visibility starts with a record.
+→ Say yes to problems, not titles. Problems build the reputation.
+→ Ask for feedback before the review cycle, not during it.
+
+From my own experience: Built a Power BI dashboard for a retail project that exposed three low-margin product categories, and the team changed pricing on two of them.
+
+I would love your thoughts. I am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.
+
+#CareerGrowth #RetailAnalytics #Sql #CareerAdvice
+
+## D08 Actionable Tips (micro_story)
+
+How I tailor my application for Business Intelligence Analyst in 20 minutes
+
+Here is the short version:
+I once sent the same resume to 20 roles and heard back from almost none; tailoring it to each role changed that.
+
+What it taught me:
+End every update with the decision you need from the reader.
+
+If you are hiring managers and recruiters in analytics, take this with you:
+Keep a running list of questions. Answer one every morning.
+
+I would love your thoughts. What would you add to this list? Recruiters and peers, I would value your view.
+
+#CareerTips #RetailAnalytics #Sql #ProfessionalDevelopment
+
+## D09 Industry Trends (carousel)
+
+What changed in retail analytics over the last 12 months, in plain English
+
+I turned this into a short carousel so you can save it for later. Swipe through.
+
+I would love your thoughts. If this resonated, let us connect. I am always happy to swap notes.
+
+#FutureOfWork #RetailAnalytics #Sql #Trends
+
+## D10 Personal Journey (text)
+
+A small win this month that reminded me why I chose retail analytics
+
+I do not share this often, but it is worth sharing.
+
+→ Progress rarely looks like progress while it is happening.
+→ The mistake taught me more than the win ever did.
+→ Asking for help earlier would have saved me weeks.
+
+From my own experience: Analysed 120,000 sales records to find the top three margin leaks
+
+I would love your thoughts. I am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.
+
+#PersonalBranding #RetailAnalytics #Sql #LessonsLearned
+
+## D11 Actionable Tips (poll)
+
+The 15-minute habit that improved my SQL fastest
+
+This takes minutes, and it works.
+
+End every update with the decision you need from the reader.
+
+Vote in the poll below, then tell me why in the comments.
+
+#CareerTips #RetailAnalytics #Sql #ProfessionalDevelopment
+
+## D12 Career Insights (text)
+
+How I decide whether a new opportunity is worth a yes
+
+A quick reflection from my own career so far.
+
+→ Put numbers on your wins: time saved, errors cut, revenue added.
+→ Build relationships before you need them. It is far easier than it sounds.
+→ Write down what you shipped every Friday. Visibility starts with a record.
+
+From my own experience: Completed a Power BI project reviewed by a mentor with a score of 92%
+
+I would love your thoughts. If this resonated, let us connect. I am always happy to swap notes.
+
+#CareerGrowth #RetailAnalytics #Sql #CareerAdvice
+
+## D13 Personal Journey (text)
+
+My biggest mistake as a Data Analyst (and the lesson I still use)
+
+I do not share this often, but it is worth sharing.
+
+→ Progress rarely looks like progress while it is happening.
+→ The mistake taught me more than the win ever did.
+→ Asking for help earlier would have saved me weeks.
+
+From my own experience: Built a Power BI dashboard for a retail project that exposed three low-margin product categories, and the team changed pricing on two of them.
+
+I would love your thoughts. I am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.
+
+#PersonalBranding #RetailAnalytics #Sql #LessonsLearned
+
+## D14 Actionable Tips (micro_story)
+
+How I structure my week to protect deep work
+
+Here is the short version:
+I once sent the same resume to 20 roles and heard back from almost none; tailoring it to each role changed that.
+
+What it taught me:
+End every update with the decision you need from the reader.
+
+If you are hiring managers and recruiters in analytics, take this with you:
+Keep a running list of questions. Answer one every morning.
+
+I would love your thoughts. What would you add to this list? Recruiters and peers, I would value your view.
+
+#CareerTips #RetailAnalytics #Sql #ProfessionalDevelopment
+
+## D15 Industry Trends (carousel)
+
+3 shifts in retail analytics that hiring managers and recruiters in analytics should watch this quarter
+
+I turned this into a short carousel so you can save it for later. Swipe through.
+
+I would love your thoughts. If this resonated, let us connect. I am always happy to swap notes.
+
+#FutureOfWork #RetailAnalytics #Sql #Trends
+
+## D16 Career Insights (text)
+
+Nobody tells hiring managers and recruiters in analytics this about moving from junior to senior in retail analytics
+
+I have been thinking about this a lot while working as a Data Analyst in retail analytics.
+
+→ Write down what you shipped every Friday. Visibility starts with a record.
+→ Say yes to problems, not titles. Problems build the reputation.
+→ Ask for feedback before the review cycle, not during it.
+
+From my own experience: Analysed 120,000 sales records to find the top three margin leaks
+
+I would love your thoughts. I am open to Business Intelligence Analyst roles. If your team is hiring, my DMs are open.
+
+#CareerGrowth #RetailAnalytics #Sql #CareerAdvice
+
+## D17 Personal Journey (poll)
+
+What my job search taught me about telling my own story
+
+Real talk, since honesty works better than polish.
+
+Asking for help earlier would have saved me weeks.
+
+Vote in the poll below, then tell me why in the comments.
+
+#PersonalBranding #RetailAnalytics #Sql #LessonsLearned
+
+## D18 Actionable Tips (text)
+
+3 mistakes hiring managers and recruiters in analytics make with SQL (and quick fixes)
+
+Simple, practical, and you can try it today.
+
+1. Teach it to someone else. If you cannot explain it, you do not own it yet.
+2. Block 90 minutes of deep work on your calendar and defend it.
+3. Pick one thing. Do it for 5 minutes daily for two weeks. Then review.
+
+From my own experience: Completed a Power BI project reviewed by a mentor with a score of 92%
+
+I would love your thoughts. If this resonated, let us connect. I am always happy to swap notes.
+
+#CareerTips #RetailAnalytics #Sql #ProfessionalDevelopment

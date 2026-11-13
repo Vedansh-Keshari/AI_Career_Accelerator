@@ -1,0 +1,533 @@
+[
+  {
+    "idea_id": "I01",
+    "slot_id": "S01",
+    "pillar": "career_insights",
+    "format": "text",
+    "hook": "How I earned trust on my team as a Senior Operations Analyst",
+    "body": "How I earned trust on my team as a Senior Operations Analyst\n\nI have been thinking about this a lot while working as a Senior Operations Analyst in supply chain analytics.\n\n→ Write down what you shipped every Friday. Visibility starts with a record.\n→ Say yes to problems, not titles. Problems build the reputation.\n→ Ask for feedback before the review cycle, not during it.\n\nFrom my own experience: Rebuilt our weekly delivery-performance report as a Power BI dashboard, cutting preparation time from 5 hours to 40 minutes.\n\nWhat has been your experience? I would love to hear it in the comments.",
+    "hashtags": [
+      "CareerGrowth",
+      "SupplyChainAnalytics",
+      "Excel",
+      "CareerAdvice"
+    ],
+    "source": "template",
+    "id": "D01",
+    "text": "How I earned trust on my team as a Senior Operations Analyst\n\nI have been thinking about this a lot while working as a Senior Operations Analyst in supply chain analytics.\n\n→ Write down what you shipped every Friday. Visibility starts with a record.\n→ Say yes to problems, not titles. Problems build the reputation.\n→ Ask for feedback before the review cycle, not during it.\n\nFrom my own experience: Rebuilt our weekly delivery-performance report as a Power BI dashboard, cutting preparation time from 5 hours to 40 minutes.\n\nWhat has been your experience? I would love to hear it in the comments.\n\n#CareerGrowth #SupplyChainAnalytics #Excel #CareerAdvice",
+    "quality": 100,
+    "issues": [],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I02",
+    "slot_id": "S02",
+    "pillar": "thought_leadership",
+    "format": "poll",
+    "hook": "If I were starting in supply chain analytics today, I would bet on Excel",
+    "body": "If I were starting in supply chain analytics today, I would bet on Excel\n\nI have changed my mind on this over the last year.\n\nThe people who win in supply chain analytics are rarely the loudest. They are the most consistent.\n\nVote in the poll below, then tell me why in the comments.",
+    "hashtags": [
+      "ThoughtLeadership",
+      "SupplyChainAnalytics",
+      "Excel",
+      "Leadership"
+    ],
+    "source": "template",
+    "poll": {
+      "question": "Will AI make Senior Operations Analysts more or less valuable?",
+      "options": [
+        "More valuable",
+        "Less valuable",
+        "Just different",
+        "Too early to say"
+      ]
+    },
+    "id": "D02",
+    "text": "If I were starting in supply chain analytics today, I would bet on Excel\n\nI have changed my mind on this over the last year.\n\nThe people who win in supply chain analytics are rarely the loudest. They are the most consistent.\n\nVote in the poll below, then tell me why in the comments.\n\n#ThoughtLeadership #SupplyChainAnalytics #Excel #Leadership",
+    "quality": 100,
+    "issues": [],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I03",
+    "slot_id": "S03",
+    "pillar": "industry_trends",
+    "format": "micro_story",
+    "hook": "A trend in supply chain analytics that looks small today and big in a year",
+    "body": "A trend in supply chain analytics that looks small today and big in a year\n\nHere is the short version:\nA 10-minute data check before any review meeting saves hours of damage control.\n\nWhat it taught me:\nThe gap between demand for Excel and people who can actually do it is real.\n\nIf you are operations and supply chain professionals, take this with you:\nSmaller, faster experiments are replacing big annual plans.\n\nIf you found this useful, share it with a colleague who needs it.",
+    "hashtags": [
+      "FutureOfWork",
+      "SupplyChainAnalytics",
+      "Excel",
+      "Trends"
+    ],
+    "source": "template",
+    "id": "D03",
+    "text": "A trend in supply chain analytics that looks small today and big in a year\n\nHere is the short version:\nA 10-minute data check before any review meeting saves hours of damage control.\n\nWhat it taught me:\nThe gap between demand for Excel and people who can actually do it is real.\n\nIf you are operations and supply chain professionals, take this with you:\nSmaller, faster experiments are replacing big annual plans.\n\nIf you found this useful, share it with a colleague who needs it.\n\n#FutureOfWork #SupplyChainAnalytics #Excel #Trends",
+    "quality": 100,
+    "issues": [],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I04",
+    "slot_id": "S04",
+    "pillar": "actionable_tips",
+    "format": "poll",
+    "hook": "Steal this structure for your next supply chain analytics project update",
+    "body": "Steal this structure for your next supply chain analytics project update\n\nSaving you the trial and error I went through.\n\nPick one thing. Do it for 5 minutes daily for two weeks. Then review.\n\nVote in the poll below, then tell me why in the comments.",
+    "hashtags": [
+      "CareerTips",
+      "SupplyChainAnalytics",
+      "Excel",
+      "ProfessionalDevelopment"
+    ],
+    "source": "template",
+    "poll": {
+      "question": "Where do you lose the most time?",
+      "options": [
+        "Meetings",
+        "Context switching",
+        "Unclear tasks",
+        "Email"
+      ]
+    },
+    "id": "D04",
+    "text": "Steal this structure for your next supply chain analytics project update\n\nSaving you the trial and error I went through.\n\nPick one thing. Do it for 5 minutes daily for two weeks. Then review.\n\nVote in the poll below, then tell me why in the comments.\n\n#CareerTips #SupplyChainAnalytics #Excel #ProfessionalDevelopment",
+    "quality": 100,
+    "issues": [],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I05",
+    "slot_id": "S05",
+    "pillar": "personal_journey",
+    "format": "carousel",
+    "hook": "Why I am building my personal brand in public",
+    "body": "Why I am building my personal brand in public\n\nI turned this into a short carousel so you can save it for later. Swipe through.\n\nHow does this show up on your team? Tell me below.",
+    "hashtags": [
+      "PersonalBranding",
+      "SupplyChainAnalytics",
+      "Excel",
+      "LessonsLearned"
+    ],
+    "source": "template",
+    "slides": [
+      {
+        "title": "Why I am building my personal brand in public",
+        "body": "A quick guide for operations and supply chain professionals"
+      },
+      {
+        "title": "I am still learning this, and that is exactly why I am sharing it",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "The people who helped me most did it without being asked",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Progress rarely looks like progress while it is happening",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "The mistake taught me more than the win ever did",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Asking for help earlier would have saved me weeks",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Your turn",
+        "body": "How does this show up on your team? Tell me below."
+      }
+    ],
+    "id": "D05",
+    "text": "Why I am building my personal brand in public\n\nI turned this into a short carousel so you can save it for later. Swipe through.\n\nHow does this show up on your team? Tell me below.\n\n#PersonalBranding #SupplyChainAnalytics #Excel #LessonsLearned",
+    "quality": 88,
+    "issues": [
+      "Short post (179 chars). Aim for 250+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I06",
+    "slot_id": "S06",
+    "pillar": "career_insights",
+    "format": "text",
+    "hook": "3 skills that quietly separate good Senior Operations Analysts from great ones",
+    "body": "3 skills that quietly separate good Senior Operations Analysts from great ones\n\nA quick reflection from my own career so far.\n\n→ Put numbers on your wins: time saved, errors cut, revenue added.\n→ Build relationships before you need them. It is far easier than it sounds.\n→ Write down what you shipped every Friday. Visibility starts with a record.\n\nFrom my own experience: Reduced late-delivery escalations by 18% over two quarters\n\nIf you found this useful, share it with a colleague who needs it.",
+    "hashtags": [
+      "CareerGrowth",
+      "SupplyChainAnalytics",
+      "Excel",
+      "CareerAdvice"
+    ],
+    "source": "template",
+    "id": "D06",
+    "text": "3 skills that quietly separate good Senior Operations Analysts from great ones\n\nA quick reflection from my own career so far.\n\n→ Put numbers on your wins: time saved, errors cut, revenue added.\n→ Build relationships before you need them. It is far easier than it sounds.\n→ Write down what you shipped every Friday. Visibility starts with a record.\n\nFrom my own experience: Reduced late-delivery escalations by 18% over two quarters\n\nIf you found this useful, share it with a colleague who needs it.\n\n#CareerGrowth #SupplyChainAnalytics #Excel #CareerAdvice",
+    "quality": 80,
+    "issues": [
+      "Short post (498 chars). Aim for 500+ for richer value.",
+      "Statistic or study mentioned without a named source; attribute it."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I07",
+    "slot_id": "S07",
+    "pillar": "industry_trends",
+    "format": "text",
+    "hook": "The skill gap in supply chain analytics that nobody is hiring for loudly",
+    "body": "The skill gap in supply chain analytics that nobody is hiring for loudly\n\nI spend a lot of time watching how supply chain analytics is moving. Here is what stands out.\n\n→ Teams are shifting from owning tools to owning outcomes.\n→ Employers are asking for Excel alongside the usual job description.\n→ AI is moving from experiment to everyday workflow in supply chain analytics.\n\nWhat has been your experience? I would love to hear it in the comments.",
+    "hashtags": [
+      "FutureOfWork",
+      "SupplyChainAnalytics",
+      "Excel",
+      "Trends"
+    ],
+    "source": "template",
+    "id": "D07",
+    "text": "The skill gap in supply chain analytics that nobody is hiring for loudly\n\nI spend a lot of time watching how supply chain analytics is moving. Here is what stands out.\n\n→ Teams are shifting from owning tools to owning outcomes.\n→ Employers are asking for Excel alongside the usual job description.\n→ AI is moving from experiment to everyday workflow in supply chain analytics.\n\nWhat has been your experience? I would love to hear it in the comments.\n\n#FutureOfWork #SupplyChainAnalytics #Excel #Trends",
+    "quality": 88,
+    "issues": [
+      "Short post (449 chars). Aim for 500+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I08",
+    "slot_id": "S08",
+    "pillar": "thought_leadership",
+    "format": "micro_story",
+    "hook": "The best Senior Operations Analysts I know do one thing differently",
+    "body": "The best Senior Operations Analysts I know do one thing differently\n\nHere is the short version:\nI once presented a cost-saving figure without checking for duplicate shipment IDs; the number was 8% too high until a colleague caught it.\n\nWhat it taught me:\nThe people who win in supply chain analytics are rarely the loudest. They are the most consistent.\n\nIf you are operations and supply chain professionals, take this with you:\nMost problems in supply chain analytics are communication problems wearing a technical costume.\n\nHow does this show up on your team? Tell me below.",
+    "hashtags": [
+      "ThoughtLeadership",
+      "SupplyChainAnalytics",
+      "Excel",
+      "Leadership"
+    ],
+    "source": "template",
+    "id": "D08",
+    "text": "The best Senior Operations Analysts I know do one thing differently\n\nHere is the short version:\nI once presented a cost-saving figure without checking for duplicate shipment IDs; the number was 8% too high until a colleague caught it.\n\nWhat it taught me:\nThe people who win in supply chain analytics are rarely the loudest. They are the most consistent.\n\nIf you are operations and supply chain professionals, take this with you:\nMost problems in supply chain analytics are communication problems wearing a technical costume.\n\nHow does this show up on your team? Tell me below.\n\n#ThoughtLeadership #SupplyChainAnalytics #Excel #Leadership",
+    "quality": 92,
+    "issues": [
+      "Statistic or study mentioned without a named source; attribute it."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I09",
+    "slot_id": "S09",
+    "pillar": "actionable_tips",
+    "format": "text",
+    "hook": "How to explain Excel to a non-expert in 30 seconds",
+    "body": "How to explain Excel to a non-expert in 30 seconds\n\nSimple, practical, and you can try it today.\n\n1. Teach it to someone else. If you cannot explain it, you do not own it yet.\n2. Block 90 minutes of deep work on your calendar and defend it.\n3. Pick one thing. Do it for 5 minutes daily for two weeks. Then review.\n\nFrom my own experience: A 10-minute data check before any review meeting saves hours of damage control.\n\nIf you found this useful, share it with a colleague who needs it.",
+    "hashtags": [
+      "CareerTips",
+      "SupplyChainAnalytics",
+      "Excel",
+      "ProfessionalDevelopment"
+    ],
+    "source": "template",
+    "id": "D09",
+    "text": "How to explain Excel to a non-expert in 30 seconds\n\nSimple, practical, and you can try it today.\n\n1. Teach it to someone else. If you cannot explain it, you do not own it yet.\n2. Block 90 minutes of deep work on your calendar and defend it.\n3. Pick one thing. Do it for 5 minutes daily for two weeks. Then review.\n\nFrom my own experience: A 10-minute data check before any review meeting saves hours of damage control.\n\nIf you found this useful, share it with a colleague who needs it.\n\n#CareerTips #SupplyChainAnalytics #Excel #ProfessionalDevelopment",
+    "quality": 88,
+    "issues": [
+      "Short post (485 chars). Aim for 500+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I10",
+    "slot_id": "S10",
+    "pillar": "career_insights",
+    "format": "poll",
+    "hook": "Visibility beats busyness: what 6 years in supply chain analytics taught me about getting noticed",
+    "body": "Visibility beats busyness: what 6 years in supply chain analytics taught me about getting noticed\n\nI have been thinking about this a lot while working as a Senior Operations Analyst in supply chain analytics.\n\nWrite down what you shipped every Friday. Visibility starts with a record.\n\nVote in the poll below, then tell me why in the comments.",
+    "hashtags": [
+      "CareerGrowth",
+      "SupplyChainAnalytics",
+      "Excel",
+      "CareerAdvice"
+    ],
+    "source": "template",
+    "poll": {
+      "question": "What slows career growth the most?",
+      "options": [
+        "Low visibility",
+        "Skill gaps",
+        "No feedback",
+        "Burnout"
+      ]
+    },
+    "id": "D10",
+    "text": "Visibility beats busyness: what 6 years in supply chain analytics taught me about getting noticed\n\nI have been thinking about this a lot while working as a Senior Operations Analyst in supply chain analytics.\n\nWrite down what you shipped every Friday. Visibility starts with a record.\n\nVote in the poll below, then tell me why in the comments.\n\n#CareerGrowth #SupplyChainAnalytics #Excel #CareerAdvice",
+    "quality": 100,
+    "issues": [],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I11",
+    "slot_id": "S11",
+    "pillar": "personal_journey",
+    "format": "carousel",
+    "hook": "A small win this month that reminded me why I chose supply chain analytics",
+    "body": "A small win this month that reminded me why I chose supply chain analytics\n\nI turned this into a short carousel so you can save it for later. Swipe through.\n\nHow does this show up on your team? Tell me below.",
+    "hashtags": [
+      "PersonalBranding",
+      "SupplyChainAnalytics",
+      "Excel",
+      "LessonsLearned"
+    ],
+    "source": "template",
+    "slides": [
+      {
+        "title": "A small win this month that reminded me why I chose supply chain analytics",
+        "body": "A quick guide for operations and supply chain professionals"
+      },
+      {
+        "title": "I am still learning this, and that is exactly why I am sharing it",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "The people who helped me most did it without being asked",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Progress rarely looks like progress while it is happening",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "The mistake taught me more than the win ever did",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Asking for help earlier would have saved me weeks",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Your turn",
+        "body": "How does this show up on your team? Tell me below."
+      }
+    ],
+    "id": "D11",
+    "text": "A small win this month that reminded me why I chose supply chain analytics\n\nI turned this into a short carousel so you can save it for later. Swipe through.\n\nHow does this show up on your team? Tell me below.\n\n#PersonalBranding #SupplyChainAnalytics #Excel #LessonsLearned",
+    "quality": 88,
+    "issues": [
+      "Short post (208 chars). Aim for 250+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I12",
+    "slot_id": "S12",
+    "pillar": "industry_trends",
+    "format": "text",
+    "hook": "Tools operations and supply chain professionals are quietly adopting in supply chain analytics",
+    "body": "Tools operations and supply chain professionals are quietly adopting in supply chain analytics\n\nNo hype, just what I am noticing.\n\n→ The gap between demand for Excel and people who can actually do it is real.\n→ Smaller, faster experiments are replacing big annual plans.\n→ Teams are shifting from owning tools to owning outcomes.\n\nIf you found this useful, share it with a colleague who needs it.",
+    "hashtags": [
+      "FutureOfWork",
+      "SupplyChainAnalytics",
+      "Excel",
+      "Trends"
+    ],
+    "source": "template",
+    "id": "D12",
+    "text": "Tools operations and supply chain professionals are quietly adopting in supply chain analytics\n\nNo hype, just what I am noticing.\n\n→ The gap between demand for Excel and people who can actually do it is real.\n→ Smaller, faster experiments are replacing big annual plans.\n→ Teams are shifting from owning tools to owning outcomes.\n\nIf you found this useful, share it with a colleague who needs it.\n\n#FutureOfWork #SupplyChainAnalytics #Excel #Trends",
+    "quality": 88,
+    "issues": [
+      "Short post (396 chars). Aim for 500+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I13",
+    "slot_id": "S13",
+    "pillar": "thought_leadership",
+    "format": "text",
+    "hook": "Hot take: consistency beats brilliance in supply chain analytics",
+    "body": "Hot take: consistency beats brilliance in supply chain analytics\n\nI know this will not be popular with everyone, so let me explain.\n\n→ The tool matters less than the question you ask it.\n→ Depth in Excel compounds. Breadth just keeps you busy.\n→ The people who win in supply chain analytics are rarely the loudest. They are the most consistent.\n\nWhat has been your experience? I would love to hear it in the comments.",
+    "hashtags": [
+      "ThoughtLeadership",
+      "SupplyChainAnalytics",
+      "Excel",
+      "Leadership"
+    ],
+    "source": "template",
+    "id": "D13",
+    "text": "Hot take: consistency beats brilliance in supply chain analytics\n\nI know this will not be popular with everyone, so let me explain.\n\n→ The tool matters less than the question you ask it.\n→ Depth in Excel compounds. Breadth just keeps you busy.\n→ The people who win in supply chain analytics are rarely the loudest. They are the most consistent.\n\nWhat has been your experience? I would love to hear it in the comments.\n\n#ThoughtLeadership #SupplyChainAnalytics #Excel #Leadership",
+    "quality": 88,
+    "issues": [
+      "Short post (417 chars). Aim for 500+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I14",
+    "slot_id": "S14",
+    "pillar": "actionable_tips",
+    "format": "micro_story",
+    "hook": "The 15-minute habit that improved my Excel fastest",
+    "body": "The 15-minute habit that improved my Excel fastest\n\nHere is the short version:\nI once presented a cost-saving figure without checking for duplicate shipment IDs; the number was 8% too high until a colleague caught it.\n\nWhat it taught me:\nEnd every update with the decision you need from the reader.\n\nIf you are operations and supply chain professionals, take this with you:\nKeep a running list of questions. Answer one every morning.\n\nHow does this show up on your team? Tell me below.",
+    "hashtags": [
+      "CareerTips",
+      "SupplyChainAnalytics",
+      "Excel",
+      "ProfessionalDevelopment"
+    ],
+    "source": "template",
+    "id": "D14",
+    "text": "The 15-minute habit that improved my Excel fastest\n\nHere is the short version:\nI once presented a cost-saving figure without checking for duplicate shipment IDs; the number was 8% too high until a colleague caught it.\n\nWhat it taught me:\nEnd every update with the decision you need from the reader.\n\nIf you are operations and supply chain professionals, take this with you:\nKeep a running list of questions. Answer one every morning.\n\nHow does this show up on your team? Tell me below.\n\n#CareerTips #SupplyChainAnalytics #Excel #ProfessionalDevelopment",
+    "quality": 92,
+    "issues": [
+      "Statistic or study mentioned without a named source; attribute it."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I15",
+    "slot_id": "S15",
+    "pillar": "career_insights",
+    "format": "text",
+    "hook": "The career move that looked like a step back but was not",
+    "body": "The career move that looked like a step back but was not\n\nA quick reflection from my own career so far.\n\n→ Put numbers on your wins: time saved, errors cut, revenue added.\n→ Build relationships before you need them. It is far easier than it sounds.\n→ Write down what you shipped every Friday. Visibility starts with a record.\n\nFrom my own experience: A 10-minute data check before any review meeting saves hours of damage control.\n\nIf you found this useful, share it with a colleague who needs it.",
+    "hashtags": [
+      "CareerGrowth",
+      "SupplyChainAnalytics",
+      "Excel",
+      "CareerAdvice"
+    ],
+    "source": "template",
+    "id": "D15",
+    "text": "The career move that looked like a step back but was not\n\nA quick reflection from my own career so far.\n\n→ Put numbers on your wins: time saved, errors cut, revenue added.\n→ Build relationships before you need them. It is far easier than it sounds.\n→ Write down what you shipped every Friday. Visibility starts with a record.\n\nFrom my own experience: A 10-minute data check before any review meeting saves hours of damage control.\n\nIf you found this useful, share it with a colleague who needs it.\n\n#CareerGrowth #SupplyChainAnalytics #Excel #CareerAdvice",
+    "quality": 88,
+    "issues": [
+      "Short post (497 chars). Aim for 500+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I16",
+    "slot_id": "S16",
+    "pillar": "personal_journey",
+    "format": "poll",
+    "hook": "How I got my first real break in supply chain analytics",
+    "body": "How I got my first real break in supply chain analytics\n\nI do not share this often, but it is worth sharing.\n\nProgress rarely looks like progress while it is happening.\n\nVote in the poll below, then tell me why in the comments.",
+    "hashtags": [
+      "PersonalBranding",
+      "SupplyChainAnalytics",
+      "Excel",
+      "LessonsLearned"
+    ],
+    "source": "template",
+    "poll": {
+      "question": "What do you share least on LinkedIn?",
+      "options": [
+        "Failures",
+        "Wins",
+        "Opinions",
+        "Behind the scenes"
+      ]
+    },
+    "id": "D16",
+    "text": "How I got my first real break in supply chain analytics\n\nI do not share this often, but it is worth sharing.\n\nProgress rarely looks like progress while it is happening.\n\nVote in the poll below, then tell me why in the comments.\n\n#PersonalBranding #SupplyChainAnalytics #Excel #LessonsLearned",
+    "quality": 88,
+    "issues": [
+      "Short post (227 chars). Aim for 250+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I17",
+    "slot_id": "S17",
+    "pillar": "industry_trends",
+    "format": "carousel",
+    "hook": "Where supply chain analytics hiring is heading and how to prepare",
+    "body": "Where supply chain analytics hiring is heading and how to prepare\n\nI turned this into a short carousel so you can save it for later. Swipe through.\n\nHow does this show up on your team? Tell me below.",
+    "hashtags": [
+      "FutureOfWork",
+      "SupplyChainAnalytics",
+      "Excel",
+      "Trends"
+    ],
+    "source": "template",
+    "slides": [
+      {
+        "title": "Where supply chain analytics hiring is heading and how to prepare",
+        "body": "A quick guide for operations and supply chain professionals"
+      },
+      {
+        "title": "The gap between demand for Excel and people who can actually do it is real",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Smaller, faster experiments are replacing big annual plans",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Teams are shifting from owning tools to owning outcomes",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Employers are asking for Excel alongside the usual job description",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "AI is moving from experiment to everyday workflow in supply chain analytics",
+        "body": "Try it this week and note what changes."
+      },
+      {
+        "title": "Your turn",
+        "body": "How does this show up on your team? Tell me below."
+      }
+    ],
+    "id": "D17",
+    "text": "Where supply chain analytics hiring is heading and how to prepare\n\nI turned this into a short carousel so you can save it for later. Swipe through.\n\nHow does this show up on your team? Tell me below.\n\n#FutureOfWork #SupplyChainAnalytics #Excel #Trends",
+    "quality": 88,
+    "issues": [
+      "Short post (199 chars). Aim for 250+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  },
+  {
+    "idea_id": "I18",
+    "slot_id": "S18",
+    "pillar": "thought_leadership",
+    "format": "text",
+    "hook": "The myth about Excel that holds operations and supply chain professionals back",
+    "body": "The myth about Excel that holds operations and supply chain professionals back\n\nHere is where I have landed, after a lot of thinking.\n\n→ Judgment is the skill that automation makes more valuable, not less.\n→ A clear opinion, shared early, beats a perfect take shared never.\n→ The tool matters less than the question you ask it.\n\nIf you found this useful, share it with a colleague who needs it.",
+    "hashtags": [
+      "ThoughtLeadership",
+      "SupplyChainAnalytics",
+      "Excel",
+      "Leadership"
+    ],
+    "source": "template",
+    "id": "D18",
+    "text": "The myth about Excel that holds operations and supply chain professionals back\n\nHere is where I have landed, after a lot of thinking.\n\n→ Judgment is the skill that automation makes more valuable, not less.\n→ A clear opinion, shared early, beats a perfect take shared never.\n→ The tool matters less than the question you ask it.\n\nIf you found this useful, share it with a colleague who needs it.\n\n#ThoughtLeadership #SupplyChainAnalytics #Excel #Leadership",
+    "quality": 88,
+    "issues": [
+      "Short post (394 chars). Aim for 500+ for richer value."
+    ],
+    "human_reviewed": false,
+    "status": "draft"
+  }
+]

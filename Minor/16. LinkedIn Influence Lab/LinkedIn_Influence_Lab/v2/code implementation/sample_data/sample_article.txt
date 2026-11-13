@@ -1,0 +1,9 @@
+Why data checks belong before the meeting, not after it (sample article written for this app)
+
+Teams often discover data problems in the middle of a review meeting, when a number looks too good or too bad and nobody can explain it. By then the discussion has already shifted from decisions to doubt. A short check before the meeting prevents most of these moments.
+
+The simplest check is to look for duplicate records. Duplicates inflate totals, and they are easy to find with a count of unique identifiers against the count of rows. A second check compares the new numbers with last period. A change of more than twenty percent deserves a sentence of explanation before anyone sees it.
+
+The third habit is to name one owner for every metric. When nobody owns a number, nobody notices when its definition quietly changes. Owners do not need to be senior; they need to know where the data comes from and who can answer questions about it.
+
+Finally, write the checks down. A list of five checks that takes ten minutes to run will be used. A long policy document will not. Teams that adopt a short written checklist report fewer corrections after meetings and more time spent on actual decisions.

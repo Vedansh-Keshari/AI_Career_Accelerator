@@ -1,0 +1,27 @@
+{
+  "phase1": {
+    "state": "done",
+    "note": "Audit score 44/100; 5 pillars",
+    "updated": "2026-11-13T20:40:23"
+  },
+  "phase2": {
+    "state": "done",
+    "note": "21 ideas, 18 drafts; 0 need your real examples",
+    "updated": "2026-11-13T20:40:24"
+  },
+  "phase3": {
+    "state": "waiting",
+    "note": "18 slots; 0/18 drafts human-approved for Taplio",
+    "updated": "2026-11-13T20:40:24"
+  },
+  "phase4": {
+    "state": "done",
+    "note": "15 of 10+ posts logged",
+    "updated": "2026-11-13T20:40:24"
+  },
+  "phase5": {
+    "state": "done",
+    "note": "Built from 15 SAMPLE posts",
+    "updated": "2026-11-13T20:40:26"
+  }
+}

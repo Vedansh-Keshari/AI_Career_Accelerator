@@ -1,0 +1,67 @@
+{
+  "persona": "professional",
+  "pillars": [
+    {
+      "key": "career_insights",
+      "label": "Career Insights",
+      "weight": 0.25,
+      "posts": 4,
+      "desc": "Hard-won lessons about growth, promotions and decisions.",
+      "examples": [
+        "The best career advice I ignored for years (and what finally changed my mind)",
+        "Visibility beats busyness: what 6 years in supply chain analytics taught me about getting noticed",
+        "Nobody tells operations and supply chain professionals this about moving from junior to senior in supply chain analytics"
+      ]
+    },
+    {
+      "key": "thought_leadership",
+      "label": "Thought Leadership",
+      "weight": 0.2,
+      "posts": 4,
+      "desc": "Opinions, frameworks and bets that make people think.",
+      "examples": [
+        "Unpopular opinion: most supply chain analytics advice about Excel is outdated",
+        "Everyone in supply chain analytics is talking about AI. Few talk about what it will not replace.",
+        "Here is what I believe about the future of Senior Operations Analysts, and why I could be wrong"
+      ]
+    },
+    {
+      "key": "industry_trends",
+      "label": "Industry Trends",
+      "weight": 0.2,
+      "posts": 4,
+      "desc": "What is changing in your field, explained in plain English.",
+      "examples": [
+        "3 shifts in supply chain analytics that operations and supply chain professionals should watch this quarter",
+        "What the latest wave of AI tools means for Senior Operations Analysts",
+        "The skill gap in supply chain analytics that nobody is hiring for loudly"
+      ]
+    },
+    {
+      "key": "actionable_tips",
+      "label": "Actionable Tips",
+      "weight": 0.2,
+      "posts": 4,
+      "desc": "Checklists, templates and habits people can use today.",
+      "examples": [
+        "5 minutes a day on Excel: the routine that actually stuck",
+        "A simple checklist I use before every Senior Operations Analyst deliverable",
+        "How to explain Excel to a non-expert in 30 seconds"
+      ]
+    },
+    {
+      "key": "personal_journey",
+      "label": "Personal Journey",
+      "weight": 0.15,
+      "posts": 3,
+      "desc": "Honest stories: wins, mistakes and what you are learning.",
+      "examples": [
+        "My biggest mistake as a Senior Operations Analyst (and the lesson I still use)",
+        "A small win this month that reminded me why I chose supply chain analytics",
+        "How I got my first real break in supply chain analytics"
+      ]
+    }
+  ],
+  "posts_per_week": 3,
+  "persona_goal": "Visibility and credibility inside my niche."
+}

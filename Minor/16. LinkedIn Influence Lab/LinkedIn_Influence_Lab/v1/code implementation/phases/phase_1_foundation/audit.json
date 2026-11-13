@@ -1,0 +1,201 @@
+{
+  "total": 19,
+  "band": "Starting out",
+  "items": [
+    {
+      "key": "photo",
+      "label": "Professional profile photo",
+      "points": 8,
+      "score": 8,
+      "fix": "Use a clear, well-lit headshot where your face fills about 60% of the frame.",
+      "ok": true
+    },
+    {
+      "key": "banner",
+      "label": "Banner that states your value",
+      "points": 6,
+      "score": 0,
+      "fix": "Replace the default banner with one line on who you help and how.",
+      "ok": false
+    },
+    {
+      "key": "headline",
+      "label": "Keyword-rich headline (60-220 chars)",
+      "points": 14,
+      "score": 4,
+      "fix": "Use: role | who you help / what you do | 2-3 skills. Avoid a bare job title.",
+      "ok": false
+    },
+    {
+      "key": "about",
+      "label": "About section with proof and a call to action",
+      "points": 14,
+      "score": 3,
+      "fix": "Write 600-1,500 characters: hook, proof, what you post about, how to reach you.",
+      "ok": false
+    },
+    {
+      "key": "custom_url",
+      "label": "Custom profile URL",
+      "points": 4,
+      "score": 4,
+      "fix": "Edit public profile & URL in LinkedIn settings, use your name.",
+      "ok": true
+    },
+    {
+      "key": "featured",
+      "label": "Featured section populated",
+      "points": 8,
+      "score": 0,
+      "fix": "Pin your best post, a project, and a link that proves your skills.",
+      "ok": false
+    },
+    {
+      "key": "skills_15",
+      "label": "15+ skills, top 3 pinned",
+      "points": 6,
+      "score": 0,
+      "fix": "Add relevant skills and pin the three you want to be known for.",
+      "ok": false
+    },
+    {
+      "key": "recs_3",
+      "label": "3+ recommendations",
+      "points": 8,
+      "score": 0,
+      "fix": "Ask three colleagues or managers for specific recommendations.",
+      "ok": false
+    },
+    {
+      "key": "experience_metrics",
+      "label": "Experience bullets include numbers",
+      "points": 12,
+      "score": 0,
+      "fix": "Rewrite each role with one measurable result.",
+      "ok": false
+    },
+    {
+      "key": "visibility",
+      "label": "Open to Work set (recruiters only)",
+      "points": 6,
+      "score": 0,
+      "fix": "Turn on Open to Work for recruiters only.",
+      "ok": false
+    },
+    {
+      "key": "cadence",
+      "label": "Posting at least 8 times a month",
+      "points": 8,
+      "score": 0,
+      "fix": "Start with the 6-week calendar from this project.",
+      "ok": false
+    },
+    {
+      "key": "network",
+      "label": "500+ connections",
+      "points": 6,
+      "score": 0,
+      "fix": "Send 5 personalised connection requests a day to peers and recruiters.",
+      "ok": false
+    }
+  ],
+  "gaps": [
+    {
+      "key": "banner",
+      "label": "Banner that states your value",
+      "points": 6,
+      "score": 0,
+      "fix": "Replace the default banner with one line on who you help and how.",
+      "ok": false
+    },
+    {
+      "key": "headline",
+      "label": "Keyword-rich headline (60-220 chars)",
+      "points": 14,
+      "score": 4,
+      "fix": "Use: role | who you help / what you do | 2-3 skills. Avoid a bare job title.",
+      "ok": false
+    },
+    {
+      "key": "about",
+      "label": "About section with proof and a call to action",
+      "points": 14,
+      "score": 3,
+      "fix": "Write 600-1,500 characters: hook, proof, what you post about, how to reach you.",
+      "ok": false
+    },
+    {
+      "key": "featured",
+      "label": "Featured section populated",
+      "points": 8,
+      "score": 0,
+      "fix": "Pin your best post, a project, and a link that proves your skills.",
+      "ok": false
+    },
+    {
+      "key": "skills_15",
+      "label": "15+ skills, top 3 pinned",
+      "points": 6,
+      "score": 0,
+      "fix": "Add relevant skills and pin the three you want to be known for.",
+      "ok": false
+    },
+    {
+      "key": "recs_3",
+      "label": "3+ recommendations",
+      "points": 8,
+      "score": 0,
+      "fix": "Ask three colleagues or managers for specific recommendations.",
+      "ok": false
+    },
+    {
+      "key": "experience_metrics",
+      "label": "Experience bullets include numbers",
+      "points": 12,
+      "score": 0,
+      "fix": "Rewrite each role with one measurable result.",
+      "ok": false
+    },
+    {
+      "key": "visibility",
+      "label": "Open to Work set (recruiters only)",
+      "points": 6,
+      "score": 0,
+      "fix": "Turn on Open to Work for recruiters only.",
+      "ok": false
+    },
+    {
+      "key": "cadence",
+      "label": "Posting at least 8 times a month",
+      "points": 8,
+      "score": 0,
+      "fix": "Start with the 6-week calendar from this project.",
+      "ok": false
+    },
+    {
+      "key": "network",
+      "label": "500+ connections",
+      "points": 6,
+      "score": 0,
+      "fix": "Send 5 personalised connection requests a day to peers and recruiters.",
+      "ok": false
+    }
+  ],
+  "persona": "job_seeker",
+  "headline_options": [
+    "Data Analyst | Excel · SQL · Power BI | Open to Business Intelligence Analyst",
+    "Aspiring Business Intelligence Analyst | Turning Excel into results for hiring managers and early-career analysts",
+    "Data Analyst who ships: Excel, SQL | Looking for Business Intelligence Analyst roles"
+  ],
+  "about_draft": "I help teams get dependable Excel work done, and I am looking for my next role as a Business Intelligence Analyst.\n\nWhat I bring:\n• I rebuilt a weekly sales report as a Power BI dashboard and cut the prep time from 4 hours to 30 minutes.\n• I once sent a report without checking duplicate rows, and the totals were wrong until a teammate caught it.\n• A 5-minute data check before sharing saves hours of explaining later.\n\nWhat I write about: actionable tips, personal journey, career insights, industry trends.\nSkills I use most: Excel, SQL, Power BI, Python.\n\nIf you are hiring for Business Intelligence Analyst, message me. I reply to every note.",
+  "about_source": "Template engine",
+  "role_models": [
+    {
+      "name": "Sample Role Model",
+      "url": "https://www.linkedin.com/in/sample",
+      "learn": "Clear hooks and weekly carousels"
+    }
+  ],
+  "current_headline": "Data Analyst",
+  "current_about": "I like working with data."
+}

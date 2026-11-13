@@ -1,0 +1,149 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//LinkedIn Influence Lab//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:S01-2026-10-12@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261012T090000
+DTEND;TZID=Asia/Kolkata:20261012T093000
+SUMMARY:LinkedIn post: A simple checklist I use before every Data Analyst deliverable
+DESCRIPTION:Actionable Tips | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S02-2026-10-14@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261014T090000
+DTEND;TZID=Asia/Kolkata:20261014T093000
+SUMMARY:LinkedIn post: What a bad day at work taught me about SQL
+DESCRIPTION:Personal Journey | poll
+END:VEVENT
+BEGIN:VEVENT
+UID:S03-2026-10-16@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261016T090000
+DTEND;TZID=Asia/Kolkata:20261016T093000
+SUMMARY:LinkedIn post: The best career advice I ignored for years (and what finally changed my mind)
+DESCRIPTION:Career Insights | micro_story
+END:VEVENT
+BEGIN:VEVENT
+UID:S04-2026-10-19@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261019T090000
+DTEND;TZID=Asia/Kolkata:20261019T093000
+SUMMARY:LinkedIn post: I read a lot about retail analytics this week. Three ideas worth your time.
+DESCRIPTION:Industry Trends | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S05-2026-10-21@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261021T090000
+DTEND;TZID=Asia/Kolkata:20261021T093000
+SUMMARY:LinkedIn post: Steal this structure for your next retail analytics project update
+DESCRIPTION:Actionable Tips | poll
+END:VEVENT
+BEGIN:VEVENT
+UID:S06-2026-10-23@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261023T090000
+DTEND;TZID=Asia/Kolkata:20261023T093000
+SUMMARY:LinkedIn post: The moment I realised I needed to get serious about SQL
+DESCRIPTION:Personal Journey | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S07-2026-10-26@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261026T090000
+DTEND;TZID=Asia/Kolkata:20261026T093000
+SUMMARY:LinkedIn post: 3 skills that quietly separate good Data Analysts from great ones
+DESCRIPTION:Career Insights | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S08-2026-10-28@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261028T090000
+DTEND;TZID=Asia/Kolkata:20261028T093000
+SUMMARY:LinkedIn post: How I tailor my application for Business Intelligence Analyst in 20 minutes
+DESCRIPTION:Actionable Tips | micro_story
+END:VEVENT
+BEGIN:VEVENT
+UID:S09-2026-10-30@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261030T090000
+DTEND;TZID=Asia/Kolkata:20261030T093000
+SUMMARY:LinkedIn post: What changed in retail analytics over the last 12 months\, in plain English
+DESCRIPTION:Industry Trends | carousel
+END:VEVENT
+BEGIN:VEVENT
+UID:S10-2026-11-02@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261102T090000
+DTEND;TZID=Asia/Kolkata:20261102T093000
+SUMMARY:LinkedIn post: A small win this month that reminded me why I chose retail analytics
+DESCRIPTION:Personal Journey | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S11-2026-11-04@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261104T090000
+DTEND;TZID=Asia/Kolkata:20261104T093000
+SUMMARY:LinkedIn post: The 15-minute habit that improved my SQL fastest
+DESCRIPTION:Actionable Tips | poll
+END:VEVENT
+BEGIN:VEVENT
+UID:S12-2026-11-06@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261106T090000
+DTEND;TZID=Asia/Kolkata:20261106T093000
+SUMMARY:LinkedIn post: How I decide whether a new opportunity is worth a yes
+DESCRIPTION:Career Insights | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S13-2026-11-09@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261109T090000
+DTEND;TZID=Asia/Kolkata:20261109T093000
+SUMMARY:LinkedIn post: My biggest mistake as a Data Analyst (and the lesson I still use)
+DESCRIPTION:Personal Journey | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S14-2026-11-11@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261111T090000
+DTEND;TZID=Asia/Kolkata:20261111T093000
+SUMMARY:LinkedIn post: How I structure my week to protect deep work
+DESCRIPTION:Actionable Tips | micro_story
+END:VEVENT
+BEGIN:VEVENT
+UID:S15-2026-11-13@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261113T090000
+DTEND;TZID=Asia/Kolkata:20261113T093000
+SUMMARY:LinkedIn post: 3 shifts in retail analytics that hiring managers and recruiters in analytics should watch this quarter
+DESCRIPTION:Industry Trends | carousel
+END:VEVENT
+BEGIN:VEVENT
+UID:S16-2026-11-16@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261116T090000
+DTEND;TZID=Asia/Kolkata:20261116T093000
+SUMMARY:LinkedIn post: Nobody tells hiring managers and recruiters in analytics this about moving from junior to senior in retail analytics
+DESCRIPTION:Career Insights | text
+END:VEVENT
+BEGIN:VEVENT
+UID:S17-2026-11-18@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261118T090000
+DTEND;TZID=Asia/Kolkata:20261118T093000
+SUMMARY:LinkedIn post: What my job search taught me about telling my own story
+DESCRIPTION:Personal Journey | poll
+END:VEVENT
+BEGIN:VEVENT
+UID:S18-2026-11-20@linkedin-influence-lab
+DTSTAMP:20261113T103329Z
+DTSTART;TZID=Asia/Kolkata:20261120T090000
+DTEND;TZID=Asia/Kolkata:20261120T093000
+SUMMARY:LinkedIn post: 3 mistakes hiring managers and recruiters in analytics make with SQL (and quick fixes)
+DESCRIPTION:Actionable Tips | text
+END:VEVENT
+END:VCALENDAR

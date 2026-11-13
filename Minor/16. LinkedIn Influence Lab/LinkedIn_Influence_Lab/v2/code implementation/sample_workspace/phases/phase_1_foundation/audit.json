@@ -1,0 +1,187 @@
+{
+  "total": 44,
+  "band": "Needs work",
+  "items": [
+    {
+      "key": "photo",
+      "label": "Professional profile photo",
+      "points": 8,
+      "score": 8,
+      "fix": "Use a clear, well-lit headshot where your face fills about 60% of the frame.",
+      "ok": true
+    },
+    {
+      "key": "banner",
+      "label": "Banner that states your value",
+      "points": 6,
+      "score": 0,
+      "fix": "Replace the default banner with one line on who you help and how.",
+      "ok": false
+    },
+    {
+      "key": "headline",
+      "label": "Keyword-rich headline (60-220 chars)",
+      "points": 14,
+      "score": 9,
+      "fix": "Use: role | who you help / what you do | 2-3 skills. Avoid a bare job title.",
+      "ok": false
+    },
+    {
+      "key": "about",
+      "label": "About section with proof and a call to action",
+      "points": 14,
+      "score": 3,
+      "fix": "Write 600-1,500 characters: hook, proof, what you post about, how to reach you.",
+      "ok": false
+    },
+    {
+      "key": "custom_url",
+      "label": "Custom profile URL",
+      "points": 4,
+      "score": 4,
+      "fix": "Edit public profile & URL in LinkedIn settings, use your name.",
+      "ok": true
+    },
+    {
+      "key": "featured",
+      "label": "Featured section populated",
+      "points": 8,
+      "score": 0,
+      "fix": "Pin your best post, a project, and a link that proves your skills.",
+      "ok": false
+    },
+    {
+      "key": "skills_15",
+      "label": "15+ skills, top 3 pinned",
+      "points": 6,
+      "score": 6,
+      "fix": "Add relevant skills and pin the three you want to be known for.",
+      "ok": true
+    },
+    {
+      "key": "recs_3",
+      "label": "3+ recommendations",
+      "points": 8,
+      "score": 8,
+      "fix": "Ask three colleagues or managers for specific recommendations.",
+      "ok": true
+    },
+    {
+      "key": "experience_metrics",
+      "label": "Experience bullets include numbers",
+      "points": 12,
+      "score": 0,
+      "fix": "Rewrite each role with one measurable result.",
+      "ok": false
+    },
+    {
+      "key": "visibility",
+      "label": "Contact info and a clear call to action",
+      "points": 6,
+      "score": 0,
+      "fix": "Add email or a booking link in contact info.",
+      "ok": false
+    },
+    {
+      "key": "cadence",
+      "label": "Posting at least 8 times a month",
+      "points": 8,
+      "score": 0,
+      "fix": "Start with the 6-week calendar from this project.",
+      "ok": false
+    },
+    {
+      "key": "network",
+      "label": "500+ connections",
+      "points": 6,
+      "score": 6,
+      "fix": "Send 5 personalised connection requests a day to peers and recruiters.",
+      "ok": true
+    }
+  ],
+  "gaps": [
+    {
+      "key": "banner",
+      "label": "Banner that states your value",
+      "points": 6,
+      "score": 0,
+      "fix": "Replace the default banner with one line on who you help and how.",
+      "ok": false
+    },
+    {
+      "key": "headline",
+      "label": "Keyword-rich headline (60-220 chars)",
+      "points": 14,
+      "score": 9,
+      "fix": "Use: role | who you help / what you do | 2-3 skills. Avoid a bare job title.",
+      "ok": false
+    },
+    {
+      "key": "about",
+      "label": "About section with proof and a call to action",
+      "points": 14,
+      "score": 3,
+      "fix": "Write 600-1,500 characters: hook, proof, what you post about, how to reach you.",
+      "ok": false
+    },
+    {
+      "key": "featured",
+      "label": "Featured section populated",
+      "points": 8,
+      "score": 0,
+      "fix": "Pin your best post, a project, and a link that proves your skills.",
+      "ok": false
+    },
+    {
+      "key": "experience_metrics",
+      "label": "Experience bullets include numbers",
+      "points": 12,
+      "score": 0,
+      "fix": "Rewrite each role with one measurable result.",
+      "ok": false
+    },
+    {
+      "key": "visibility",
+      "label": "Contact info and a clear call to action",
+      "points": 6,
+      "score": 0,
+      "fix": "Add email or a booking link in contact info.",
+      "ok": false
+    },
+    {
+      "key": "cadence",
+      "label": "Posting at least 8 times a month",
+      "points": 8,
+      "score": 0,
+      "fix": "Start with the 6-week calendar from this project.",
+      "ok": false
+    }
+  ],
+  "persona": "professional",
+  "headline_options": [
+    "Senior Operations Analyst at Northwind Logistics | Helping operations and supply chain professionals with Excel | SQL · Power BI",
+    "Senior Operations Analyst | Excel · SQL · Power BI | Sharing lessons from supply chain analytics",
+    "Senior Operations Analyst at Northwind Logistics | I turn Excel into clear decisions for operations and supply chain professionals"
+  ],
+  "about_draft": "I am a Senior Operations Analyst in supply chain analytics who helps operations and supply chain professionals make better use of Excel.\n\nWhat I bring:\n• Rebuilt our weekly delivery-performance report as a Power BI dashboard, cutting preparation time from 5 hours to 40 minutes.\n• I once presented a cost-saving figure without checking for duplicate shipment IDs; the number was 8% too high until a colleague caught it.\n• A 10-minute data check before any review meeting saves hours of damage control.\n\nWhat I write about: career insights, thought leadership, personal journey, industry trends, actionable tips.\nSkills I use most: Excel, SQL, Power BI, Process Improvement, Stakeholder Communication.\n\nAlways happy to swap notes. Connect or send me a message.",
+  "about_source": "Template engine",
+  "role_models": [
+    {
+      "name": "Sample Peer A",
+      "url": "https://www.linkedin.com/in/sample-peer-a",
+      "learn": "One clear takeaway in every weekly carousel"
+    },
+    {
+      "name": "Sample Peer B",
+      "url": "https://www.linkedin.com/in/sample-peer-b",
+      "learn": "Short stories about process fixes"
+    },
+    {
+      "name": "Sample Peer C",
+      "url": "https://www.linkedin.com/in/sample-peer-c",
+      "learn": "Honest posts about mistakes and what changed"
+    }
+  ],
+  "current_headline": "Senior Operations Analyst at Northwind Logistics",
+  "current_about": "I work in operations analytics at Northwind Logistics. I enjoy turning messy delivery data into reports teams can act on."
+}
