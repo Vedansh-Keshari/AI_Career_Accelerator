@@ -1,0 +1,86 @@
+﻿Week,Date,Day,Theme (Content Pillar),Format,Hook,Draft Content,AI Template,Status
+1,2026-11-16,Mon,Profile audit + content pillars,No post,No post scheduled,Week 1 is the personal branding audit and content pillar definition (Section 22).,-,Planned
+2,2026-11-24,Tue,Personal journey,Micro-story,My first SQL query returned zero rows. I thought I'd broken the database.,"My first SQL query returned zero rows.
+I was sure I had broken something.
+The cause: I had filtered on 'North ' with a trailing space. One invisible character. Forty minutes of panic.
+What it taught me: when a result looks wrong, check the data before you doubt yourself.
+What is the smallest bug that ever cost you the most time?
+#SQL #DataAnalytics #CareerJourney",Template A,Planned
+2,2026-11-26,Thu,Actionable tips,Text post,"Before you share any dashboard, run these 3 checks.","Before you share any dashboard, run these 3 checks:
+1. Do the totals match the source?
+2. Are there blanks or duplicates hiding in your key column?
+3. Does every chart title say what the reader should notice?
+Two minutes of checking saves a week of 'why doesn't this match?' emails.
+Which check would you add?
+#Excel #DataAnalytics #Dashboards",Template A,Planned
+2,2026-11-27,Fri,Career insights,Poll,Junior analysts: what matters most in a portfolio?,"Junior analysts: what matters most in a portfolio?
+Poll options:
+- Clean data projects
+- Clear storytelling
+- Technical depth (SQL, Python)
+- Business impact
+I'm curious what hiring managers and fellow analysts look for. Vote, then tell me in the comments what I missed.
+#DataAnalytics #Portfolio #CareerAdvice",Template A,Planned
+3,2026-12-01,Tue,Industry trends,Text post,AI can draft your analysis. It can't know your business.,"AI can draft your analysis. It can't know your business.
+Tools now produce first drafts of queries, summaries and charts quickly. What stays human is knowing which question matters and whether the answer makes sense for this business.
+My rule: AI drafts, I review, test and rewrite in my own words.
+How are you using AI in your analysis work?
+#AI #DataAnalytics #FutureOfWork",Template B,Planned
+3,2026-12-03,Thu,Thought leadership,Text post,A dashboard doesn't make a decision. A question does.,"A dashboard doesn't make a decision. A question does.
+Many dashboards start with 'what data do we have?' The better ones start with 'what decision are we making?'
+Before building, write down:
+- the decision
+- the person making it
+- the one number that would change their mind
+Then build the smallest view that shows it.
+#DataStorytelling #Analytics",Template B,Planned
+4,2026-12-07,Mon,Career insights,Text post,Your LinkedIn profile gets a few seconds. Make them count.,"Your LinkedIn profile gets a few seconds. Make them count.
+Three things do most of the work:
+1. Headline: what you do and who you help
+2. First lines of About: the value, not the job history
+3. Featured: one piece of proof
+Fix those three before touching anything else.
+What does your headline say right now?
+#PersonalBranding #LinkedInTips",Template A,Planned
+4,2026-12-09,Wed,Actionable tips,Carousel,SQL joins in 5 slides.,"Carousel outline (5 slides)
+Slide 1: SQL joins in 5 slides
+Slide 2: INNER JOIN returns only matching rows
+Slide 3: LEFT JOIN keeps all left rows and adds matches from the right
+Slide 4: Common mistake: joining on a non-unique key duplicates rows
+Slide 5: Quick check: compare row counts before and after the join
+Caption: Save this for your next query or interview.
+#SQL #DataAnalytics #LearnSQL",Template A,Planned
+4,2026-12-11,Fri,Personal journey,Micro-story,My first rejected application taught me more than I expected.,"My first rejected application taught me more than I expected.
+I had sent the same generic resume to every role.
+So I changed one thing: I rewrote the top three bullets for each job, using that job's own wording.
+Fewer applications. Better ones.
+What is one change that improved your job search?
+#JobSearch #CareerGrowth #DataCareers",Template B,Planned
+5,2026-12-14,Mon,Industry trends,Text post,3 takeaways on data literacy at work.,"I read an article on data literacy at work. My 3 takeaways:
+1. Everyone who uses numbers needs to question them.
+2. Plain-language explanations beat technical ones.
+3. Training works best when tied to real daily tasks.
+Source: [article title and link, add before publishing]
+Do you agree?
+#DataLiteracy #Analytics",Template C,Planned
+5,2026-12-16,Wed,Thought leadership,Text post,The best analysts I know ask one more question.,"The best analysts I know ask one more question.
+A request arrives: 'Send me last month's sales.'
+The extra question: 'What decision will this help you make?'
+That one question turns a data dump into an answer people actually use.
+What is your go-to clarifying question?
+#Analytics #Stakeholders #DataStorytelling",Template B,Planned
+5,2026-12-18,Fri,Career insights,Poll,Which skill would you learn first this quarter?,"Which skill would you learn first this quarter?
+Poll options:
+- Advanced SQL
+- Python
+- Power BI or Tableau
+- Communication and storytelling
+Tell me why in the comments. I'll share what I'm picking.
+#DataAnalytics #Upskilling #CareerGrowth",Template A,Planned
+6,2026-12-22,Tue,Personal journey,Text post,Six weeks of posting on LinkedIn: what I learned.,"Six weeks of posting on LinkedIn. What I learned from 12 posts:
+1. Specific beats clever.
+2. Polls and carousels got the most reactions.
+3. A content calendar made consistency easy.
+Next: keep posting twice a week and do more of what worked.
+What has helped you stay consistent?
+#PersonalBranding #LinkedIn #Consistency",Template B,Planned
