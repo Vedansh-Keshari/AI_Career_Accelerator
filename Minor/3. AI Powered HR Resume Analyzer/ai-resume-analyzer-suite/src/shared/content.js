@@ -1,0 +1,35 @@
+export const STEPS=[
+{id:"sheets",cls:"get",badge:"SETUP",title:"/sheets",summary:"Set up your two Google Sheets",tool:"sheets",
+ why:"A fixed layout means every candidate is scored the same way, which is what removes bias.",
+ actions:["Create a Google Sheet for candidates (input) and another for results (output).","Paste the input headers into the first sheet and add a row per candidate.","Paste the output headers into the second sheet."],
+ quiz:{q:"Why do both sheets use fixed column names?",o:["It looks tidier","Every candidate is scored on the same parameters","Google Sheets requires it"],a:1,why:"Standard columns give standard scoring, the main fix for human bias."}},
+{id:"text",cls:"patch",badge:"COLLECT",title:"/resume-text",summary:"Get the text out of each resume",tool:null,
+ why:"In the n8n version, an HTTP node downloaded the file and an Extract node read the PDF. Here you do that by hand.",
+ actions:["Open the resume link for one candidate.","Select all, copy the text and keep it handy.","If the PDF is a scan, run it through a free OCR tool first."],
+ quiz:{q:"What does copying the resume text replace from the n8n workflow?",o:["The OpenAI node","The HTTP Request and Extract from File nodes","The Google Sheets node"],a:1,why:"Those two nodes downloaded each PDF and turned it into text."}},
+{id:"prompt",cls:"put",badge:"PROMPT",title:"/system-prompt",summary:"Write the CHRO system prompt",tool:"prompt",
+ why:"The more detailed the system prompt, the better the output. It sets the role, the criteria and the score bands.",
+ actions:["Describe the role you are hiring for.","Set points per parameter so they total 100.","Add your rules, for example not rejecting someone for missing AI tool names.","Copy the finished prompt."],
+ quiz:{q:"A candidate never names an AI tool. What should the prompt tell the AI?",o:["Reject them","Do not reject only for that","Score them zero on everything"],a:1,why:"The original brief says not to reject candidates just because they skip AI tool names."}},
+{id:"run",cls:"post",badge:"RUN",title:"/run",summary:"Run one resume through ChatGPT or Claude",tool:null,
+ why:"One chat per candidate keeps scores from bleeding into each other.",
+ actions:["Start a new chat and paste your system prompt.","Paste the resume text as the next message.","Check that the reply is JSON only."],
+ quiz:{q:"Why ask for JSON only?",o:["It is faster to read aloud","It maps cleanly onto sheet columns","It is cheaper"],a:1,why:"Structured output drops straight into the output columns."}},
+{id:"score",cls:"post",badge:"SCORE",title:"/score",summary:"Turn the reply into a scored row",tool:"score",
+ why:"The tool adds the total itself, so a slip in the AI’s arithmetic cannot change a result.",
+ actions:["Paste the JSON reply.","Check the total and the recommendation.","Add the candidate to your dashboard or copy the row into your sheet."],
+ quiz:{q:"Who calculates the total score here?",o:["The AI","The toolkit","You, by hand"],a:1,why:"The toolkit sums the parameter scores and applies the bands."}},
+{id:"review",cls:"delete",badge:"REVIEW",title:"/decision",summary:"Review, then decide",tool:"link",
+ why:"Standard scoring reduces bias, but a person makes the final call.",
+ actions:["Read the summary for every Strong and Potential candidate.","Spot-check a few Weak ones against their resumes.","Shortlist, then schedule interviews outside this workflow."],
+ quiz:{q:"What is the AI’s role in the final decision?",o:["It decides alone","It screens and a person decides","It books interviews"],a:1,why:"Interview scheduling and the final decision stay outside the workflow."}}];
+export const INFO={
+ why:["Screening resumes by hand takes a long time","Humans hire with bias","Standard scoring improves hiring"],
+ who:["Recruiters and HR professionals","Founders of start-ups and new companies","Anyone who wants to automate resume screening"],
+ inc:["Tool integration logic","Writing clear system prompts","Evaluation criteria"],
+ exc:["Automating interview scheduling","Building a full hiring software"]};
+export const FAQ=[
+ ["Do I need n8n?","No. This version uses Google Sheets and ChatGPT or Claude by hand. The steps match the n8n workflow, so you can automate later."],
+ ["Where is my data stored?","Only in your browser on this device. Nothing is uploaded by this tool."],
+ ["Are the scores final?","No. They are a consistent first screen. A person reviews and decides."],
+ ["Can I change the parameters?","You can change the points per parameter, the role, the bands and the rules in the prompt builder."]];

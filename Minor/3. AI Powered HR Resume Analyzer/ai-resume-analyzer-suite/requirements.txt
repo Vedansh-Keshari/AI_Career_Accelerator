@@ -1,0 +1,16 @@
+# AI Resume Analyzer: Guide and App
+# Everything you need, in plain terms.
+
+## To USE it (no install)
+Browser          Any recent Chrome, Edge, Firefox or Safari
+Files            website.html and app.html in the same folder
+Google account   For Google Sheets (candidate list and results)
+AI assistant     ChatGPT or Claude (a free account is enough to start)
+
+## To REBUILD it (optional, only if you edit the source)
+Node.js          18 or newer
+react            18.3.1
+react-dom        18.3.1
+esbuild          0.21.5   (dev)
+jsdom            24.1.0   (dev, used only for testing)
+Commands         npm install   then   npm run build
